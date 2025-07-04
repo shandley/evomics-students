@@ -1,7 +1,7 @@
 import React from 'react';
 import type { FacultyProfile, EnrichedFacultyProfile } from '../types';
-import { TopicDisplay } from './TopicDisplay';
-import { SearchHighlight } from './SearchHighlight';
+// import { TopicDisplay } from './TopicDisplay';
+// import { SearchHighlight } from './SearchHighlight';
 
 interface FacultyCardProps {
   profile: FacultyProfile | EnrichedFacultyProfile;
@@ -91,14 +91,14 @@ export const FacultyCard: React.FC<FacultyCardProps> = ({ profile, workshops, on
         </div>
 
         {/* Topics Display (if enriched profile) */}
-        {'enrichment' in profile && (
+        {/* {'enrichment' in profile && (
           <TopicDisplay profile={profile as EnrichedFacultyProfile} variant="card" />
-        )}
+        )} */}
         
         {/* Search Highlight */}
-        {searchTerm && 'enrichment' in profile && (
+        {/* {searchTerm && 'enrichment' in profile && (
           <SearchHighlight profile={profile as EnrichedFacultyProfile} searchTerm={searchTerm} />
-        )}
+        )} */}
 
         {/* Footer with timeline info */}
         <div className="pt-4 border-t border-gray-100 flex items-center justify-between text-xs">

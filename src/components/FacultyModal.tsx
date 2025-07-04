@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import type { EnrichedFacultyProfile, Workshop } from '../types';
-import { TopicDisplay } from './TopicDisplay';
+// import { TopicDisplay } from './TopicDisplay';
 
 interface FacultyModalProps {
   profile: EnrichedFacultyProfile | null;
@@ -185,7 +185,10 @@ export const FacultyModal: React.FC<FacultyModalProps> = ({
 
           {/* Research Areas with Topics */}
           <div className="mb-6">
-            <TopicDisplay profile={profile} variant="modal" />
+            {/* <TopicDisplay profile={profile} variant="modal" /> */}
+            <div className="text-gray-600 text-sm">
+              Topic display temporarily disabled
+            </div>
           </div>
 
           {/* Workshop Participation */}
