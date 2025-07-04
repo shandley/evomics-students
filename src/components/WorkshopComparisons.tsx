@@ -14,8 +14,7 @@ export const WorkshopComparisons: React.FC<WorkshopComparisonsProps> = ({
   const workshopData = useMemo(() => {
     const data = {
       participation: [] as any[],
-      geographic: [] as any[],
-      crossWorkshop: [] as any[]
+      geographic: [] as any[]
     };
 
     // Workshop participation breakdown
@@ -48,26 +47,6 @@ export const WorkshopComparisons: React.FC<WorkshopComparisonsProps> = ({
       diversity: (countries.size / workshopCounts[id as keyof typeof workshopCounts] * 100).toFixed(1)
     }));
 
-    // Cross-workshop participation analysis
-    const crossParticipation: { [key: string]: number } = {};
-    profiles.forEach(profile => {
-      const participatedWorkshops = Object.keys(profile.participations)
-        .filter(id => profile.participations[id].length > 0 && id in workshopCounts)
-        .sort();
-      
-      if (participatedWorkshops.length > 0) {
-        const key = participatedWorkshops.join(' + ');
-        crossParticipation[key] = (crossParticipation[key] || 0) + 1;
-      }
-    });
-
-    data.crossWorkshop = Object.entries(crossParticipation)
-      .map(([combination, count]) => ({
-        combination,
-        count,
-        percentage: ((count / profiles.length) * 100).toFixed(1)
-      }))
-      .sort((a, b) => b.count - a.count);
 
     return data;
   }, [profiles, workshops]);
@@ -77,17 +56,13 @@ export const WorkshopComparisons: React.FC<WorkshopComparisonsProps> = ({
       const data = payload[0].payload;
       return (
         <div className="bg-white p-3 border border-gray-200 rounded-lg shadow-lg">
-          <p className="font-medium text-gray-900">{data.name || data.workshop || data.combination}</p>
+          <p className="font-medium text-gray-900">{data.name || data.workshop}</p>
           <p className="text-sm text-gray-600">
             {data.value ? `Students: ${data.value}` : 
-             data.students ? `Students: ${data.students}` :
-             `Count: ${data.count}`}
+             data.students ? `Students: ${data.students}` : ''}
           </p>
           {data.countries && (
             <p className="text-sm text-gray-600">Countries: {data.countries}</p>
-          )}
-          {data.percentage && (
-            <p className="text-sm text-gray-600">Percentage: {data.percentage}%</p>
           )}
         </div>
       );
@@ -146,30 +121,6 @@ export const WorkshopComparisons: React.FC<WorkshopComparisonsProps> = ({
         </p>
       </div>
 
-      {/* Cross-Workshop Participation */}
-      <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm lg:col-span-2">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Cross-Workshop Participation Patterns</h3>
-        <div className="h-64">
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={workshopData.crossWorkshop}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis 
-                dataKey="combination" 
-                angle={-45}
-                textAnchor="end"
-                height={80}
-                fontSize={12}
-              />
-              <YAxis />
-              <Tooltip content={<CustomTooltip />} />
-              <Bar dataKey="count" fill="#059669" name="Students" />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
-        <p className="text-sm text-gray-600 mt-2">
-          Shows how students participate across multiple workshops. Single workshop participation vs. cross-workshop engagement patterns.
-        </p>
-      </div>
 
       {/* Top Countries Analysis */}
       <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm lg:col-span-2">
