@@ -301,6 +301,56 @@ function FocusedApp() {
         {/* Main Stats Dashboard */}
         <FocusedStudentStats profiles={profiles} workshops={workshops} />
         
+        {/* Workshop Timeline - moved up from bottom */}
+        <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm mb-6">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">Workshop Timeline</h3>
+          <div className="mb-4 text-sm text-gray-600">
+            2011 - 2024 (14 years of student participation)
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {['wog', 'wpsg', 'wphylo'].map((workshopId) => {
+              const workshop = workshops[workshopId];
+              // Count unique students for this workshop
+              const uniqueStudents = profiles.filter(p => p.participations[workshopId]?.length > 0).length;
+              
+              // Get year range for this workshop
+              const workshopYears = new Set<number>();
+              profiles.forEach(profile => {
+                if (profile.participations[workshopId]?.length > 0) {
+                  profile.participations[workshopId].forEach((year: number) => workshopYears.add(year));
+                }
+              });
+              const years = Array.from(workshopYears).sort();
+              
+              const colorMap = {
+                'wog': 'border-blue-200 bg-blue-50',
+                'wpsg': 'border-purple-200 bg-purple-50', 
+                'wphylo': 'border-green-200 bg-green-50'
+              };
+              
+              return (
+                <div key={workshopId} className={`border rounded-lg p-4 ${colorMap[workshopId as keyof typeof colorMap]}`}>
+                  <h4 className="font-medium text-gray-900 mb-2">{workshop?.shortName}</h4>
+                  <div className="text-sm text-gray-600 mb-3" title={workshop?.name}>
+                    {workshop?.name}
+                  </div>
+                  <div className="text-lg font-bold text-primary-600 mb-2">{uniqueStudents} students</div>
+                  
+                  {years.length > 0 && (
+                    <div className="space-y-1">
+                      <div className="text-xs text-gray-500">Active years:</div>
+                      <div className="text-xs text-gray-600">
+                        {years[0]} - {years[years.length - 1]}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        
         {/* Filter Controls */}
         <FilterControls />
 
@@ -391,13 +441,6 @@ function FocusedApp() {
             <DrilldownAnalytics profiles={profiles} workshops={workshops} />
           </div>
         )}
-        
-        {/* Focused Insights */}
-        <FocusedInsights 
-          profiles={profiles} 
-          workshops={workshops} 
-          filters={filters}
-        />
 
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm bg-white rounded-lg p-6">
