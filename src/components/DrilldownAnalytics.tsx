@@ -144,15 +144,16 @@ export const DrilldownAnalytics: React.FC<DrilldownAnalyticsProps> = ({
           </h3>
           <div className="h-80">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={analyticsData.topCountries} layout="horizontal">
+              <BarChart data={analyticsData.topCountries}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis type="number" />
-                <YAxis 
+                <XAxis 
                   dataKey="country" 
-                  type="category" 
-                  width={80}
-                  fontSize={12}
+                  angle={-45}
+                  textAnchor="end"
+                  height={100}
+                  fontSize={10}
                 />
+                <YAxis />
                 <Tooltip 
                   content={({ active, payload, label }) => {
                     if (active && payload && payload.length) {
@@ -246,15 +247,16 @@ export const DrilldownAnalytics: React.FC<DrilldownAnalyticsProps> = ({
         </h3>
         <div className="h-96">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={analyticsData.topInstitutions} layout="horizontal">
+            <BarChart data={analyticsData.topInstitutions}>
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis type="number" />
-              <YAxis 
+              <XAxis 
                 dataKey="institution" 
-                type="category" 
-                width={150}
-                fontSize={10}
+                angle={-45}
+                textAnchor="end"
+                height={120}
+                fontSize={9}
               />
+              <YAxis />
               <Tooltip 
                 content={({ active, payload, label }) => {
                   if (active && payload && payload.length) {
