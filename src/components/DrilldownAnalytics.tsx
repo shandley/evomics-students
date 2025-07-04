@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, TreeMap, Cell } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import type { StudentProfile } from '../types/student';
 
 interface DrilldownAnalyticsProps {
@@ -75,22 +75,22 @@ export const DrilldownAnalytics: React.FC<DrilldownAnalyticsProps> = ({
         .slice(0, 10);
     }
 
-    // Institution diversity treemap data
-    const institutionTreemapData = Object.entries(
+    // Top institutions data for simple bar chart
+    const topInstitutions = Object.entries(
       filteredProfiles.reduce((acc, profile) => {
-        const key = `${profile.student.country} - ${profile.student.institution}`;
+        const key = `${profile.student.institution} (${profile.student.country})`;
         acc[key] = (acc[key] || 0) + 1;
         return acc;
       }, {} as { [key: string]: number })
     )
-    .map(([name, value]) => ({ name, value, size: value }))
-    .sort((a, b) => b.value - a.value)
-    .slice(0, 20);
+    .map(([institution, count]) => ({ institution, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 15);
 
     return {
       topCountries,
       institutionStats,
-      institutionTreemapData,
+      topInstitutions,
       countryStats
     };
   }, [profiles, selectedWorkshop, selectedCountry]);
@@ -238,29 +238,42 @@ export const DrilldownAnalytics: React.FC<DrilldownAnalyticsProps> = ({
         </div>
       </div>
 
-      {/* Institution Diversity Treemap */}
+      {/* Top Institutions Chart */}
       <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">
-          Institutional Diversity Overview
+          Top Institutions by Student Count
           {selectedWorkshop !== 'all' && ` (${workshops[selectedWorkshop]?.shortName})`}
         </h3>
         <div className="h-96">
           <ResponsiveContainer width="100%" height="100%">
-            <TreeMap
-              data={analyticsData.institutionTreemapData}
-              dataKey="size"
-              ratio={4/3}
-              stroke="#fff"
-              fill="#8884d8"
-            >
-              {analyticsData.institutionTreemapData.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-              ))}
-            </TreeMap>
+            <BarChart data={analyticsData.topInstitutions} layout="horizontal">
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis type="number" />
+              <YAxis 
+                dataKey="institution" 
+                type="category" 
+                width={150}
+                fontSize={10}
+              />
+              <Tooltip 
+                content={({ active, payload, label }) => {
+                  if (active && payload && payload.length) {
+                    return (
+                      <div className="bg-white p-3 border border-gray-200 rounded-lg shadow-lg max-w-sm">
+                        <p className="font-medium text-gray-900 text-sm">{label}</p>
+                        <p className="text-sm text-gray-600">Students: {payload[0].value}</p>
+                      </div>
+                    );
+                  }
+                  return null;
+                }}
+              />
+              <Bar dataKey="count" fill="#059669" />
+            </BarChart>
           </ResponsiveContainer>
         </div>
         <p className="text-sm text-gray-600 mt-2">
-          Treemap showing relative sizes of institutional participation. Larger blocks = more students from that institution.
+          Top 15 institutions by student participation across all workshops.
         </p>
       </div>
 
@@ -281,7 +294,7 @@ export const DrilldownAnalytics: React.FC<DrilldownAnalyticsProps> = ({
         <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
           <div className="text-center">
             <div className="text-2xl font-bold text-purple-600">
-              {selectedCountry ? analyticsData.institutionStats.length : analyticsData.institutionTreemapData.length}
+              {selectedCountry ? analyticsData.institutionStats.length : analyticsData.topInstitutions.length}
             </div>
             <div className="text-sm text-gray-600">
               {selectedCountry ? 'Institutions in Country' : 'Top Institutions'}

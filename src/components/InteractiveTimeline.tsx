@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, ComposedChart } from 'recharts';
 import type { StudentProfile } from '../types/student';
 
 interface InteractiveTimelineProps {
@@ -150,7 +150,7 @@ export const InteractiveTimeline: React.FC<InteractiveTimelineProps> = ({
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Cumulative Student Community Growth</h3>
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={cumulativeData}>
+            <ComposedChart data={cumulativeData}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
               <XAxis 
                 dataKey="year" 
@@ -194,7 +194,7 @@ export const InteractiveTimeline: React.FC<InteractiveTimelineProps> = ({
                 name="Total Alumni"
                 dot={{ fill: '#059669', strokeWidth: 2, r: 4 }}
               />
-            </BarChart>
+            </ComposedChart>
           </ResponsiveContainer>
         </div>
         <p className="text-sm text-gray-600 mt-2">
