@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, ComposedChart } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, ComposedChart, AreaChart, Area } from 'recharts';
 import type { StudentProfile } from '../types/student';
 
 interface InteractiveTimelineProps {
@@ -16,6 +16,7 @@ export const InteractiveTimeline: React.FC<InteractiveTimelineProps> = ({
 }) => {
   const [showLocationBreakdown, setShowLocationBreakdown] = useState(false);
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const [showLocationView, setShowLocationView] = useState(false);
 
   const timelineData = useMemo(() => {
     const yearData: { [year: number]: { 
@@ -61,6 +62,69 @@ export const InteractiveTimeline: React.FC<InteractiveTimelineProps> = ({
 
     return Object.values(yearData).sort((a, b) => a.year - b.year);
   }, [profiles]);
+
+  // Enhanced timeline data with location breakdown
+  const locationTimelineData = useMemo(() => {
+    const yearLocationData: { [year: number]: { 
+      year: number;
+      total: number;
+      wog: number;
+      wpsg: number;
+      wphylo: number;
+      // WoG location breakdown
+      wog_colorado: number;
+      wog_czech: number;
+      wog_smithsonian: number;
+      wog_other: number;
+      multiLocation: boolean;
+    }} = {};
+
+    // Process raw participations to get location data
+    studentData.participations.forEach(participation => {
+      const { year, location, workshopId, studentId } = participation;
+      
+      // Only include focused workshops
+      if (!['wog', 'wpsg', 'wphylo'].includes(workshopId)) return;
+      
+      if (!yearLocationData[year]) {
+        yearLocationData[year] = { 
+          year, total: 0, wog: 0, wpsg: 0, wphylo: 0,
+          wog_colorado: 0, wog_czech: 0, wog_smithsonian: 0, wog_other: 0,
+          multiLocation: false
+        };
+      }
+      
+      // Count unique students per year per workshop (avoid double counting)
+      const existingStudents = new Set<string>();
+      
+      // For WoG, break down by location
+      if (workshopId === 'wog') {
+        if (location.toLowerCase().includes('colorado')) {
+          yearLocationData[year].wog_colorado++;
+        } else if (location.toLowerCase().includes('czech') || location.toLowerCase().includes('krumlov')) {
+          yearLocationData[year].wog_czech++;
+        } else if (location.toLowerCase().includes('smithsonian') || location.toLowerCase().includes('washington')) {
+          yearLocationData[year].wog_smithsonian++;
+        } else {
+          yearLocationData[year].wog_other++;
+        }
+      }
+    });
+
+    // Calculate totals and detect multi-location years
+    Object.values(yearLocationData).forEach(data => {
+      data.wog = data.wog_colorado + data.wog_czech + data.wog_smithsonian + data.wog_other;
+      
+      // Check if it's a multi-location year (more than one location has students)
+      const locationCount = [data.wog_colorado, data.wog_czech, data.wog_smithsonian, data.wog_other]
+        .filter(count => count > 0).length;
+      data.multiLocation = locationCount > 1;
+      
+      data.total = data.wog + data.wpsg + data.wphylo;
+    });
+
+    return Object.values(yearLocationData).sort((a, b) => a.year - b.year);
+  }, []);
 
   // Location breakdown analysis using raw participation data
   const locationData = useMemo(() => {
@@ -175,14 +239,24 @@ export const InteractiveTimeline: React.FC<InteractiveTimelineProps> = ({
               </button>
             )}
             <button
-              onClick={() => setShowLocationBreakdown(!showLocationBreakdown)}
+              onClick={() => setShowLocationView(!showLocationView)}
               className={`px-4 py-2 text-sm rounded-md transition-colors ${
-                showLocationBreakdown
+                showLocationView
                   ? 'bg-blue-100 text-blue-800 border border-blue-300'
                   : 'bg-gray-100 text-gray-700 border border-gray-300 hover:bg-gray-200'
               }`}
             >
-              {showLocationBreakdown ? 'Hide' : 'Show'} Location Analysis
+              {showLocationView ? 'Hide' : 'Show'} Location View
+            </button>
+            <button
+              onClick={() => setShowLocationBreakdown(!showLocationBreakdown)}
+              className={`px-4 py-2 text-sm rounded-md transition-colors ${
+                showLocationBreakdown
+                  ? 'bg-purple-100 text-purple-800 border border-purple-300'
+                  : 'bg-gray-100 text-gray-700 border border-gray-300 hover:bg-gray-200'
+              }`}
+            >
+              {showLocationBreakdown ? 'Hide' : 'Show'} Location Details
             </button>
           </div>
         </div>
@@ -195,54 +269,161 @@ export const InteractiveTimeline: React.FC<InteractiveTimelineProps> = ({
 
       {/* Annual Participation Timeline */}
       <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Annual Workshop Participation</h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+          Annual Workshop Participation
+          {showLocationView && (
+            <span className="ml-2 text-sm font-normal text-blue-600">(Location View)</span>
+          )}
+        </h3>
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={timelineData}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-              <XAxis 
-                dataKey="year" 
-                stroke="#6b7280"
-                fontSize={12}
-              />
-              <YAxis 
-                stroke="#6b7280"
-                fontSize={12}
-              />
-              <Tooltip content={<CustomTooltip />} />
-              <Legend />
-              <Line 
-                type="monotone" 
-                dataKey="wog" 
-                stroke="#2563eb" 
-                strokeWidth={3}
-                name="WoG"
-                dot={{ fill: '#2563eb', strokeWidth: 2, r: 4, cursor: 'pointer' }}
-                onClick={(data) => setSelectedYear(data.year)}
-              />
-              <Line 
-                type="monotone" 
-                dataKey="wpsg" 
-                stroke="#9333ea" 
-                strokeWidth={3}
-                name="WPSG"
-                dot={{ fill: '#9333ea', strokeWidth: 2, r: 4, cursor: 'pointer' }}
-                onClick={(data) => setSelectedYear(data.year)}
-              />
-              <Line 
-                type="monotone" 
-                dataKey="wphylo" 
-                stroke="#059669" 
-                strokeWidth={3}
-                name="WPhylo"
-                dot={{ fill: '#059669', strokeWidth: 2, r: 4, cursor: 'pointer' }}
-                onClick={(data) => setSelectedYear(data.year)}
-              />
-            </LineChart>
+            {showLocationView ? (
+              <AreaChart data={locationTimelineData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+                <XAxis 
+                  dataKey="year" 
+                  stroke="#6b7280"
+                  fontSize={12}
+                />
+                <YAxis 
+                  stroke="#6b7280"
+                  fontSize={12}
+                />
+                <Tooltip 
+                  content={({ active, payload, label }) => {
+                    if (active && payload && payload.length) {
+                      const data = payload[0].payload;
+                      return (
+                        <div className="bg-white p-3 border border-gray-200 rounded-lg shadow-lg">
+                          <p className="font-medium text-gray-900">{`Year: ${label}`}</p>
+                          <div className="space-y-1 mt-2">
+                            <p className="text-sm text-blue-600">WoG Total: {data.wog}</p>
+                            {data.wog_smithsonian > 0 && (
+                              <p className="text-xs text-blue-700 ml-2">• Smithsonian DC: {data.wog_smithsonian}</p>
+                            )}
+                            {data.wog_czech > 0 && (
+                              <p className="text-xs text-blue-700 ml-2">• Czech Republic: {data.wog_czech}</p>
+                            )}
+                            {data.wog_colorado > 0 && (
+                              <p className="text-xs text-blue-700 ml-2">• Colorado State: {data.wog_colorado}</p>
+                            )}
+                            {data.wog_other > 0 && (
+                              <p className="text-xs text-blue-700 ml-2">• Other: {data.wog_other}</p>
+                            )}
+                            {data.wpsg > 0 && <p className="text-sm text-purple-600">WPSG: {data.wpsg}</p>}
+                            {data.wphylo > 0 && <p className="text-sm text-green-600">WPhylo: {data.wphylo}</p>}
+                            {data.multiLocation && (
+                              <p className="text-xs text-orange-600 mt-1">⚡ Multi-location year</p>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    }
+                    return null;
+                  }}
+                />
+                <Legend />
+                {/* WoG stacked areas by location */}
+                <Area 
+                  type="monotone" 
+                  dataKey="wog_smithsonian" 
+                  stackId="wog"
+                  stroke="#1e40af" 
+                  fill="#1e40af"
+                  name="WoG - Smithsonian DC"
+                />
+                <Area 
+                  type="monotone" 
+                  dataKey="wog_czech" 
+                  stackId="wog"
+                  stroke="#3b82f6" 
+                  fill="#3b82f6"
+                  name="WoG - Czech Republic"
+                />
+                <Area 
+                  type="monotone" 
+                  dataKey="wog_colorado" 
+                  stackId="wog"
+                  stroke="#60a5fa" 
+                  fill="#60a5fa"
+                  name="WoG - Colorado State"
+                />
+                <Area 
+                  type="monotone" 
+                  dataKey="wog_other" 
+                  stackId="wog"
+                  stroke="#93c5fd" 
+                  fill="#93c5fd"
+                  name="WoG - Other"
+                />
+                {/* Other workshops as areas */}
+                <Area 
+                  type="monotone" 
+                  dataKey="wpsg" 
+                  stroke="#9333ea" 
+                  fill="rgba(147, 51, 234, 0.3)"
+                  strokeWidth={2}
+                  name="WPSG"
+                />
+                <Area 
+                  type="monotone" 
+                  dataKey="wphylo" 
+                  stroke="#059669" 
+                  fill="rgba(5, 150, 105, 0.3)"
+                  strokeWidth={2}
+                  name="WPhylo"
+                />
+              </AreaChart>
+            ) : (
+              <LineChart data={timelineData}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+                <XAxis 
+                  dataKey="year" 
+                  stroke="#6b7280"
+                  fontSize={12}
+                />
+                <YAxis 
+                  stroke="#6b7280"
+                  fontSize={12}
+                />
+                <Tooltip content={<CustomTooltip />} />
+                <Legend />
+                <Line 
+                  type="monotone" 
+                  dataKey="wog" 
+                  stroke="#2563eb" 
+                  strokeWidth={3}
+                  name="WoG"
+                  dot={{ fill: '#2563eb', strokeWidth: 2, r: 4, cursor: 'pointer' }}
+                  onClick={(data) => setSelectedYear(data.year)}
+                />
+                <Line 
+                  type="monotone" 
+                  dataKey="wpsg" 
+                  stroke="#9333ea" 
+                  strokeWidth={3}
+                  name="WPSG"
+                  dot={{ fill: '#9333ea', strokeWidth: 2, r: 4, cursor: 'pointer' }}
+                  onClick={(data) => setSelectedYear(data.year)}
+                />
+                <Line 
+                  type="monotone" 
+                  dataKey="wphylo" 
+                  stroke="#059669" 
+                  strokeWidth={3}
+                  name="WPhylo"
+                  dot={{ fill: '#059669', strokeWidth: 2, r: 4, cursor: 'pointer' }}
+                  onClick={(data) => setSelectedYear(data.year)}
+                />
+              </LineChart>
+            )}
           </ResponsiveContainer>
         </div>
         <p className="text-sm text-gray-600 mt-2">
-          Track participation trends across the three core workshop series over time.
+          {showLocationView 
+            ? "View WoG participation by location with stacked areas. Multi-location years show the distributed nature of workshop offerings."
+            : "Track participation trends across the three core workshop series over time. Click points to see location breakdown."
+          }
         </p>
       </div>
 
