@@ -95,7 +95,8 @@ const FocusedInsights: React.FC<{
             const workshop = workshops[workshopId];
             const workshopData = insights.workshopYearStats[workshopId] || {};
             const years = Object.keys(workshopData).map(Number).sort();
-            const totalParticipants = Object.values(workshopData).reduce((a: number, b: number) => a + b, 0);
+            // Count unique students for this workshop (not total participations)
+            const uniqueStudents = filteredProfiles.filter(p => p.participations[workshopId]?.length > 0).length;
             
             const colorMap = {
               'wog': 'border-blue-200 bg-blue-50',
@@ -109,7 +110,7 @@ const FocusedInsights: React.FC<{
                 <div className="text-sm text-gray-600 mb-3" title={workshop?.name}>
                   {workshop?.name}
                 </div>
-                <div className="text-lg font-bold text-primary-600 mb-2">{totalParticipants} students</div>
+                <div className="text-lg font-bold text-primary-600 mb-2">{uniqueStudents} students</div>
                 
                 {years.length > 0 && (
                   <div className="space-y-1">
@@ -118,7 +119,7 @@ const FocusedInsights: React.FC<{
                       {years[0]} - {years[years.length - 1]}
                     </div>
                     <div className="text-xs text-gray-600">
-                      Peak: {Math.max(...Object.values(workshopData))} students ({Object.entries(workshopData).find(([_, count]) => count === Math.max(...Object.values(workshopData)))?.[0]})
+                      Peak: {Math.max(...Object.values(workshopData))} participations ({Object.entries(workshopData).find(([_, count]) => count === Math.max(...Object.values(workshopData)))?.[0]})
                     </div>
                   </div>
                 )}
