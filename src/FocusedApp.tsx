@@ -1,5 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { FocusedStudentStats } from './components/FocusedStudentStats';
+import { InteractiveWorldMap } from './components/InteractiveWorldMap';
+import { InteractiveTimeline } from './components/InteractiveTimeline';
+import { WorkshopComparisons } from './components/WorkshopComparisons';
+import { DrilldownAnalytics } from './components/DrilldownAnalytics';
 import { useFocusedStudentData } from './hooks/useFocusedStudentData';
 import { filterStudents } from './utils/studentFilters';
 import type { Filters } from './types/student';
@@ -137,6 +141,12 @@ function FocusedApp() {
     countries: [],
     institutions: []
   });
+
+  // Visualization toggle states
+  const [showMap, setShowMap] = useState(false);
+  const [showTimeline, setShowTimeline] = useState(false);
+  const [showComparisons, setShowComparisons] = useState(false);
+  const [showDrilldown, setShowDrilldown] = useState(false);
 
   // Simple filter controls for focused workshops
   const FilterControls: React.FC = () => {
@@ -292,6 +302,94 @@ function FocusedApp() {
         
         {/* Filter Controls */}
         <FilterControls />
+
+        {/* Interactive Visualization Toggle Buttons */}
+        <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm mb-6">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">Interactive Visualizations</h3>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <button
+              onClick={() => setShowMap(!showMap)}
+              className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
+                showMap 
+                  ? 'bg-blue-100 border-blue-300 text-blue-800' 
+                  : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              World Map
+            </button>
+            
+            <button
+              onClick={() => setShowTimeline(!showTimeline)}
+              className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
+                showTimeline 
+                  ? 'bg-purple-100 border-purple-300 text-purple-800' 
+                  : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+              Timeline
+            </button>
+            
+            <button
+              onClick={() => setShowComparisons(!showComparisons)}
+              className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
+                showComparisons 
+                  ? 'bg-green-100 border-green-300 text-green-800' 
+                  : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+              </svg>
+              Comparisons
+            </button>
+            
+            <button
+              onClick={() => setShowDrilldown(!showDrilldown)}
+              className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
+                showDrilldown 
+                  ? 'bg-orange-100 border-orange-300 text-orange-800' 
+                  : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              Analytics
+            </button>
+          </div>
+        </div>
+
+        {/* Interactive Visualizations */}
+        {showMap && (
+          <div className="mb-6">
+            <InteractiveWorldMap profiles={profiles} workshops={workshops} />
+          </div>
+        )}
+
+        {showTimeline && (
+          <div className="mb-6">
+            <InteractiveTimeline profiles={profiles} workshops={workshops} />
+          </div>
+        )}
+
+        {showComparisons && (
+          <div className="mb-6">
+            <WorkshopComparisons profiles={profiles} workshops={workshops} />
+          </div>
+        )}
+
+        {showDrilldown && (
+          <div className="mb-6">
+            <DrilldownAnalytics profiles={profiles} workshops={workshops} />
+          </div>
+        )}
         
         {/* Focused Insights */}
         <FocusedInsights 
