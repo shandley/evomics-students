@@ -1,0 +1,27 @@
+Subject: Re: Faculty Profile Update Request - [Faculty Name]
+
+Dear [Faculty Name],
+
+Thank you for your interest in updating your Evomics faculty profile.
+
+Please complete this form to submit your updates:
+https://docs.google.com/forms/d/e/1FAIpQLSfgjNj8lJF4Iw4z_oFTUHkAwgcq5_XjcPDmoFUmtpZECthdlw/viewform
+
+The form includes fields for:
+- Professional affiliation and title
+- Department information
+- Lab or personal website
+- ORCID ID
+- Research areas
+- Short biographical statement
+
+Your updates will be reviewed and published within 1-2 weeks. You'll receive a confirmation email once your profile has been updated.
+
+If you have any questions or need assistance, please don't hesitate to reach out.
+
+Best regards,
+The Evomics Team
+
+--
+Evomics Faculty Alumni Directory
+https://shandley.github.io/evomics-faculty/

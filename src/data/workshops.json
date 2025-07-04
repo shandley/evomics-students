@@ -1,0 +1,74 @@
+{
+  "wmolevo": {
+    "id": "wmolevo",
+    "name": "Workshop on Molecular Evolution",
+    "shortName": "WMolEvo",
+    "description": "Workshop focusing on molecular evolutionary analysis and phylogenetic methods.",
+    "active": false,
+    "startYear": 2008
+  },
+  "wog": {
+    "id": "wog",
+    "name": "Workshop on Genomics",
+    "shortName": "WoG",
+    "description": "Annual workshop focusing on genomic data analysis techniques including genome assembly, annotation, alignment, and variant calling.",
+    "active": false,
+    "startYear": 2011
+  },
+  "programm": {
+    "id": "programm",
+    "name": "Programming - Python and Biopython",
+    "shortName": "P-PaB",
+    "description": "Workshop on Programming - Python and Biopython",
+    "active": false,
+    "startYear": 2012
+  },
+  "randbioc": {
+    "id": "randbioc",
+    "name": "R and Bioconductor",
+    "shortName": "RaB",
+    "description": "Workshop on R and Bioconductor",
+    "active": false,
+    "startYear": 2012
+  },
+  "wpsg": {
+    "id": "wpsg",
+    "name": "Workshop on Population and Speciation Genomics",
+    "shortName": "WPSG",
+    "description": "Biennial workshop analyzing genomic data at population and species levels.",
+    "active": true,
+    "startYear": 2016
+  },
+  "wphylo": {
+    "id": "wphylo",
+    "name": "Workshop on Phylogenomics",
+    "shortName": "WPhylo",
+    "description": "Workshop on phylogenomic analysis and large-scale evolutionary studies.",
+    "active": true,
+    "startYear": 2017
+  },
+  "introduc": {
+    "id": "introduc",
+    "name": "Introduction to Bioinformatics",
+    "shortName": "ItB",
+    "description": "Workshop on Introduction to Bioinformatics",
+    "active": true,
+    "startYear": 2022
+  },
+  "workshop": {
+    "id": "workshop",
+    "name": "Workshop on Metagenomics and Transcriptomics",
+    "shortName": "WoMaT",
+    "description": "Workshop on Metagenomics and Transcriptomics",
+    "active": false,
+    "startYear": 2014
+  },
+  "wmta": {
+    "id": "wmta",
+    "name": "Workshop on Microbiome and Transcriptome Analysis",
+    "shortName": "WMTA",
+    "description": "Workshop focusing on microbiome and transcriptomic analysis methods.",
+    "active": true,
+    "startYear": 2018
+  }
+}

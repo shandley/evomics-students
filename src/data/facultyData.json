@@ -1,0 +1,3418 @@
+{
+  "faculty": [
+    {
+      "id": "ahren-dag",
+      "firstName": "Dag",
+      "lastName": "Ahrén"
+    },
+    {
+      "id": "albrechtsen-anders",
+      "firstName": "Anders",
+      "lastName": "Albrechtsen"
+    },
+    {
+      "id": "almeida-king-jeff",
+      "firstName": "Jeff",
+      "lastName": "Almeida-King"
+    },
+    {
+      "id": "bank-claudia",
+      "firstName": "Claudia",
+      "lastName": "Bank"
+    },
+    {
+      "id": "barnett-david",
+      "firstName": "David",
+      "lastName": "Barnett"
+    },
+    {
+      "id": "barth-julia",
+      "firstName": "Julia M.I.",
+      "lastName": "Barth"
+    },
+    {
+      "id": "beiko-robert",
+      "firstName": "Robert",
+      "lastName": "Beiko"
+    },
+    {
+      "id": "berner-daniel",
+      "firstName": "Daniel",
+      "lastName": "Berner"
+    },
+    {
+      "id": "bielawski-joseph",
+      "firstName": "Joseph",
+      "lastName": "Bielawski"
+    },
+    {
+      "id": "blanco-miguez-altor",
+      "firstName": "Altor",
+      "lastName": "Blanco Miguez"
+    },
+    {
+      "id": "bohutinska-magdalena",
+      "firstName": "Magdalena",
+      "lastName": "Bohutinska"
+    },
+    {
+      "id": "bos-kirsten",
+      "firstName": "Kirsten",
+      "lastName": "Bos"
+    },
+    {
+      "id": "buerkle-alex",
+      "firstName": "Alex",
+      "lastName": "Buerkle"
+    },
+    {
+      "id": "catchen-julian",
+      "firstName": "Julian",
+      "lastName": "Catchen"
+    },
+    {
+      "id": "chevreux-bastien",
+      "firstName": "Bastien",
+      "lastName": "Chevreux"
+    },
+    {
+      "id": "chikhi-rayan",
+      "firstName": "Rayan",
+      "lastName": "Chikhi"
+    },
+    {
+      "id": "christmas-matthew",
+      "firstName": "Matthew",
+      "lastName": "Christmas"
+    },
+    {
+      "id": "cicconardi-francesco",
+      "firstName": "Francesco",
+      "lastName": "Cicconardi"
+    },
+    {
+      "id": "clark-andrew",
+      "firstName": "Andrew",
+      "lastName": "Clark"
+    },
+    {
+      "id": "clauw-pieter",
+      "firstName": "Pieter",
+      "lastName": "Clauw"
+    },
+    {
+      "id": "colonna-vincenza",
+      "firstName": "Vincenza",
+      "lastName": "Colonna"
+    },
+    {
+      "id": "cresko-bill",
+      "firstName": "Bill",
+      "lastName": "Cresko"
+    },
+    {
+      "id": "crotty-stephen",
+      "firstName": "Stephen",
+      "lastName": "Crotty"
+    },
+    {
+      "id": "cummings-michael",
+      "firstName": "Michael",
+      "lastName": "Cummings"
+    },
+    {
+      "id": "danacek-petr",
+      "firstName": "Petr",
+      "lastName": "Danacek"
+    },
+    {
+      "id": "dos-reis-mario",
+      "firstName": "Mario",
+      "lastName": "dos Reis"
+    },
+    {
+      "id": "droge-johannes",
+      "firstName": "Johannes",
+      "lastName": "Droge"
+    },
+    {
+      "id": "drummond-alexei",
+      "firstName": "Alexei",
+      "lastName": "Drummond"
+    },
+    {
+      "id": "duchoslav-miroslav",
+      "firstName": "Milos",
+      "lastName": "Duchoslav"
+    },
+    {
+      "id": "dudaniec-rachael",
+      "firstName": "Rachael",
+      "lastName": "Dudaniec"
+    },
+    {
+      "id": "dudas-gytis",
+      "firstName": "Gytis",
+      "lastName": "Dudas"
+    },
+    {
+      "id": "durbin-richard",
+      "firstName": "Richard",
+      "lastName": "Durbin"
+    },
+    {
+      "id": "dyhrman-sonya",
+      "firstName": "Sonya",
+      "lastName": "Dyhrman"
+    },
+    {
+      "id": "eichler-evan",
+      "firstName": "Evan",
+      "lastName": "Eichler"
+    },
+    {
+      "id": "falush-daniel",
+      "firstName": "Daniel",
+      "lastName": "Falush"
+    },
+    {
+      "id": "fernandez-rosa",
+      "firstName": "Rosa",
+      "lastName": "Fernández"
+    },
+    {
+      "id": "ferrer-obiol-joan",
+      "firstName": "Joan",
+      "lastName": "Ferrer Obiol"
+    },
+    {
+      "id": "fillault-daniel",
+      "firstName": "Daniel",
+      "lastName": "Fillault"
+    },
+    {
+      "id": "fumagalli-matteo",
+      "firstName": "Matteo",
+      "lastName": "Fumagalli"
+    },
+    {
+      "id": "gabaldon-toni",
+      "firstName": "Toni",
+      "lastName": "Gabaldón"
+    },
+    {
+      "id": "gaggiotti-oscar",
+      "firstName": "Oscar",
+      "lastName": "Gaggiotti"
+    },
+    {
+      "id": "garamszegi-laszlo",
+      "firstName": "Laszlo",
+      "lastName": "Garamszegi"
+    },
+    {
+      "id": "garber-manuel",
+      "firstName": "Manuel",
+      "lastName": "Garber"
+    },
+    {
+      "id": "gardy-jennifer",
+      "firstName": "Jennifer",
+      "lastName": "Gardy"
+    },
+    {
+      "id": "garrison-erik",
+      "firstName": "Erik",
+      "lastName": "Garrison"
+    },
+    {
+      "id": "gascuel-olivier",
+      "firstName": "Olivier",
+      "lastName": "Gascuel"
+    },
+    {
+      "id": "gosik-kirk",
+      "firstName": "Kirk",
+      "lastName": "Gosik"
+    },
+    {
+      "id": "grabherr-manfred",
+      "firstName": "Manfred",
+      "lastName": "Grabherr"
+    },
+    {
+      "id": "griffith-malachi",
+      "firstName": "Malachi",
+      "lastName": "Griffith"
+    },
+    {
+      "id": "guido-roderic",
+      "firstName": "Roderic",
+      "lastName": "Guido"
+    },
+    {
+      "id": "gutenkurst-ryan",
+      "firstName": "Ryan",
+      "lastName": "Gutenkurst"
+    },
+    {
+      "id": "haas-brian",
+      "firstName": "Brian",
+      "lastName": "Haas"
+    },
+    {
+      "id": "hahn-matthew",
+      "firstName": "Matthew",
+      "lastName": "Hahn"
+    },
+    {
+      "id": "hall-neil",
+      "firstName": "Neil",
+      "lastName": "Hall"
+    },
+    {
+      "id": "hancock-angela",
+      "firstName": "Angela",
+      "lastName": "Hancock"
+    },
+    {
+      "id": "handley-scott",
+      "firstName": "Scott",
+      "lastName": "Handley"
+    },
+    {
+      "id": "harris-kelley",
+      "firstName": "Kelley",
+      "lastName": "Harris"
+    },
+    {
+      "id": "heath-tracy",
+      "firstName": "Tracy",
+      "lastName": "Heath"
+    },
+    {
+      "id": "hird-sarah",
+      "firstName": "Sarah",
+      "lastName": "Hird"
+    },
+    {
+      "id": "hoff-katharina",
+      "firstName": "Katharina",
+      "lastName": "Hoff"
+    },
+    {
+      "id": "hofreiter-michael",
+      "firstName": "Michael",
+      "lastName": "Hofreiter"
+    },
+    {
+      "id": "huson-daniel",
+      "firstName": "Daniel",
+      "lastName": "Huson"
+    },
+    {
+      "id": "huttenhower-curtis",
+      "firstName": "Curtis",
+      "lastName": "Huttenhower"
+    },
+    {
+      "id": "jay-flora",
+      "firstName": "Flora",
+      "lastName": "Jay"
+    },
+    {
+      "id": "jiggins-chris",
+      "firstName": "Chris",
+      "lastName": "Jiggins"
+    },
+    {
+      "id": "jones-felicity",
+      "firstName": "Felicity",
+      "lastName": "Jones"
+    },
+    {
+      "id": "kaessman-henrik",
+      "firstName": "Henrik",
+      "lastName": "Kaessmann"
+    },
+    {
+      "id": "kamoun-sophien",
+      "firstName": "Sophien",
+      "lastName": "Kamoun"
+    },
+    {
+      "id": "karlicki-michal",
+      "firstName": "Michal",
+      "lastName": "Karlicki"
+    },
+    {
+      "id": "karnkowska-anna",
+      "firstName": "Anna",
+      "lastName": "Karnkowska"
+    },
+    {
+      "id": "kern-andrew",
+      "firstName": "Andrew",
+      "lastName": "Kern"
+    },
+    {
+      "id": "knight-robert",
+      "firstName": "Robert",
+      "lastName": "Knight"
+    },
+    {
+      "id": "knowles-lacey",
+      "firstName": "Lacey",
+      "lastName": "Knowles"
+    },
+    {
+      "id": "kolisko-martin",
+      "firstName": "Martin",
+      "lastName": "Kolisko"
+    },
+    {
+      "id": "korneliussen-thorfinn",
+      "firstName": "Thorfinn",
+      "lastName": "Korneliussen"
+    },
+    {
+      "id": "kosunsky-ilya",
+      "firstName": "Ilya",
+      "lastName": "Kosunsky"
+    },
+    {
+      "id": "kozlov-oleksiy",
+      "firstName": "Oleksiy",
+      "lastName": "Kozlov"
+    },
+    {
+      "id": "kubatko-laura",
+      "firstName": "Laura",
+      "lastName": "Kubatko"
+    },
+    {
+      "id": "kucukural-alper",
+      "firstName": "Alper",
+      "lastName": "Kucukural"
+    },
+    {
+      "id": "lanzen-anders",
+      "firstName": "Anders",
+      "lastName": "Lanzen"
+    },
+    {
+      "id": "leonard-alexander",
+      "firstName": "Alexander",
+      "lastName": "Leonard"
+    },
+    {
+      "id": "leonard-guy",
+      "firstName": "Guy",
+      "lastName": "Leonard"
+    },
+    {
+      "id": "limasset-antoine",
+      "firstName": "Antoine",
+      "lastName": "Limasset"
+    },
+    {
+      "id": "loman-nick",
+      "firstName": "Nick",
+      "lastName": "Loman"
+    },
+    {
+      "id": "lorenzen-eline",
+      "firstName": "Eline",
+      "lastName": "Lorenzen"
+    },
+    {
+      "id": "lunter-gerton",
+      "firstName": "Gerton",
+      "lastName": "Lunter"
+    },
+    {
+      "id": "mafessoni-fabrizio",
+      "firstName": "Fabrizio",
+      "lastName": "Mafessoni"
+    },
+    {
+      "id": "malinsky-milan",
+      "firstName": "Milan",
+      "lastName": "Malinsky"
+    },
+    {
+      "id": "manghi-paolo",
+      "firstName": "Paolo",
+      "lastName": "Manghi"
+    },
+    {
+      "id": "marcet-houben-marina",
+      "firstName": "Marina",
+      "lastName": "Marcet-Houben"
+    },
+    {
+      "id": "marchet-camille",
+      "firstName": "Camille",
+      "lastName": "Marchet"
+    },
+    {
+      "id": "martin-simon",
+      "firstName": "Simon",
+      "lastName": "Martin"
+    },
+    {
+      "id": "martinez-redondo-gemma",
+      "firstName": "Gemma Isabel",
+      "lastName": "Martínez-Redondo"
+    },
+    {
+      "id": "matschiner-michael",
+      "firstName": "Michael",
+      "lastName": "Matschiner"
+    },
+    {
+      "id": "mcdonald-daniel",
+      "firstName": "Daniel",
+      "lastName": "McDonald"
+    },
+    {
+      "id": "mchardy-alice",
+      "firstName": "Alice",
+      "lastName": "McHardy"
+    },
+    {
+      "id": "mckay-sheldon",
+      "firstName": "Sheldon",
+      "lastName": "McKay"
+    },
+    {
+      "id": "mclysaght-aoife",
+      "firstName": "Aoife",
+      "lastName": "McLysaght"
+    },
+    {
+      "id": "mcmurdie-paul",
+      "firstName": "Paul",
+      "lastName": "McMurdie"
+    },
+    {
+      "id": "meier-joana",
+      "firstName": "Joana",
+      "lastName": "Meier"
+    },
+    {
+      "id": "meyer-britta",
+      "firstName": "Britta",
+      "lastName": "Meyer"
+    },
+    {
+      "id": "molloy-erin",
+      "firstName": "Erin",
+      "lastName": "Molloy"
+    },
+    {
+      "id": "montoliu-nern-merc",
+      "firstName": "Mercè",
+      "lastName": "Montoliu-Nerin"
+    },
+    {
+      "id": "montserrat-jordi-paps",
+      "firstName": "Jordi Paps",
+      "lastName": "Montserrat"
+    },
+    {
+      "id": "morlon-helene",
+      "firstName": "Hélène",
+      "lastName": "Morlon"
+    },
+    {
+      "id": "moyle-leonie",
+      "firstName": "Leonie",
+      "lastName": "Moyle"
+    },
+    {
+      "id": "myers-simon",
+      "firstName": "Simon",
+      "lastName": "Myers"
+    },
+    {
+      "id": "neilsen-rasmus",
+      "firstName": "Rasmus",
+      "lastName": "Nielsen"
+    },
+    {
+      "id": "nekrutenko-anton",
+      "firstName": "Anton",
+      "lastName": "Nekrutenko"
+    },
+    {
+      "id": "nenasheva-natalia",
+      "firstName": "Natalia",
+      "lastName": "Nenasheva"
+    },
+    {
+      "id": "nordborg-magnus",
+      "firstName": "Magnus",
+      "lastName": "Nordborg"
+    },
+    {
+      "id": "nosil-patrik",
+      "firstName": "Patrik",
+      "lastName": "Nosil"
+    },
+    {
+      "id": "nurk-sergey",
+      "firstName": "Sergey",
+      "lastName": "Nurk"
+    },
+    {
+      "id": "ocana-pallares-eduard",
+      "firstName": "Eduard",
+      "lastName": "Ocaña-Pallarès"
+    },
+    {
+      "id": "ogilvie-huw",
+      "firstName": "Huw",
+      "lastName": "Ogilvie"
+    },
+    {
+      "id": "orlando-ludovic",
+      "firstName": "Ludovic",
+      "lastName": "Orlando"
+    },
+    {
+      "id": "paris-josephine",
+      "firstName": "Josephine",
+      "lastName": "Paris"
+    },
+    {
+      "id": "paszkiewicz-konrad",
+      "firstName": "Konrad",
+      "lastName": "Paszkiewicz"
+    },
+    {
+      "id": "pearson-william",
+      "firstName": "William",
+      "lastName": "Pearson"
+    },
+    {
+      "id": "peichel-katie",
+      "firstName": "Katie",
+      "lastName": "Peichel"
+    },
+    {
+      "id": "peona-valentina",
+      "firstName": "Valentina",
+      "lastName": "Peona"
+    },
+    {
+      "id": "petr-martin",
+      "firstName": "Martin",
+      "lastName": "Petr"
+    },
+    {
+      "id": "pettersson-olga-vinnere",
+      "firstName": "Olga Vinnere",
+      "lastName": "Pettersson"
+    },
+    {
+      "id": "pokorny-lisa",
+      "firstName": "Lisa",
+      "lastName": "Pokorny"
+    },
+    {
+      "id": "ponting-chris",
+      "firstName": "Chris",
+      "lastName": "Ponting"
+    },
+    {
+      "id": "rees-jasmine",
+      "firstName": "Jasmine",
+      "lastName": "Rees"
+    },
+    {
+      "id": "rengefors-karin",
+      "firstName": "Karin",
+      "lastName": "Rengefors"
+    },
+    {
+      "id": "rodriguez-ezpeleta-naiara",
+      "firstName": "Naiara",
+      "lastName": "Rodriguez-Ezpeleta"
+    },
+    {
+      "id": "rokas-antonis",
+      "firstName": "Antonis",
+      "lastName": "Rokas"
+    },
+    {
+      "id": "salzburger-walter",
+      "firstName": "Walter",
+      "lastName": "Salzburger"
+    },
+    {
+      "id": "schleper-christa",
+      "firstName": "Christa",
+      "lastName": "Schleper"
+    },
+    {
+      "id": "scofield-doug",
+      "firstName": "Doug",
+      "lastName": "Scofield"
+    },
+    {
+      "id": "scornavacca-celine",
+      "firstName": "Celine",
+      "lastName": "Scornavacca"
+    },
+    {
+      "id": "sedlazeck-fritz",
+      "firstName": "Fritz",
+      "lastName": "Sedlazeck"
+    },
+    {
+      "id": "setter-derek",
+      "firstName": "Derek",
+      "lastName": "Setter"
+    },
+    {
+      "id": "shaw-sophie",
+      "firstName": "Sophie",
+      "lastName": "Shaw"
+    },
+    {
+      "id": "shekhar-karthik",
+      "firstName": "Karthik",
+      "lastName": "Shekhar"
+    },
+    {
+      "id": "simakov-oleg",
+      "firstName": "Oleg",
+      "lastName": "Simakov"
+    },
+    {
+      "id": "skidmore-zachary",
+      "firstName": "Zachary",
+      "lastName": "Skidmore"
+    },
+    {
+      "id": "sousa-vitor",
+      "firstName": "Vitor",
+      "lastName": "Sousa"
+    },
+    {
+      "id": "speidel-leo",
+      "firstName": "Leo",
+      "lastName": "Speidel"
+    },
+    {
+      "id": "stajich-jason",
+      "firstName": "Jason",
+      "lastName": "Stajich"
+    },
+    {
+      "id": "stanke-mario",
+      "firstName": "Mario",
+      "lastName": "Stanke"
+    },
+    {
+      "id": "steenwyk-jacob",
+      "firstName": "Jacob",
+      "lastName": "Steenwyk"
+    },
+    {
+      "id": "steffen-karin",
+      "firstName": "Karin",
+      "lastName": "Steffen"
+    },
+    {
+      "id": "stefka-jan",
+      "firstName": "Jan",
+      "lastName": "Stefka"
+    },
+    {
+      "id": "stepanauskas-ramunas",
+      "firstName": "Ramunas",
+      "lastName": "Stepanauskas"
+    },
+    {
+      "id": "steward-rachel",
+      "firstName": "Rachel",
+      "lastName": "Steward"
+    },
+    {
+      "id": "suh-alexander",
+      "firstName": "Alexander",
+      "lastName": "Suh"
+    },
+    {
+      "id": "swofford-david",
+      "firstName": "David",
+      "lastName": "Swofford"
+    },
+    {
+      "id": "szollosi-gergely",
+      "firstName": "Gergely",
+      "lastName": "Szollosi"
+    },
+    {
+      "id": "tavalire-hannah",
+      "firstName": "Hannah",
+      "lastName": "Tavalire"
+    },
+    {
+      "id": "taylor-james",
+      "firstName": "James",
+      "lastName": "Taylor"
+    },
+    {
+      "id": "trucchi-emiliano",
+      "firstName": "Emiliano",
+      "lastName": "Trucchi"
+    },
+    {
+      "id": "trynka-gosia",
+      "firstName": "Gosia",
+      "lastName": "Trynka"
+    },
+    {
+      "id": "tsambos-georgia",
+      "firstName": "Georgia",
+      "lastName": "Tsambos"
+    },
+    {
+      "id": "uliano-silva-marcela",
+      "firstName": "Marcela",
+      "lastName": "Uliano-Silva"
+    },
+    {
+      "id": "uller-tobias",
+      "firstName": "Tobias",
+      "lastName": "Uller"
+    },
+    {
+      "id": "vaughan-tim",
+      "firstName": "Tim",
+      "lastName": "Vaughan"
+    },
+    {
+      "id": "vazquez-baeza-yoshiki",
+      "firstName": "Yoshiki",
+      "lastName": "Vazquez-Baeza"
+    },
+    {
+      "id": "videvall-elin",
+      "firstName": "Elin",
+      "lastName": "Videvall"
+    },
+    {
+      "id": "waterhouse-robert",
+      "firstName": "Robert",
+      "lastName": "Waterhouse"
+    },
+    {
+      "id": "westbury-michael",
+      "firstName": "Michael",
+      "lastName": "Westbury"
+    },
+    {
+      "id": "wheat-chris",
+      "firstName": "Chris",
+      "lastName": "Wheat"
+    },
+    {
+      "id": "whiting-james",
+      "firstName": "James",
+      "lastName": "Whiting"
+    },
+    {
+      "id": "willis-amy",
+      "firstName": "Amy",
+      "lastName": "Willis"
+    },
+    {
+      "id": "woyke-tanja",
+      "firstName": "Tanja",
+      "lastName": "Woyke"
+    },
+    {
+      "id": "wrighton-kelly",
+      "firstName": "Kelly",
+      "lastName": "Wrighton"
+    },
+    {
+      "id": "zhou-xiaofen",
+      "firstName": "Xiaofen",
+      "lastName": "Zhou"
+    },
+    {
+      "id": "zody-mike",
+      "firstName": "Mike",
+      "lastName": "Zody"
+    }
+  ],
+  "participations": [
+    {
+      "facultyId": "ahren-dag",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ahren-dag",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ahren-dag",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ahren-dag",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ahren-dag",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ahren-dag",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ahren-dag",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ahren-dag",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ahren-dag",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "albrechtsen-anders",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "almeida-king-jeff",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "bank-claudia",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "barnett-david",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "barnett-david",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "barnett-david",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "barnett-david",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "barth-julia",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "barth-julia",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "barth-julia",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "barth-julia",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "barth-julia",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "beiko-robert",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "berner-daniel",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "bielawski-joseph",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "bielawski-joseph",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "blanco-miguez-altor",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "bohutinska-magdalena",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "bos-kirsten",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "buerkle-alex",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "buerkle-alex",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "catchen-julian",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "catchen-julian",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "catchen-julian",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "catchen-julian",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "catchen-julian",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "catchen-julian",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "catchen-julian",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "catchen-julian",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chevreux-bastien",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "chikhi-rayan",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "christmas-matthew",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cicconardi-francesco",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cicconardi-francesco",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "clark-andrew",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "clauw-pieter",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "colonna-vincenza",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "colonna-vincenza",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cresko-bill",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cresko-bill",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cresko-bill",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cresko-bill",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cresko-bill",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cresko-bill",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cresko-bill",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "crotty-stephen",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cummings-michael",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "cummings-michael",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "danacek-petr",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dos-reis-mario",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "droge-johannes",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "drummond-alexei",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "duchoslav-miroslav",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dudaniec-rachael",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dudas-gytis",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "durbin-richard",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "durbin-richard",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dyhrman-sonya",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dyhrman-sonya",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dyhrman-sonya",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dyhrman-sonya",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dyhrman-sonya",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dyhrman-sonya",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dyhrman-sonya",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dyhrman-sonya",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "dyhrman-sonya",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eichler-evan",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eichler-evan",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eichler-evan",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eichler-evan",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eichler-evan",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eichler-evan",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eichler-evan",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eichler-evan",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eichler-evan",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "eichler-evan",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "falush-daniel",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "falush-daniel",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "falush-daniel",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "fernandez-rosa",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "fernandez-rosa",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "fernandez-rosa",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ferrer-obiol-joan",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ferrer-obiol-joan",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ferrer-obiol-joan",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "fillault-daniel",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "fumagalli-matteo",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "fumagalli-matteo",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "gabaldon-toni",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "gabaldon-toni",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "gabaldon-toni",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "gabaldon-toni",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "gaggiotti-oscar",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "garamszegi-laszlo",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "garber-manuel",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "garber-manuel",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "garber-manuel",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "garber-manuel",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "garber-manuel",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "gardy-jennifer",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "garrison-erik",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "garrison-erik",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "garrison-erik",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "gascuel-olivier",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "gosik-kirk",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "grabherr-manfred",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "griffith-malachi",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "griffith-malachi",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "griffith-malachi",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "guido-roderic",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "gutenkurst-ryan",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "haas-brian",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "haas-brian",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "haas-brian",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "haas-brian",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "haas-brian",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "haas-brian",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "haas-brian",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "haas-brian",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "haas-brian",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hahn-matthew",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hahn-matthew",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hahn-matthew",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hall-neil",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hancock-angela",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "handley-scott",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "harris-kelley",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "harris-kelley",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "heath-tracy",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "heath-tracy",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hird-sarah",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hoff-katharina",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hoff-katharina",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hoff-katharina",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "hofreiter-michael",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "huson-daniel",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "huttenhower-curtis",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "jay-flora",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "jiggins-chris",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "jiggins-chris",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "jiggins-chris",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "jones-felicity",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kaessman-henrik",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kamoun-sophien",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kamoun-sophien",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "karlicki-michal",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "karnkowska-anna",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "karnkowska-anna",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kern-andrew",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "knight-robert",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "knowles-lacey",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "korneliussen-thorfinn",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kosunsky-ilya",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kozlov-oleksiy",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kubatko-laura",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kubatko-laura",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "kucukural-alper",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "lanzen-anders",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-alexander",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "leonard-guy",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "limasset-antoine",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "limasset-antoine",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "limasset-antoine",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "limasset-antoine",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "limasset-antoine",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "loman-nick",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "lorenzen-eline",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "lunter-gerton",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mafessoni-fabrizio",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "malinsky-milan",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "malinsky-milan",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "malinsky-milan",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "malinsky-milan",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "manghi-paolo",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "marcet-houben-marina",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "marcet-houben-marina",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "marcet-houben-marina",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "marchet-camille",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "marchet-camille",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "marchet-camille",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "marchet-camille",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "marchet-camille",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "martin-simon",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "martin-simon",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "martin-simon",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "martinez-redondo-gemma",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "matschiner-michael",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "matschiner-michael",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "matschiner-michael",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "matschiner-michael",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "matschiner-michael",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mcdonald-daniel",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mcdonald-daniel",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mcdonald-daniel",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mcdonald-daniel",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mcdonald-daniel",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mcdonald-daniel",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mcdonald-daniel",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mchardy-alice",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mckay-sheldon",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mclysaght-aoife",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mcmurdie-paul",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "mcmurdie-paul",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "meier-joana",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "meyer-britta",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "meyer-britta",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "meyer-britta",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "meyer-britta",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "molloy-erin",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "montoliu-nern-merc",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "montoliu-nern-merc",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "montoliu-nern-merc",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "montserrat-jordi-paps",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "montserrat-jordi-paps",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "montserrat-jordi-paps",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "morlon-helene",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "moyle-leonie",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "myers-simon",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "myers-simon",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "neilsen-rasmus",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "nekrutenko-anton",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "nenasheva-natalia",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "nordborg-magnus",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "nosil-patrik",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "nurk-sergey",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ocana-pallares-eduard",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ogilvie-huw",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "orlando-ludovic",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "orlando-ludovic",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "orlando-ludovic",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paris-josephine",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paris-josephine",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paris-josephine",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paris-josephine",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paris-josephine",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paris-josephine",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paris-josephine",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paris-josephine",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paris-josephine",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paris-josephine",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paszkiewicz-konrad",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paszkiewicz-konrad",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paszkiewicz-konrad",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paszkiewicz-konrad",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "paszkiewicz-konrad",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "pearson-william",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "peichel-katie",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "peona-valentina",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "peona-valentina",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "petr-martin",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "pettersson-olga-vinnere",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "pokorny-lisa",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ponting-chris",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "ponting-chris",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rees-jasmine",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rengefors-karin",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rengefors-karin",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rengefors-karin",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rengefors-karin",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rengefors-karin",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rodriguez-ezpeleta-naiara",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rodriguez-ezpeleta-naiara",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rodriguez-ezpeleta-naiara",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rodriguez-ezpeleta-naiara",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "rokas-antonis",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "salzburger-walter",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "salzburger-walter",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "salzburger-walter",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "salzburger-walter",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "salzburger-walter",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "schleper-christa",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "scofield-doug",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "scornavacca-celine",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "scornavacca-celine",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "sedlazeck-fritz",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "sedlazeck-fritz",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "sedlazeck-fritz",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "setter-derek",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "shaw-sophie",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "shaw-sophie",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "shaw-sophie",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "shaw-sophie",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "shaw-sophie",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "shaw-sophie",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "shaw-sophie",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "shekhar-karthik",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "simakov-oleg",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "skidmore-zachary",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "sousa-vitor",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "sousa-vitor",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "sousa-vitor",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "sousa-vitor",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "speidel-leo",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "speidel-leo",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "stajich-jason",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "stanke-mario",
+      "workshopId": "wog",
+      "year": 2011,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "steenwyk-jacob",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "steenwyk-jacob",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "steenwyk-jacob",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "steffen-karin",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "stefka-jan",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "stefka-jan",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "stefka-jan",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "stefka-jan",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "stefka-jan",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "stepanauskas-ramunas",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "steward-rachel",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "steward-rachel",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "steward-rachel",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "suh-alexander",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "suh-alexander",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "swofford-david",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "swofford-david",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "szollosi-gergely",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "szollosi-gergely",
+      "workshopId": "wphylo",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "tavalire-hannah",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "taylor-james",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "trucchi-emiliano",
+      "workshopId": "wpsg",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "trucchi-emiliano",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "trucchi-emiliano",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "trucchi-emiliano",
+      "workshopId": "wpsg",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "trucchi-emiliano",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "trucchi-emiliano",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "trucchi-emiliano",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "trynka-gosia",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "tsambos-georgia",
+      "workshopId": "wpsg",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "tsambos-georgia",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "uliano-silva-marcela",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "uliano-silva-marcela",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "uliano-silva-marcela",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "uller-tobias",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "vaughan-tim",
+      "workshopId": "wpsg",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "vazquez-baeza-yoshiki",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "videvall-elin",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "waterhouse-robert",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "westbury-michael",
+      "workshopId": "wpsg",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2024,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wheat-chris",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "whiting-james",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "willis-amy",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "woyke-tanja",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "wrighton-kelly",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zhou-xiaofen",
+      "workshopId": "wphylo",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zhou-xiaofen",
+      "workshopId": "wphylo",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2012,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2013,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2014,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2015,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2016,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2017,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2018,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2019,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2020,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2022,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2023,
+      "role": "faculty"
+    },
+    {
+      "facultyId": "zody-mike",
+      "workshopId": "wog",
+      "year": 2025,
+      "role": "faculty"
+    }
+  ]
+}

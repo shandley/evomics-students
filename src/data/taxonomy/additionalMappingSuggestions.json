@@ -1,0 +1,48 @@
+{
+  "generated": "2025-07-03T15:23:52.559Z",
+  "totalSuggestions": 7,
+  "suggestions": {
+    "arabidopsis genomics": {
+      "standardizedId": "model-plant-genomics",
+      "confidence": "medium",
+      "notes": "Model organism - plants",
+      "frequency": 2
+    },
+    "qiime 2": {
+      "standardizedId": "bioinformatics-software",
+      "confidence": "medium",
+      "notes": "Major bioinformatics platform",
+      "frequency": 1
+    },
+    "rad-seq": {
+      "standardizedId": "sequencing-techniques",
+      "confidence": "medium",
+      "notes": "Specific sequencing method",
+      "frequency": 1
+    },
+    "ngs": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "high",
+      "notes": "Synonym for next-generation sequencing",
+      "frequency": 1
+    },
+    "bcftools": {
+      "standardizedId": "sequence-analysis-tools",
+      "confidence": "medium",
+      "notes": "Sequence manipulation tools",
+      "frequency": 1
+    },
+    "samtools": {
+      "standardizedId": "sequence-analysis-tools",
+      "confidence": "medium",
+      "notes": "Sequence manipulation tools",
+      "frequency": 1
+    },
+    "htslib": {
+      "standardizedId": "sequence-analysis-tools",
+      "confidence": "medium",
+      "notes": "Sequence manipulation tools",
+      "frequency": 1
+    }
+  }
+}

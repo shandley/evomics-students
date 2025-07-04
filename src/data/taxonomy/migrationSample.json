@@ -1,0 +1,437 @@
+{
+  "leonard-guy": {
+    "name": "Guy Leonard",
+    "original": [
+      "comparative genomics",
+      "phylogenomics",
+      "genome assembly",
+      "evolutionary relationships",
+      "eukaryotes",
+      "bioinformatics"
+    ],
+    "standardized": {
+      "primary": [
+        {
+          "id": "bioinformatics",
+          "label": "Bioinformatics",
+          "level": 2,
+          "parentId": "computational-sciences",
+          "description": "Application of computational methods to analyze biological data",
+          "synonyms": [
+            "biomedical informatics",
+            "computational genomics"
+          ],
+          "children": []
+        },
+        {
+          "id": "comparative-genomics",
+          "label": "Comparative Genomics",
+          "level": 2,
+          "parentId": "genomics-omics",
+          "description": "Comparison of genome sequences and structures across different species",
+          "synonyms": [
+            "genome comparison",
+            "comparative genome analysis"
+          ],
+          "children": []
+        },
+        {
+          "id": "phylogenetics",
+          "label": "Phylogenetics",
+          "level": 2,
+          "parentId": "evolutionary-biology",
+          "description": "Study of evolutionary relationships among organisms",
+          "synonyms": [
+            "phylogenetic analysis",
+            "phylogenetic inference"
+          ],
+          "children": []
+        },
+        {
+          "id": "phylogenomics",
+          "label": "Phylogenomics",
+          "level": 2,
+          "parentId": "evolutionary-biology",
+          "description": "Phylogenetic analysis using genome-scale data",
+          "synonyms": [
+            "genomic phylogenetics",
+            "phylogenomic analysis"
+          ],
+          "children": []
+        }
+      ],
+      "secondary": [
+        {
+          "id": "genome-assembly",
+          "label": "Genome Assembly",
+          "level": 3,
+          "parentId": "sequencing-technology",
+          "description": "Computational reconstruction of genomes from sequencing data",
+          "synonyms": [
+            "genome reconstruction",
+            "sequence assembly"
+          ]
+        }
+      ],
+      "techniques": []
+    }
+  },
+  "marcet-houben-marina": {
+    "name": "Marina Marcet-Houben",
+    "original": [
+      "phylogenomics",
+      "fungal evolution",
+      "next generation sequencing",
+      "genomics",
+      "bioinformatics",
+      "microsporidians"
+    ],
+    "standardized": {
+      "primary": [
+        {
+          "id": "bioinformatics",
+          "label": "Bioinformatics",
+          "level": 2,
+          "parentId": "computational-sciences",
+          "description": "Application of computational methods to analyze biological data",
+          "synonyms": [
+            "biomedical informatics",
+            "computational genomics"
+          ],
+          "children": []
+        },
+        {
+          "id": "genomics-omics",
+          "label": "Genomics & Omics Sciences",
+          "level": 1,
+          "description": "Large-scale study of genomes and other molecular data including sequencing, assembly, and multi-omics integration",
+          "icon": "🧬",
+          "children": [
+            "comparative-genomics",
+            "functional-genomics",
+            "population-genomics",
+            "evolutionary-genomics",
+            "structural-genomics",
+            "single-cell-genomics",
+            "metagenomics",
+            "transcriptomics",
+            "proteomics",
+            "metabolomics",
+            "epigenomics",
+            "pangenomics"
+          ]
+        },
+        {
+          "id": "microbial-evolution",
+          "label": "Microbial Evolution",
+          "level": 2,
+          "parentId": "microbiology-microbiome",
+          "description": "Evolution of microorganisms",
+          "synonyms": [
+            "bacterial evolution",
+            "prokaryotic evolution"
+          ],
+          "children": []
+        },
+        {
+          "id": "phylogenomics",
+          "label": "Phylogenomics",
+          "level": 2,
+          "parentId": "evolutionary-biology",
+          "description": "Phylogenetic analysis using genome-scale data",
+          "synonyms": [
+            "genomic phylogenetics",
+            "phylogenomic analysis"
+          ],
+          "children": []
+        }
+      ],
+      "secondary": [
+        {
+          "id": "fungal-evolution",
+          "label": "Fungal Evolution",
+          "level": 3,
+          "parentId": "microbial-evolution",
+          "description": "Evolution of fungal species",
+          "synonyms": [
+            "mycological evolution",
+            "fungal phylogeny"
+          ]
+        }
+      ],
+      "techniques": [
+        {
+          "id": "sequencing-technology",
+          "label": "Sequencing Technology",
+          "level": 2,
+          "parentId": "technology-methods",
+          "description": "Development and application of DNA/RNA sequencing technologies",
+          "synonyms": [
+            "next-generation sequencing",
+            "NGS",
+            "high-throughput sequencing"
+          ],
+          "children": []
+        }
+      ]
+    }
+  },
+  "mcdonald-daniel": {
+    "name": "Daniel McDonald",
+    "original": [
+      "microbiome data science",
+      "microbiome analysis",
+      "genomics",
+      "QIIME 2",
+      "complex microbial communities",
+      "bioinformatics"
+    ],
+    "standardized": {
+      "primary": [
+        {
+          "id": "bioinformatics",
+          "label": "Bioinformatics",
+          "level": 2,
+          "parentId": "computational-sciences",
+          "description": "Application of computational methods to analyze biological data",
+          "synonyms": [
+            "biomedical informatics",
+            "computational genomics"
+          ],
+          "children": []
+        },
+        {
+          "id": "genomics-omics",
+          "label": "Genomics & Omics Sciences",
+          "level": 1,
+          "description": "Large-scale study of genomes and other molecular data including sequencing, assembly, and multi-omics integration",
+          "icon": "🧬",
+          "children": [
+            "comparative-genomics",
+            "functional-genomics",
+            "population-genomics",
+            "evolutionary-genomics",
+            "structural-genomics",
+            "single-cell-genomics",
+            "metagenomics",
+            "transcriptomics",
+            "proteomics",
+            "metabolomics",
+            "epigenomics",
+            "pangenomics"
+          ]
+        },
+        {
+          "id": "microbial-ecology",
+          "label": "Microbial Ecology",
+          "level": 2,
+          "parentId": "microbiology-microbiome",
+          "description": "Study of microorganisms in their natural environments",
+          "synonyms": [
+            "environmental microbiology",
+            "microbial community ecology"
+          ],
+          "children": []
+        },
+        {
+          "id": "microbiome-research",
+          "label": "Microbiome Research",
+          "level": 2,
+          "parentId": "microbiology-microbiome",
+          "description": "Study of microbial communities and their interactions with hosts and environments",
+          "synonyms": [
+            "microbiome analysis",
+            "microbiota research"
+          ],
+          "children": []
+        }
+      ],
+      "secondary": [],
+      "techniques": [
+        {
+          "id": "computational-methods",
+          "label": "Computational Methods",
+          "level": 2,
+          "parentId": "technology-methods",
+          "description": "Computational approaches and tools for biological analysis",
+          "synonyms": [
+            "computational tools",
+            "bioinformatics methods"
+          ],
+          "children": []
+        }
+      ]
+    }
+  },
+  "bank-claudia": {
+    "name": "Claudia Bank",
+    "original": [
+      "theoretical ecology",
+      "evolution",
+      "population genetics",
+      "evolutionary forces",
+      "genomics",
+      "diversity"
+    ],
+    "standardized": {
+      "primary": [
+        {
+          "id": "biodiversity",
+          "label": "Biodiversity",
+          "level": 2,
+          "parentId": "ecology-environmental",
+          "description": "Study of biological diversity at all levels",
+          "synonyms": [
+            "biological diversity",
+            "species diversity"
+          ],
+          "children": []
+        },
+        {
+          "id": "ecology",
+          "label": "Ecology",
+          "level": 2,
+          "parentId": "ecology-environmental",
+          "description": "Study of organisms and their environment",
+          "synonyms": [
+            "ecological science",
+            "environmental biology"
+          ],
+          "children": []
+        },
+        {
+          "id": "evolutionary-biology",
+          "label": "Evolutionary Biology",
+          "level": 1,
+          "description": "Study of evolutionary processes, patterns, and history of life including phylogenetics and speciation",
+          "icon": "🌳",
+          "children": [
+            "molecular-evolution",
+            "phylogenetics",
+            "phylogenomics",
+            "speciation",
+            "adaptation",
+            "evolutionary-genetics",
+            "macroevolution",
+            "microevolution",
+            "evolutionary-ecology"
+          ]
+        },
+        {
+          "id": "genomics-omics",
+          "label": "Genomics & Omics Sciences",
+          "level": 1,
+          "description": "Large-scale study of genomes and other molecular data including sequencing, assembly, and multi-omics integration",
+          "icon": "🧬",
+          "children": [
+            "comparative-genomics",
+            "functional-genomics",
+            "population-genomics",
+            "evolutionary-genomics",
+            "structural-genomics",
+            "single-cell-genomics",
+            "metagenomics",
+            "transcriptomics",
+            "proteomics",
+            "metabolomics",
+            "epigenomics",
+            "pangenomics"
+          ]
+        },
+        {
+          "id": "population-genetics",
+          "label": "Population Genetics",
+          "level": 2,
+          "parentId": "population-quantitative",
+          "description": "Study of genetic variation and change within populations",
+          "synonyms": [
+            "population genetic analysis",
+            "genetic population structure"
+          ],
+          "children": []
+        }
+      ],
+      "secondary": [],
+      "techniques": []
+    }
+  },
+  "catchen-julian": {
+    "name": "Julian Catchen",
+    "original": [
+      "population genomics",
+      "RAD-seq",
+      "genetic mapping",
+      "restriction enzyme-based data",
+      "stacks software",
+      "evolutionary genomics"
+    ],
+    "standardized": {
+      "primary": [
+        {
+          "id": "evolutionary-genomics",
+          "label": "Evolutionary Genomics",
+          "level": 2,
+          "parentId": "genomics-omics",
+          "description": "Study of genome evolution and evolutionary processes using genomic data",
+          "synonyms": [
+            "genome evolution",
+            "evolutionary genome analysis"
+          ],
+          "children": []
+        },
+        {
+          "id": "population-genetics",
+          "label": "Population Genetics",
+          "level": 2,
+          "parentId": "population-quantitative",
+          "description": "Study of genetic variation and change within populations",
+          "synonyms": [
+            "population genetic analysis",
+            "genetic population structure"
+          ],
+          "children": []
+        },
+        {
+          "id": "population-genomics",
+          "label": "Population Genomics",
+          "level": 2,
+          "parentId": "genomics-omics",
+          "description": "Genome-wide analysis of genetic variation within and between populations",
+          "synonyms": [
+            "population-level genomics",
+            "genomic population genetics"
+          ],
+          "children": []
+        }
+      ],
+      "secondary": [],
+      "techniques": [
+        {
+          "id": "computational-methods",
+          "label": "Computational Methods",
+          "level": 2,
+          "parentId": "technology-methods",
+          "description": "Computational approaches and tools for biological analysis",
+          "synonyms": [
+            "computational tools",
+            "bioinformatics methods"
+          ],
+          "children": []
+        },
+        {
+          "id": "sequencing-technology",
+          "label": "Sequencing Technology",
+          "level": 2,
+          "parentId": "technology-methods",
+          "description": "Development and application of DNA/RNA sequencing technologies",
+          "synonyms": [
+            "next-generation sequencing",
+            "NGS",
+            "high-throughput sequencing"
+          ],
+          "children": []
+        }
+      ]
+    }
+  }
+}

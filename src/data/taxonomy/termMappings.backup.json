@@ -1,0 +1,514 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-01-03",
+    "totalMappings": 100,
+    "confidence": {
+      "high": 75,
+      "medium": 20,
+      "low": 5
+    }
+  },
+  "mappings": {
+    "bioinformatics": {
+      "standardizedId": "bioinformatics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "computational biology": {
+      "standardizedId": "computational-biology",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "genomics": {
+      "standardizedId": "genomics-omics",
+      "confidence": "high",
+      "notes": "Maps to parent category - too general for specific subdiscipline"
+    },
+    "population genetics": {
+      "standardizedId": "population-genetics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "evolutionary biology": {
+      "standardizedId": "evolutionary-biology",
+      "confidence": "high",
+      "notes": "Maps to Level 1 parent category"
+    },
+    "evolutionary genomics": {
+      "standardizedId": "evolutionary-genomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "comparative genomics": {
+      "standardizedId": "comparative-genomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "population genomics": {
+      "standardizedId": "population-genomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "metagenomics": {
+      "standardizedId": "metagenomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "phylogenetics": {
+      "standardizedId": "phylogenetics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "molecular evolution": {
+      "standardizedId": "molecular-evolution",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "speciation": {
+      "standardizedId": "speciation",
+      "confidence": "high",
+      "notes": "Maps to Level 2 subcategory under evolutionary biology"
+    },
+    "genome assembly": {
+      "standardizedId": "genome-assembly",
+      "confidence": "high",
+      "notes": "Maps to Level 3 technique under technology-methods"
+    },
+    "ancient dna": {
+      "standardizedId": "ancient-dna",
+      "confidence": "high",
+      "notes": "Maps to Level 3 specialization"
+    },
+    "phylogenomics": {
+      "standardizedId": "phylogenomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "evolution": {
+      "standardizedId": "evolutionary-biology",
+      "confidence": "medium",
+      "notes": "Too general - maps to parent category"
+    },
+    "evolutionary genetics": {
+      "standardizedId": "evolutionary-genetics",
+      "confidence": "high",
+      "notes": "Maps to Level 2 subcategory"
+    },
+    "statistical genetics": {
+      "standardizedId": "statistical-genetics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "adaptation": {
+      "standardizedId": "adaptation",
+      "confidence": "high",
+      "notes": "Maps to Level 2 subcategory under evolutionary biology"
+    },
+    "microbiome": {
+      "standardizedId": "microbiome-research",
+      "confidence": "high",
+      "notes": "Maps to formal Level 2 category name"
+    },
+    "microbial ecology": {
+      "standardizedId": "microbial-ecology",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "machine learning": {
+      "standardizedId": "machine-learning",
+      "confidence": "high",
+      "notes": "Maps to Level 2 under mathematical-statistical"
+    },
+    "human genetics": {
+      "standardizedId": "human-genetics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "sequence analysis": {
+      "standardizedId": "sequence-analysis",
+      "confidence": "high",
+      "notes": "Maps to Level 3 technique"
+    },
+    "human evolution": {
+      "standardizedId": "human-evolution",
+      "confidence": "high",
+      "notes": "Maps to Level 3 specialization"
+    },
+    "transcriptomics": {
+      "standardizedId": "transcriptomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "computational methods": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Maps to Level 2 under technology-methods"
+    },
+    "natural selection": {
+      "standardizedId": "natural-selection",
+      "confidence": "high",
+      "notes": "Maps to Level 3 concept under evolution"
+    },
+    "conservation genetics": {
+      "standardizedId": "conservation-genetics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "algorithms": {
+      "standardizedId": "algorithm-development",
+      "confidence": "medium",
+      "notes": "Maps to more specific category"
+    },
+    "computational genomics": {
+      "standardizedId": "computational-biology",
+      "confidence": "medium",
+      "notes": "Synonym for computational biology in genomics context"
+    },
+    "systems biology": {
+      "standardizedId": "systems-biology",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "genome annotation": {
+      "standardizedId": "genome-annotation",
+      "confidence": "high",
+      "notes": "Maps to Level 3 technique"
+    },
+    "speciation genomics": {
+      "standardizedId": "speciation",
+      "confidence": "high",
+      "notes": "Maps to parent speciation category"
+    },
+    "next-generation sequencing": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "high",
+      "notes": "Maps to sequencing technology category"
+    },
+    "environmental genomics": {
+      "standardizedId": "environmental-genomics",
+      "confidence": "high",
+      "notes": "Maps to Level 2 under ecology-environmental"
+    },
+    "genome evolution": {
+      "standardizedId": "evolutionary-genomics",
+      "confidence": "high",
+      "notes": "Maps to evolutionary genomics category"
+    },
+    "fungal genomics": {
+      "standardizedId": "fungal-genomics",
+      "confidence": "high",
+      "notes": "Maps to Level 3 organism-specific"
+    },
+    "gut microbiota": {
+      "standardizedId": "microbiome-research",
+      "confidence": "high",
+      "notes": "Specific type of microbiome research"
+    },
+    "microbial genomics": {
+      "standardizedId": "microbial-genomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "functional genomics": {
+      "standardizedId": "functional-genomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "microbiome analysis": {
+      "standardizedId": "microbiome-research",
+      "confidence": "high",
+      "notes": "Type of microbiome research"
+    },
+    "statistical phylogenetics": {
+      "standardizedId": "phylogenetics",
+      "confidence": "high",
+      "notes": "Specialized approach within phylogenetics"
+    },
+    "data analysis": {
+      "standardizedId": "data-analysis",
+      "confidence": "medium",
+      "notes": "General technique - needs context"
+    },
+    "structural variation": {
+      "standardizedId": "structural-variation",
+      "confidence": "high",
+      "notes": "Maps to Level 3 analysis type"
+    },
+    "bioinformatics tools": {
+      "standardizedId": "bioinformatics",
+      "confidence": "high",
+      "notes": "Aspect of bioinformatics"
+    },
+    "plant genomics": {
+      "standardizedId": "plant-genomics",
+      "confidence": "high",
+      "notes": "Maps to Level 3 organism-specific"
+    },
+    "cancer genomics": {
+      "standardizedId": "cancer-genomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "statistical methods": {
+      "standardizedId": "biostatistics",
+      "confidence": "medium",
+      "notes": "Maps to biostatistics in biological context"
+    },
+    "computational phylogenetics": {
+      "standardizedId": "phylogenetics",
+      "confidence": "high",
+      "notes": "Computational approach to phylogenetics"
+    },
+    "paleogenomics": {
+      "standardizedId": "paleogenomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "single-cell genomics": {
+      "standardizedId": "single-cell-genomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "convergent evolution": {
+      "standardizedId": "convergent-evolution",
+      "confidence": "high",
+      "notes": "Maps to Level 3 evolutionary concept"
+    },
+    "fungal evolution": {
+      "standardizedId": "fungal-evolution",
+      "confidence": "high",
+      "notes": "Maps to Level 3 organism-specific evolution"
+    },
+    "next generation sequencing": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "high",
+      "notes": "Alternative spelling of NGS"
+    },
+    "diversity": {
+      "standardizedId": "biodiversity",
+      "confidence": "low",
+      "notes": "Too general - needs context"
+    },
+    "coalescent theory": {
+      "standardizedId": "coalescent-theory",
+      "confidence": "high",
+      "notes": "Maps to Level 3 theoretical method"
+    },
+    "species tree inference": {
+      "standardizedId": "phylogenetics",
+      "confidence": "high",
+      "notes": "Specific phylogenetic method"
+    },
+    "cichlid evolution": {
+      "standardizedId": "fish-evolution",
+      "confidence": "medium",
+      "notes": "Specific organism evolution study"
+    },
+    "k-mer analysis": {
+      "standardizedId": "sequence-analysis",
+      "confidence": "high",
+      "notes": "Specific sequence analysis method"
+    },
+    "genomic data analysis": {
+      "standardizedId": "genomic-data-analysis",
+      "confidence": "high",
+      "notes": "Maps to Level 3 analysis type"
+    },
+    "microbial evolution": {
+      "standardizedId": "microbial-evolution",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "horizontal gene transfer": {
+      "standardizedId": "horizontal-gene-transfer",
+      "confidence": "high",
+      "notes": "Maps to Level 3 evolutionary mechanism"
+    },
+    "stickleback evolution": {
+      "standardizedId": "fish-evolution",
+      "confidence": "medium",
+      "notes": "Specific model organism"
+    },
+    "stickleback fish": {
+      "standardizedId": "model-organisms",
+      "confidence": "medium",
+      "notes": "Model organism for evolution studies"
+    },
+    "algorithmic bioinformatics": {
+      "standardizedId": "bioinformatics",
+      "confidence": "high",
+      "notes": "Algorithm-focused bioinformatics"
+    },
+    "bayesian inference": {
+      "standardizedId": "bayesian-methods",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "phylodynamics": {
+      "standardizedId": "phylodynamics",
+      "confidence": "high",
+      "notes": "Maps to Level 3 under phylogenetics"
+    },
+    "molecular epidemiology": {
+      "standardizedId": "molecular-epidemiology",
+      "confidence": "high",
+      "notes": "Maps to Level 3 under medical sciences"
+    },
+    "variant calling": {
+      "standardizedId": "variant-calling",
+      "confidence": "high",
+      "notes": "Maps to Level 3 analysis technique"
+    },
+    "biostatistics": {
+      "standardizedId": "biostatistics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "precision oncology": {
+      "standardizedId": "precision-medicine",
+      "confidence": "high",
+      "notes": "Subspecialty of precision medicine"
+    },
+    "ornithology": {
+      "standardizedId": "bird-genomics",
+      "confidence": "medium",
+      "notes": "Maps to organism-specific study"
+    },
+    "ecology": {
+      "standardizedId": "ecology",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "human health": {
+      "standardizedId": "medical-clinical",
+      "confidence": "medium",
+      "notes": "Maps to parent medical category"
+    },
+    "conservation genomics": {
+      "standardizedId": "conservation-genetics",
+      "confidence": "high",
+      "notes": "Genomic approach to conservation"
+    },
+    "biodiversity": {
+      "standardizedId": "biodiversity",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "bayesian statistics": {
+      "standardizedId": "bayesian-methods",
+      "confidence": "high",
+      "notes": "Statistical approach"
+    },
+    "heliconius butterflies": {
+      "standardizedId": "insect-genomics",
+      "confidence": "medium",
+      "notes": "Model organism for evolution"
+    },
+    "genome sequencing": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "high",
+      "notes": "General sequencing category"
+    },
+    "r programming": {
+      "standardizedId": "computational-methods",
+      "confidence": "medium",
+      "notes": "Programming tool for analysis"
+    },
+    "adaptive radiation": {
+      "standardizedId": "adaptive-radiation",
+      "confidence": "high",
+      "notes": "Maps to Level 3 evolutionary concept"
+    },
+    "genetic variation": {
+      "standardizedId": "genetic-variation",
+      "confidence": "high",
+      "notes": "Maps to Level 3 concept"
+    },
+    "statistical genomics": {
+      "standardizedId": "statistical-genetics",
+      "confidence": "high",
+      "notes": "Genomic-scale statistical genetics"
+    },
+    "data science": {
+      "standardizedId": "data-science",
+      "confidence": "medium",
+      "notes": "General computational approach"
+    },
+    "ecological genomics": {
+      "standardizedId": "ecological-genomics",
+      "confidence": "high",
+      "notes": "Maps to Level 2 interdisciplinary field"
+    },
+    "sex chromosome evolution": {
+      "standardizedId": "chromosome-evolution",
+      "confidence": "high",
+      "notes": "Specific type of genome evolution"
+    },
+    "transposable elements": {
+      "standardizedId": "transposable-elements",
+      "confidence": "high",
+      "notes": "Maps to Level 3 genomic feature"
+    },
+    "avian genomics": {
+      "standardizedId": "bird-genomics",
+      "confidence": "high",
+      "notes": "Bird-specific genomics"
+    },
+    "phytoplankton ecology": {
+      "standardizedId": "marine-ecology",
+      "confidence": "medium",
+      "notes": "Specific ecological niche"
+    },
+    "molecular ecology": {
+      "standardizedId": "molecular-ecology",
+      "confidence": "high",
+      "notes": "Maps to Level 2 interdisciplinary field"
+    },
+    "environmental microbiology": {
+      "standardizedId": "environmental-microbiology",
+      "confidence": "high",
+      "notes": "Maps to Level 2 under microbiology"
+    },
+    "phylogenetic networks": {
+      "standardizedId": "phylogenetic-networks",
+      "confidence": "high",
+      "notes": "Maps to Level 3 method"
+    },
+    "mathematical biology": {
+      "standardizedId": "mathematical-biology",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "demography": {
+      "standardizedId": "demographic-inference",
+      "confidence": "high",
+      "notes": "Maps to population analysis method"
+    },
+    "statistical inference": {
+      "standardizedId": "statistical-inference",
+      "confidence": "high",
+      "notes": "Maps to Level 3 method"
+    },
+    "developmental biology": {
+      "standardizedId": "developmental-biology",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "clinical genomics": {
+      "standardizedId": "clinical-genomics",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "gene prediction": {
+      "standardizedId": "gene-prediction",
+      "confidence": "high",
+      "notes": "Maps to Level 3 computational method"
+    },
+    "single cell genomics": {
+      "standardizedId": "single-cell-genomics",
+      "confidence": "high",
+      "notes": "Alternative spelling"
+    }
+  }
+}

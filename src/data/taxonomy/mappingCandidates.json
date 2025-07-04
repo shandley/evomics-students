@@ -1,0 +1,702 @@
+[
+  {
+    "originalTerm": "bioinformatics",
+    "frequency": 63,
+    "suggestedMapping": "bioinformatics",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "computational biology",
+    "frequency": 40,
+    "suggestedMapping": "computational-biology",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "genomics",
+    "frequency": 32,
+    "suggestedMapping": "genomics-omics",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "population genetics",
+    "frequency": 28,
+    "suggestedMapping": "population-genetics",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "evolutionary biology",
+    "frequency": 23,
+    "suggestedMapping": "evolutionary-biology",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "evolutionary genomics",
+    "frequency": 22,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "comparative genomics",
+    "frequency": 18,
+    "suggestedMapping": "comparative-genomics",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "population genomics",
+    "frequency": 18,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "metagenomics",
+    "frequency": 18,
+    "suggestedMapping": "metagenomics",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "phylogenetics",
+    "frequency": 16,
+    "suggestedMapping": "phylogenetics",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "molecular evolution",
+    "frequency": 16,
+    "suggestedMapping": "molecular-evolution",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "speciation",
+    "frequency": 12,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "genome assembly",
+    "frequency": 11,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "ancient dna",
+    "frequency": 11,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "phylogenomics",
+    "frequency": 10,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "evolution",
+    "frequency": 10,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "evolutionary genetics",
+    "frequency": 10,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "statistical genetics",
+    "frequency": 9,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "adaptation",
+    "frequency": 9,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "microbiome",
+    "frequency": 9,
+    "suggestedMapping": "microbiome-research",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "microbial ecology",
+    "frequency": 8,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "machine learning",
+    "frequency": 8,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "human genetics",
+    "frequency": 6,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "sequence analysis",
+    "frequency": 6,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "human evolution",
+    "frequency": 6,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "transcriptomics",
+    "frequency": 5,
+    "suggestedMapping": "transcriptomics",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "computational methods",
+    "frequency": 5,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "natural selection",
+    "frequency": 5,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "conservation genetics",
+    "frequency": 5,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "algorithms",
+    "frequency": 5,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "computational genomics",
+    "frequency": 5,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "systems biology",
+    "frequency": 5,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "genome annotation",
+    "frequency": 5,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "speciation genomics",
+    "frequency": 4,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "next-generation sequencing",
+    "frequency": 4,
+    "suggestedMapping": "sequencing-technology",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "environmental genomics",
+    "frequency": 4,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "genome evolution",
+    "frequency": 4,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "fungal genomics",
+    "frequency": 4,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "gut microbiota",
+    "frequency": 4,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "microbial genomics",
+    "frequency": 4,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "functional genomics",
+    "frequency": 4,
+    "suggestedMapping": "functional-genomics",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "microbiome analysis",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "statistical phylogenetics",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "data analysis",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "structural variation",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "bioinformatics tools",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "plant genomics",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "cancer genomics",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "statistical methods",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "computational phylogenetics",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "paleogenomics",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "single-cell genomics",
+    "frequency": 3,
+    "suggestedMapping": "single-cell-genomics",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "convergent evolution",
+    "frequency": 3,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "fungal evolution",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "next generation sequencing",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "diversity",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "coalescent theory",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "species tree inference",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "cichlid evolution",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "k-mer analysis",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "genomic data analysis",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "microbial evolution",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "horizontal gene transfer",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "stickleback evolution",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "stickleback fish",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "algorithmic bioinformatics",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "bayesian inference",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "phylodynamics",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "molecular epidemiology",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "variant calling",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "biostatistics",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "precision oncology",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "ornithology",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "ecology",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "human health",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "conservation genomics",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "biodiversity",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "bayesian statistics",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "heliconius butterflies",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "genome sequencing",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "r programming",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "adaptive radiation",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "genetic variation",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "statistical genomics",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "data science",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "ecological genomics",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "sex chromosome evolution",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "transposable elements",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "avian genomics",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "phytoplankton ecology",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "molecular ecology",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "environmental microbiology",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "phylogenetic networks",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "mathematical biology",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "demography",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "statistical inference",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "developmental biology",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "clinical genomics",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "gene prediction",
+    "frequency": 2,
+    "suggestedMapping": null,
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "originalTerm": "single cell genomics",
+    "frequency": 2,
+    "suggestedMapping": "single-cell-genomics",
+    "confidence": "medium",
+    "notes": ""
+  }
+]

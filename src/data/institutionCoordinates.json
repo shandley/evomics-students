@@ -1,0 +1,2792 @@
+{
+  "1 Decembrie 1918 University": {
+    "lat": 46.068,
+    "lng": 23.5805,
+    "city": "Alba Iulia",
+    "country": "Romania"
+  },
+  "ADA University": {
+    "lat": 40.3803,
+    "lng": 49.8472,
+    "city": "Baku",
+    "country": "Azerbaijan"
+  },
+  "AGH University of Science and Technology": {
+    "lat": 50.0658,
+    "lng": 19.918,
+    "city": "Krakow",
+    "country": "Poland"
+  },
+  "AZTI": {
+    "lat": 43.32,
+    "lng": -2.02,
+    "city": "Pasaia",
+    "country": "Spain"
+  },
+  "Aalto University": {
+    "lat": 60.1859,
+    "lng": 24.8276,
+    "city": "Espoo",
+    "country": "Finland"
+  },
+  "Aarhus University": {
+    "lat": 56.1674,
+    "lng": 10.1991,
+    "city": "Aarhus",
+    "country": "Denmark"
+  },
+  "Academy of Economic Studies of Moldova": {
+    "lat": 47.0212,
+    "lng": 28.8322,
+    "city": "Chișinău",
+    "country": "Moldova"
+  },
+  "Adam Mickiewicz University": {
+    "lat": 52.467,
+    "lng": 16.9263,
+    "city": "Poznań",
+    "country": "Poland"
+  },
+  "Agricultural University of Tirana": {
+    "lat": 41.3209,
+    "lng": 19.8207,
+    "city": "Tirana",
+    "country": "Albania"
+  },
+  "Al-Farabi Kazakh National University": {
+    "lat": 43.2193,
+    "lng": 76.9272,
+    "city": "Almaty",
+    "country": "Kazakhstan"
+  },
+  "Alexandru Ioan Cuza University": {
+    "lat": 47.1741,
+    "lng": 27.5749,
+    "city": "Iași",
+    "country": "Romania"
+  },
+  "All Wales Medical Genomics Service": {
+    "lat": 51.4816,
+    "lng": -3.1791,
+    "city": "Cardiff",
+    "country": "UK"
+  },
+  "American University of Armenia": {
+    "lat": 40.1934,
+    "lng": 44.5081,
+    "city": "Yerevan",
+    "country": "Armenia"
+  },
+  "American University of Central Asia": {
+    "lat": 42.822,
+    "lng": 74.6026,
+    "city": "Bishkek",
+    "country": "Kyrgyzstan"
+  },
+  "Aristotle University of Thessaloniki": {
+    "lat": 40.6306,
+    "lng": 22.9595,
+    "city": "Thessaloniki",
+    "country": "Greece"
+  },
+  "Arizona State University": {
+    "lat": 33.4242,
+    "lng": -111.9281,
+    "city": "Tempe",
+    "country": "USA"
+  },
+  "Athens University of Economics and Business": {
+    "lat": 37.9942,
+    "lng": 23.7324,
+    "city": "Athens",
+    "country": "Greece"
+  },
+  "Australian National University": {
+    "lat": -35.2777,
+    "lng": 149.1185,
+    "city": "Canberra",
+    "country": "Australia"
+  },
+  "Autonomous University of Barcelona": {
+    "lat": 41.5008,
+    "lng": 2.11,
+    "city": "Barcelona",
+    "country": "Spain"
+  },
+  "Autonomous University of Madrid": {
+    "lat": 40.5456,
+    "lng": -3.694,
+    "city": "Madrid",
+    "country": "Spain"
+  },
+  "Avicenna Tajik State Medical University": {
+    "lat": 38.559,
+    "lng": 68.7941,
+    "city": "Dushanbe",
+    "country": "Tajikistan"
+  },
+  "Azerbaijan State Oil and Industry University": {
+    "lat": 40.3772,
+    "lng": 49.8494,
+    "city": "Baku",
+    "country": "Azerbaijan"
+  },
+  "Babeș-Bolyai University": {
+    "lat": 46.7667,
+    "lng": 23.5897,
+    "city": "Cluj-Napoca",
+    "country": "Romania"
+  },
+  "Baku State University": {
+    "lat": 40.3665,
+    "lng": 49.8352,
+    "city": "Baku",
+    "country": "Azerbaijan"
+  },
+  "Barcelona Supercomputing Center": {
+    "lat": 41.3897,
+    "lng": 2.116,
+    "city": "Barcelona",
+    "country": "Spain"
+  },
+  "Bauman Moscow State Technical University": {
+    "lat": 55.7658,
+    "lng": 37.6844,
+    "city": "Moscow",
+    "country": "Russia"
+  },
+  "Baylor College of Medicine": {
+    "lat": 29.7104,
+    "lng": -95.3959,
+    "city": "Houston",
+    "country": "USA"
+  },
+  "Belarusian National Technical University": {
+    "lat": 53.9207,
+    "lng": 27.5906,
+    "city": "Minsk",
+    "country": "Belarus"
+  },
+  "Belarusian State Medical University": {
+    "lat": 53.9248,
+    "lng": 27.6003,
+    "city": "Minsk",
+    "country": "Belarus"
+  },
+  "Belarusian State University": {
+    "lat": 53.8938,
+    "lng": 27.546,
+    "city": "Minsk",
+    "country": "Belarus"
+  },
+  "Belarusian State University of Informatics and Radioelectronics": {
+    "lat": 53.9176,
+    "lng": 27.5945,
+    "city": "Minsk",
+    "country": "Belarus"
+  },
+  "Bigelow Laboratory for Ocean Sciences": {
+    "lat": 43.8567,
+    "lng": -69.5817,
+    "city": "East Boothbay",
+    "country": "USA"
+  },
+  "Bill & Melinda Gates Foundation": {
+    "lat": 47.6062,
+    "lng": -122.3321,
+    "city": "Seattle",
+    "country": "USA"
+  },
+  "BiomeSense": {
+    "lat": 52.52,
+    "lng": 13.405,
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  "Broad Institute": {
+    "lat": 42.3619,
+    "lng": -71.0893,
+    "city": "Cambridge",
+    "country": "USA"
+  },
+  "Broad Institute of MIT and Harvard": {
+    "lat": 42.3619,
+    "lng": -71.0893,
+    "city": "Cambridge",
+    "country": "USA"
+  },
+  "Budapest University of Technology and Economics": {
+    "lat": 47.4814,
+    "lng": 19.0553,
+    "city": "Budapest",
+    "country": "Hungary"
+  },
+  "CEFE, CNRS": {
+    "lat": 43.6389,
+    "lng": 3.8658,
+    "city": "Montpellier",
+    "country": "France"
+  },
+  "CNRS": {
+    "lat": 48.8566,
+    "lng": 2.3522,
+    "city": "Paris",
+    "country": "France"
+  },
+  "CNRS and Muséum National d'Histoire Naturelle": {
+    "lat": 48.8433,
+    "lng": 2.3564,
+    "city": "Paris",
+    "country": "France"
+  },
+  "Cardiff University": {
+    "lat": 51.4866,
+    "lng": -3.1791,
+    "city": "Cardiff",
+    "country": "UK"
+  },
+  "Carlos III University of Madrid": {
+    "lat": 40.3156,
+    "lng": -3.7261,
+    "city": "Madrid",
+    "country": "Spain"
+  },
+  "Carnegie Mellon University": {
+    "lat": 40.4433,
+    "lng": -79.9436,
+    "city": "Pittsburgh",
+    "country": "USA"
+  },
+  "Centre for Computational Evolution": {
+    "lat": -36.8485,
+    "lng": 174.7633,
+    "city": "Auckland",
+    "country": "New Zealand"
+  },
+  "Centre for Ecological Research, Budapest": {
+    "lat": 47.4979,
+    "lng": 19.0402,
+    "city": "Budapest",
+    "country": "Hungary"
+  },
+  "Centre for Genomic Regulation": {
+    "lat": 41.3851,
+    "lng": 2.1943,
+    "city": "Barcelona",
+    "country": "Spain"
+  },
+  "Chalmers University of Technology": {
+    "lat": 57.6889,
+    "lng": 11.9773,
+    "city": "Gothenburg",
+    "country": "Sweden"
+  },
+  "Charles University": {
+    "lat": 50.0874,
+    "lng": 14.4211,
+    "city": "Prague",
+    "country": "Czech Republic"
+  },
+  "Charles University in Prague": {
+    "lat": 50.0875,
+    "lng": 14.421,
+    "city": "Prague",
+    "country": "Czech Republic"
+  },
+  "Chinese Academy of Sciences": {
+    "lat": 39.9075,
+    "lng": 116.3972,
+    "city": "Beijing",
+    "country": "China"
+  },
+  "Cold Spring Harbor Laboratory": {
+    "lat": 40.8699,
+    "lng": -73.4566,
+    "city": "Cold Spring Harbor",
+    "country": "USA"
+  },
+  "Colorado State University": {
+    "lat": 40.5734,
+    "lng": -105.0865,
+    "city": "Fort Collins",
+    "country": "USA"
+  },
+  "Columbia University": {
+    "lat": 40.8075,
+    "lng": -73.9626,
+    "city": "New York",
+    "country": "USA"
+  },
+  "Comenius University": {
+    "lat": 48.1514,
+    "lng": 17.1056,
+    "city": "Bratislava",
+    "country": "Slovakia"
+  },
+  "Complutense University of Madrid": {
+    "lat": 40.4488,
+    "lng": -3.7287,
+    "city": "Madrid",
+    "country": "Spain"
+  },
+  "Constantiam Biosciences": {
+    "lat": 52.52,
+    "lng": 13.405,
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  "Cornell University": {
+    "lat": 42.4534,
+    "lng": -76.4735,
+    "city": "Ithaca",
+    "country": "USA"
+  },
+  "Corvinus University of Budapest": {
+    "lat": 47.4867,
+    "lng": 19.058,
+    "city": "Budapest",
+    "country": "Hungary"
+  },
+  "Czech Technical University in Prague": {
+    "lat": 50.1025,
+    "lng": 14.3925,
+    "city": "Prague",
+    "country": "Czech Republic"
+  },
+  "DOE Joint Genome Institute": {
+    "lat": 37.8766,
+    "lng": -122.2473,
+    "city": "Berkeley",
+    "country": "USA"
+  },
+  "Dalhousie University": {
+    "lat": 44.6376,
+    "lng": -63.5911,
+    "city": "Halifax",
+    "country": "Canada"
+  },
+  "Daugavpils University": {
+    "lat": 55.8691,
+    "lng": 26.5151,
+    "city": "Daugavpils",
+    "country": "Latvia"
+  },
+  "Delft University of Technology": {
+    "lat": 52.0021,
+    "lng": 4.3727,
+    "city": "Delft",
+    "country": "Netherlands"
+  },
+  "Duke University": {
+    "lat": 36.0014,
+    "lng": -78.9382,
+    "city": "Durham",
+    "country": "USA"
+  },
+  "ETH Zurich": {
+    "lat": 47.3769,
+    "lng": 8.5417,
+    "city": "Zurich",
+    "country": "Switzerland"
+  },
+  "Emory University": {
+    "lat": 33.7925,
+    "lng": -84.324,
+    "city": "Atlanta",
+    "country": "USA"
+  },
+  "Erasmus University Rotterdam": {
+    "lat": 51.9173,
+    "lng": 4.5256,
+    "city": "Rotterdam",
+    "country": "Netherlands"
+  },
+  "Estonian Academy of Arts": {
+    "lat": 59.4371,
+    "lng": 24.7485,
+    "city": "Tallinn",
+    "country": "Estonia"
+  },
+  "Estonian University of Life Sciences": {
+    "lat": 58.3847,
+    "lng": 26.6975,
+    "city": "Tartu",
+    "country": "Estonia"
+  },
+  "Eötvös Loránd University": {
+    "lat": 47.4752,
+    "lng": 19.062,
+    "city": "Budapest",
+    "country": "Hungary"
+  },
+  "Far Eastern Federal University": {
+    "lat": 43.0257,
+    "lng": 131.8945,
+    "city": "Vladivostok",
+    "country": "Russia"
+  },
+  "Free University of Berlin": {
+    "lat": 52.4532,
+    "lng": 13.2904,
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  "Gdańsk University of Technology": {
+    "lat": 54.372,
+    "lng": 18.6142,
+    "city": "Gdańsk",
+    "country": "Poland"
+  },
+  "Genedata": {
+    "lat": 47.5596,
+    "lng": 7.5886,
+    "city": "Basel",
+    "country": "Switzerland"
+  },
+  "Georgian Technical University": {
+    "lat": 41.7225,
+    "lng": 44.7786,
+    "city": "Tbilisi",
+    "country": "Georgia"
+  },
+  "Ghent University": {
+    "lat": 51.046,
+    "lng": 3.7279,
+    "city": "Ghent",
+    "country": "Belgium"
+  },
+  "Goce Delčev University": {
+    "lat": 41.7155,
+    "lng": 22.1859,
+    "city": "Štip",
+    "country": "North Macedonia"
+  },
+  "Goethe University Frankfurt": {
+    "lat": 50.1267,
+    "lng": 8.6642,
+    "city": "Frankfurt",
+    "country": "Germany"
+  },
+  "Gregor Mendel Institute": {
+    "lat": 48.2333,
+    "lng": 16.4,
+    "city": "Vienna",
+    "country": "Austria"
+  },
+  "Gregor Mendel Institute of Molecular Plant Biology": {
+    "lat": 48.2333,
+    "lng": 16.4,
+    "city": "Vienna",
+    "country": "Austria"
+  },
+  "HHMI": {
+    "lat": 39.0903,
+    "lng": -77.4474,
+    "city": "Chevy Chase",
+    "country": "USA"
+  },
+  "Harvard T.H. Chan School of Public Health": {
+    "lat": 42.3355,
+    "lng": -71.1027,
+    "city": "Boston",
+    "country": "USA"
+  },
+  "Harvard University": {
+    "lat": 42.377,
+    "lng": -71.1167,
+    "city": "Cambridge",
+    "country": "USA"
+  },
+  "Hebrew University of Jerusalem": {
+    "lat": 31.7964,
+    "lng": 35.2464,
+    "city": "Jerusalem",
+    "country": "Israel"
+  },
+  "Heidelberg University": {
+    "lat": 49.4093,
+    "lng": 8.6715,
+    "city": "Heidelberg",
+    "country": "Germany"
+  },
+  "Helmholtz Centre for Infection Research": {
+    "lat": 52.2167,
+    "lng": 10.5333,
+    "city": "Braunschweig",
+    "country": "Germany"
+  },
+  "Higher School of Economics": {
+    "lat": 55.7532,
+    "lng": 37.6501,
+    "city": "Moscow",
+    "country": "Russia"
+  },
+  "Humboldt University of Berlin": {
+    "lat": 52.517,
+    "lng": 13.3933,
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  "ITMO University": {
+    "lat": 59.957,
+    "lng": 30.3083,
+    "city": "Saint Petersburg",
+    "country": "Russia"
+  },
+  "Ilia State University": {
+    "lat": 41.7092,
+    "lng": 44.7497,
+    "city": "Tbilisi",
+    "country": "Georgia"
+  },
+  "Illumina": {
+    "lat": 32.8328,
+    "lng": -117.1963,
+    "city": "San Diego",
+    "country": "USA"
+  },
+  "Immanuel Kant Baltic Federal University": {
+    "lat": 54.7245,
+    "lng": 20.5229,
+    "city": "Kaliningrad",
+    "country": "Russia"
+  },
+  "Imperial College London": {
+    "lat": 51.4988,
+    "lng": -0.1749,
+    "city": "London",
+    "country": "UK"
+  },
+  "Independent Consultant": {
+    "lat": 0,
+    "lng": 0,
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  "Independent/Industry": {
+    "lat": 0,
+    "lng": 0,
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  "Indiana University": {
+    "lat": 39.1784,
+    "lng": -86.5133,
+    "city": "Bloomington",
+    "country": "USA"
+  },
+  "Institut Pasteur": {
+    "lat": 48.8403,
+    "lng": 2.3113,
+    "city": "Paris",
+    "country": "France"
+  },
+  "Institut Pasteur of Shanghai": {
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "city": "Shanghai",
+    "country": "China"
+  },
+  "Institut de Recerca Biomèdica": {
+    "lat": 41.3851,
+    "lng": 2.1943,
+    "city": "Barcelona",
+    "country": "Spain"
+  },
+  "Institute of Evolutionary Biology (IBE, CSIC-UPF)": {
+    "lat": 41.3851,
+    "lng": 2.1943,
+    "city": "Barcelona",
+    "country": "Spain"
+  },
+  "Institute of Genetics and Biophysics, CNR": {
+    "lat": 40.8284,
+    "lng": 14.1933,
+    "city": "Naples",
+    "country": "Italy"
+  },
+  "International University for the Humanities and Development": {
+    "lat": 37.9605,
+    "lng": 58.392,
+    "city": "Ashgabat",
+    "country": "Turkmenistan"
+  },
+  "Iowa State University": {
+    "lat": 42.0267,
+    "lng": -93.6465,
+    "city": "Ames",
+    "country": "USA"
+  },
+  "Ivan Franko National University of Lviv": {
+    "lat": 49.8347,
+    "lng": 24.0151,
+    "city": "Lviv",
+    "country": "Ukraine"
+  },
+  "Jagiellonian University": {
+    "lat": 50.0605,
+    "lng": 19.9329,
+    "city": "Krakow",
+    "country": "Poland"
+  },
+  "Johns Hopkins University": {
+    "lat": 39.3299,
+    "lng": -76.6205,
+    "city": "Baltimore",
+    "country": "USA"
+  },
+  "KTH Royal Institute of Technology": {
+    "lat": 59.3498,
+    "lng": 18.0707,
+    "city": "Stockholm",
+    "country": "Sweden"
+  },
+  "KU Leuven": {
+    "lat": 50.8781,
+    "lng": 4.6997,
+    "city": "Leuven",
+    "country": "Belgium"
+  },
+  "Karlsruhe Institute of Technology": {
+    "lat": 49.0126,
+    "lng": 8.4169,
+    "city": "Karlsruhe",
+    "country": "Germany"
+  },
+  "Karolinska Institute": {
+    "lat": 59.3498,
+    "lng": 18.0263,
+    "city": "Stockholm",
+    "country": "Sweden"
+  },
+  "Kaunas University of Technology": {
+    "lat": 54.8985,
+    "lng": 23.9126,
+    "city": "Kaunas",
+    "country": "Lithuania"
+  },
+  "Kazakh National Research Technical University": {
+    "lat": 43.237,
+    "lng": 76.9462,
+    "city": "Almaty",
+    "country": "Kazakhstan"
+  },
+  "Kazan Federal University": {
+    "lat": 55.7902,
+    "lng": 49.1224,
+    "city": "Kazan",
+    "country": "Russia"
+  },
+  "Khazar University": {
+    "lat": 40.4093,
+    "lng": 49.8672,
+    "city": "Baku",
+    "country": "Azerbaijan"
+  },
+  "King's College London": {
+    "lat": 51.5115,
+    "lng": -0.116,
+    "city": "London",
+    "country": "UK"
+  },
+  "Kyrgyz National University": {
+    "lat": 42.8447,
+    "lng": 74.6216,
+    "city": "Bishkek",
+    "country": "Kyrgyzstan"
+  },
+  "Kyrgyz State Technical University": {
+    "lat": 42.8434,
+    "lng": 74.5815,
+    "city": "Bishkek",
+    "country": "Kyrgyzstan"
+  },
+  "L. N. Gumilyov Eurasian National University": {
+    "lat": 51.1598,
+    "lng": 71.4072,
+    "city": "Nur-Sultan",
+    "country": "Kazakhstan"
+  },
+  "La Jolla Institute for Immunology": {
+    "lat": 32.8698,
+    "lng": -117.2431,
+    "city": "La Jolla",
+    "country": "USA"
+  },
+  "Latvia University of Life Sciences and Technologies": {
+    "lat": 56.6541,
+    "lng": 23.7128,
+    "city": "Jelgava",
+    "country": "Latvia"
+  },
+  "Leiden University": {
+    "lat": 52.1574,
+    "lng": 4.4839,
+    "city": "Leiden",
+    "country": "Netherlands"
+  },
+  "Linköping University": {
+    "lat": 58.398,
+    "lng": 15.5767,
+    "city": "Linköping",
+    "country": "Sweden"
+  },
+  "Lithuanian University of Health Sciences": {
+    "lat": 54.8963,
+    "lng": 23.9194,
+    "city": "Kaunas",
+    "country": "Lithuania"
+  },
+  "Lobachevsky State University of Nizhny Novgorod": {
+    "lat": 56.3002,
+    "lng": 43.9343,
+    "city": "Nizhny Novgorod",
+    "country": "Russia"
+  },
+  "London School of Economics": {
+    "lat": 51.5144,
+    "lng": -0.1174,
+    "city": "London",
+    "country": "UK"
+  },
+  "Ludwig Maximilian University of Munich": {
+    "lat": 48.1508,
+    "lng": 11.5809,
+    "city": "Munich",
+    "country": "Germany"
+  },
+  "Lund University": {
+    "lat": 55.7047,
+    "lng": 13.191,
+    "city": "Lund",
+    "country": "Sweden"
+  },
+  "MIT": {
+    "lat": 42.3601,
+    "lng": -71.0942,
+    "city": "Cambridge",
+    "country": "USA"
+  },
+  "Maastricht University": {
+    "lat": 50.8484,
+    "lng": 5.6875,
+    "city": "Maastricht",
+    "country": "Netherlands"
+  },
+  "Macquarie University": {
+    "lat": -33.7738,
+    "lng": 151.1126,
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  "Marche Polytechnic University": {
+    "lat": 43.5863,
+    "lng": 13.517,
+    "city": "Ancona",
+    "country": "Italy"
+  },
+  "Maria Curie-Skłodowska University": {
+    "lat": 51.2421,
+    "lng": 22.5446,
+    "city": "Lublin",
+    "country": "Poland"
+  },
+  "Masaryk University": {
+    "lat": 49.1983,
+    "lng": 16.6053,
+    "city": "Brno",
+    "country": "Czech Republic"
+  },
+  "Max Planck Institute for Evolutionary Anthropology": {
+    "lat": 51.3217,
+    "lng": 12.3947,
+    "city": "Leipzig",
+    "country": "Germany"
+  },
+  "Max Planck Institute for Plant Breeding Research (moving to Purdue University in 2025)": {
+    "lat": 50.9594,
+    "lng": 6.8589,
+    "city": "Cologne",
+    "country": "Germany"
+  },
+  "McGill University": {
+    "lat": 45.5048,
+    "lng": -73.5772,
+    "city": "Montreal",
+    "country": "Canada"
+  },
+  "McMaster University": {
+    "lat": 43.2609,
+    "lng": -79.9192,
+    "city": "Hamilton",
+    "country": "Canada"
+  },
+  "Medical University of Sofia": {
+    "lat": 42.6845,
+    "lng": 23.3501,
+    "city": "Sofia",
+    "country": "Bulgaria"
+  },
+  "Medical University of Warsaw": {
+    "lat": 52.2067,
+    "lng": 20.9844,
+    "city": "Warsaw",
+    "country": "Poland"
+  },
+  "Mediterranean University": {
+    "lat": 42.428,
+    "lng": 18.7712,
+    "city": "Podgorica",
+    "country": "Montenegro"
+  },
+  "Moldova State University": {
+    "lat": 47.0245,
+    "lng": 28.8322,
+    "city": "Chișinău",
+    "country": "Moldova"
+  },
+  "Moldova State University of Medicine and Pharmacy": {
+    "lat": 47.029,
+    "lng": 28.8143,
+    "city": "Chișinău",
+    "country": "Moldova"
+  },
+  "Monash University": {
+    "lat": -37.9105,
+    "lng": 145.1362,
+    "city": "Melbourne",
+    "country": "Australia"
+  },
+  "Moscow Institute of Physics and Technology": {
+    "lat": 55.9297,
+    "lng": 37.5199,
+    "city": "Dolgoprudny",
+    "country": "Russia"
+  },
+  "Moscow State University": {
+    "lat": 55.7033,
+    "lng": 37.5301,
+    "city": "Moscow",
+    "country": "Russia"
+  },
+  "NOVA University Lisbon": {
+    "lat": 38.7325,
+    "lng": -9.1533,
+    "city": "Lisbon",
+    "country": "Portugal"
+  },
+  "National Institutes of Health (NIH)": {
+    "lat": 39.0003,
+    "lng": -77.1056,
+    "city": "Bethesda",
+    "country": "USA"
+  },
+  "National Polytechnic University of Armenia": {
+    "lat": 40.1867,
+    "lng": 44.5152,
+    "city": "Yerevan",
+    "country": "Armenia"
+  },
+  "National Research Nuclear University MEPhI": {
+    "lat": 55.6507,
+    "lng": 37.6646,
+    "city": "Moscow",
+    "country": "Russia"
+  },
+  "National Research University of Electronic Technology": {
+    "lat": 55.9824,
+    "lng": 37.2096,
+    "city": "Zelenograd",
+    "country": "Russia"
+  },
+  "National Technical University of Athens": {
+    "lat": 37.9733,
+    "lng": 23.7863,
+    "city": "Athens",
+    "country": "Greece"
+  },
+  "National Technical University of Ukraine": {
+    "lat": 50.449,
+    "lng": 30.4568,
+    "city": "Kyiv",
+    "country": "Ukraine"
+  },
+  "National University of Ireland, Galway": {
+    "lat": 53.2798,
+    "lng": -9.0621,
+    "city": "Galway",
+    "country": "Ireland"
+  },
+  "National University of Singapore": {
+    "lat": 1.2966,
+    "lng": 103.7764,
+    "city": "Singapore",
+    "country": "Singapore"
+  },
+  "National University of Uzbekistan": {
+    "lat": 41.3036,
+    "lng": 69.2446,
+    "city": "Tashkent",
+    "country": "Uzbekistan"
+  },
+  "Natural History Museum, University of Oslo": {
+    "lat": 59.9139,
+    "lng": 10.7522,
+    "city": "Oslo",
+    "country": "Norway"
+  },
+  "Nazarbayev University": {
+    "lat": 51.0906,
+    "lng": 71.3983,
+    "city": "Nur-Sultan",
+    "country": "Kazakhstan"
+  },
+  "New York University": {
+    "lat": 40.7295,
+    "lng": -73.9965,
+    "city": "New York",
+    "country": "USA"
+  },
+  "Nicolaus Copernicus University": {
+    "lat": 53.0193,
+    "lng": 18.5723,
+    "city": "Toruń",
+    "country": "Poland"
+  },
+  "Norwegian University of Science and Technology": {
+    "lat": 63.4175,
+    "lng": 10.4027,
+    "city": "Trondheim",
+    "country": "Norway"
+  },
+  "Novosibirsk State University": {
+    "lat": 54.8479,
+    "lng": 83.0945,
+    "city": "Novosibirsk",
+    "country": "Russia"
+  },
+  "Odesa I. I. Mechnikov National University": {
+    "lat": 46.4584,
+    "lng": 30.7562,
+    "city": "Odesa",
+    "country": "Ukraine"
+  },
+  "Ohio State University": {
+    "lat": 40.0067,
+    "lng": -83.0305,
+    "city": "Columbus",
+    "country": "USA"
+  },
+  "Oles Honchar Dnipro National University": {
+    "lat": 48.4323,
+    "lng": 35.0422,
+    "city": "Dnipro",
+    "country": "Ukraine"
+  },
+  "Osh State University": {
+    "lat": 40.5298,
+    "lng": 72.8018,
+    "city": "Osh",
+    "country": "Kyrgyzstan"
+  },
+  "Ovidius University": {
+    "lat": 44.1732,
+    "lng": 28.634,
+    "city": "Constanța",
+    "country": "Romania"
+  },
+  "Palacký University Olomouc": {
+    "lat": 49.5927,
+    "lng": 17.2658,
+    "city": "Olomouc",
+    "country": "Czech Republic"
+  },
+  "Pennsylvania State University": {
+    "lat": 40.7982,
+    "lng": -77.8599,
+    "city": "State College",
+    "country": "USA"
+  },
+  "Peter the Great St. Petersburg Polytechnic University": {
+    "lat": 60.0076,
+    "lng": 30.3731,
+    "city": "Saint Petersburg",
+    "country": "Russia"
+  },
+  "Plovdiv University": {
+    "lat": 42.1365,
+    "lng": 24.7395,
+    "city": "Plovdiv",
+    "country": "Bulgaria"
+  },
+  "Politecnico di Milano": {
+    "lat": 45.4783,
+    "lng": 9.2279,
+    "city": "Milan",
+    "country": "Italy"
+  },
+  "Politehnica University of Bucharest": {
+    "lat": 44.4397,
+    "lng": 26.0473,
+    "city": "Bucharest",
+    "country": "Romania"
+  },
+  "Polytechnic University of Catalonia": {
+    "lat": 41.3888,
+    "lng": 2.1131,
+    "city": "Barcelona",
+    "country": "Spain"
+  },
+  "Polytechnic University of Tirana": {
+    "lat": 41.3478,
+    "lng": 19.825,
+    "city": "Tirana",
+    "country": "Albania"
+  },
+  "Pompeu Fabra University": {
+    "lat": 41.4037,
+    "lng": 2.194,
+    "city": "Barcelona",
+    "country": "Spain"
+  },
+  "PreBiomics": {
+    "lat": 52.52,
+    "lng": 13.405,
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  "Princeton University": {
+    "lat": 40.3431,
+    "lng": -74.6551,
+    "city": "Princeton",
+    "country": "USA"
+  },
+  "Queen Mary University of London": {
+    "lat": 51.5241,
+    "lng": -0.0404,
+    "city": "London",
+    "country": "UK"
+  },
+  "Queen's University Belfast": {
+    "lat": 54.5844,
+    "lng": -5.934,
+    "city": "Belfast",
+    "country": "UK"
+  },
+  "RIKEN": {
+    "lat": 35.7267,
+    "lng": 139.715,
+    "city": "Wako",
+    "country": "Japan"
+  },
+  "RWTH Aachen University": {
+    "lat": 50.7801,
+    "lng": 6.0657,
+    "city": "Aachen",
+    "country": "Germany"
+  },
+  "Radboud University Nijmegen": {
+    "lat": 51.8226,
+    "lng": 5.8686,
+    "city": "Nijmegen",
+    "country": "Netherlands"
+  },
+  "Rice University": {
+    "lat": 29.7174,
+    "lng": -95.4018,
+    "city": "Houston",
+    "country": "USA"
+  },
+  "Riga Stradiņš University": {
+    "lat": 56.9538,
+    "lng": 24.1231,
+    "city": "Riga",
+    "country": "Latvia"
+  },
+  "Riga Technical University": {
+    "lat": 56.9477,
+    "lng": 24.057,
+    "city": "Riga",
+    "country": "Latvia"
+  },
+  "Royal Botanic Gardens, Kew": {
+    "lat": 51.4787,
+    "lng": -0.2956,
+    "city": "Richmond",
+    "country": "UK"
+  },
+  "Russian-Tajik Slavonic University": {
+    "lat": 38.576,
+    "lng": 68.7892,
+    "city": "Dushanbe",
+    "country": "Tajikistan"
+  },
+  "SIB Swiss Institute of Bioinformatics": {
+    "lat": 46.5191,
+    "lng": 6.5668,
+    "city": "Lausanne",
+    "country": "Switzerland"
+  },
+  "Saint Petersburg State University": {
+    "lat": 59.9419,
+    "lng": 30.2986,
+    "city": "Saint Petersburg",
+    "country": "Russia"
+  },
+  "Samara National Research University": {
+    "lat": 53.212,
+    "lng": 50.1768,
+    "city": "Samara",
+    "country": "Russia"
+  },
+  "Samarkand State University": {
+    "lat": 39.6542,
+    "lng": 66.9597,
+    "city": "Samarkand",
+    "country": "Uzbekistan"
+  },
+  "Scuola Normale Superiore": {
+    "lat": 43.717,
+    "lng": 10.3993,
+    "city": "Pisa",
+    "country": "Italy"
+  },
+  "Semmelweis University": {
+    "lat": 47.4842,
+    "lng": 19.0659,
+    "city": "Budapest",
+    "country": "Hungary"
+  },
+  "Siberian Federal University": {
+    "lat": 56.0057,
+    "lng": 92.8792,
+    "city": "Krasnoyarsk",
+    "country": "Russia"
+  },
+  "Slovak University of Technology": {
+    "lat": 48.1513,
+    "lng": 17.0736,
+    "city": "Bratislava",
+    "country": "Slovakia"
+  },
+  "Sorbonne University": {
+    "lat": 48.8483,
+    "lng": 2.3434,
+    "city": "Paris",
+    "country": "France"
+  },
+  "South Ural State University": {
+    "lat": 55.1596,
+    "lng": 61.3688,
+    "city": "Chelyabinsk",
+    "country": "Russia"
+  },
+  "Southern Federal University": {
+    "lat": 47.2166,
+    "lng": 39.6283,
+    "city": "Rostov-on-Don",
+    "country": "Russia"
+  },
+  "Stanford University": {
+    "lat": 37.4275,
+    "lng": -122.1697,
+    "city": "Stanford",
+    "country": "USA"
+  },
+  "State University of Turkmenistan": {
+    "lat": 37.938,
+    "lng": 58.3866,
+    "city": "Ashgabat",
+    "country": "Turkmenistan"
+  },
+  "Stockholm University": {
+    "lat": 59.365,
+    "lng": 18.0584,
+    "city": "Stockholm",
+    "country": "Sweden"
+  },
+  "Sumy State University": {
+    "lat": 50.8947,
+    "lng": 34.8435,
+    "city": "Sumy",
+    "country": "Ukraine"
+  },
+  "Swansea University": {
+    "lat": 51.6092,
+    "lng": -3.9801,
+    "city": "Swansea",
+    "country": "UK"
+  },
+  "Swedish Natural Museum": {
+    "lat": 59.3686,
+    "lng": 18.0544,
+    "city": "Stockholm",
+    "country": "Sweden"
+  },
+  "Swiss Federal Institute of Technology in Lausanne": {
+    "lat": 46.5191,
+    "lng": 6.5668,
+    "city": "Lausanne",
+    "country": "Switzerland"
+  },
+  "Swiss Vogelwarte": {
+    "lat": 47.0167,
+    "lng": 8.2167,
+    "city": "Sempach",
+    "country": "Switzerland"
+  },
+  "Tajik National University": {
+    "lat": 38.5711,
+    "lng": 68.7832,
+    "city": "Dushanbe",
+    "country": "Tajikistan"
+  },
+  "Tajik Technical University": {
+    "lat": 38.5527,
+    "lng": 68.774,
+    "city": "Dushanbe",
+    "country": "Tajikistan"
+  },
+  "Tallinn University": {
+    "lat": 59.4388,
+    "lng": 24.7711,
+    "city": "Tallinn",
+    "country": "Estonia"
+  },
+  "Tallinn University of Technology": {
+    "lat": 59.395,
+    "lng": 24.6717,
+    "city": "Tallinn",
+    "country": "Estonia"
+  },
+  "Taras Shevchenko National University of Kyiv": {
+    "lat": 50.4422,
+    "lng": 30.5102,
+    "city": "Kyiv",
+    "country": "Ukraine"
+  },
+  "Tashkent State Technical University": {
+    "lat": 41.327,
+    "lng": 69.2847,
+    "city": "Tashkent",
+    "country": "Uzbekistan"
+  },
+  "Tbilisi State Medical University": {
+    "lat": 41.7108,
+    "lng": 44.778,
+    "city": "Tbilisi",
+    "country": "Georgia"
+  },
+  "Tbilisi State University": {
+    "lat": 41.7098,
+    "lng": 44.767,
+    "city": "Tbilisi",
+    "country": "Georgia"
+  },
+  "Technical University of Berlin": {
+    "lat": 52.5125,
+    "lng": 13.3267,
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  "Technical University of Denmark": {
+    "lat": 55.7858,
+    "lng": 12.5214,
+    "city": "Kongens Lyngby",
+    "country": "Denmark"
+  },
+  "Technical University of Dresden": {
+    "lat": 51.028,
+    "lng": 13.7267,
+    "city": "Dresden",
+    "country": "Germany"
+  },
+  "Technical University of Košice": {
+    "lat": 48.7312,
+    "lng": 21.2446,
+    "city": "Košice",
+    "country": "Slovakia"
+  },
+  "Technical University of Moldova": {
+    "lat": 47.0572,
+    "lng": 28.8034,
+    "city": "Chișinău",
+    "country": "Moldova"
+  },
+  "Technical University of Munich": {
+    "lat": 48.2628,
+    "lng": 11.6672,
+    "city": "Munich",
+    "country": "Germany"
+  },
+  "Technical University of Sofia": {
+    "lat": 42.6576,
+    "lng": 23.3532,
+    "city": "Sofia",
+    "country": "Bulgaria"
+  },
+  "Tel Aviv University": {
+    "lat": 32.1133,
+    "lng": 34.8055,
+    "city": "Tel Aviv",
+    "country": "Israel"
+  },
+  "The Earlham Institute": {
+    "lat": 52.6219,
+    "lng": 1.2187,
+    "city": "Norwich",
+    "country": "UK"
+  },
+  "The Sainsbury Laboratory": {
+    "lat": 52.6219,
+    "lng": 1.2187,
+    "city": "Norwich",
+    "country": "UK"
+  },
+  "Tomsk State University": {
+    "lat": 56.4685,
+    "lng": 84.9483,
+    "city": "Tomsk",
+    "country": "Russia"
+  },
+  "Transylvania University of Brașov": {
+    "lat": 45.6519,
+    "lng": 25.5909,
+    "city": "Brașov",
+    "country": "Romania"
+  },
+  "Trinity College Dublin": {
+    "lat": 53.3438,
+    "lng": -6.2546,
+    "city": "Dublin",
+    "country": "Ireland"
+  },
+  "Turkmen Agricultural University": {
+    "lat": 37.9116,
+    "lng": 58.3884,
+    "city": "Ashgabat",
+    "country": "Turkmenistan"
+  },
+  "Turkmen State Medical University": {
+    "lat": 37.96,
+    "lng": 58.326,
+    "city": "Ashgabat",
+    "country": "Turkmenistan"
+  },
+  "UC Berkeley": {
+    "lat": 37.8719,
+    "lng": -122.2585,
+    "city": "Berkeley",
+    "country": "USA"
+  },
+  "UC San Diego": {
+    "lat": 32.8801,
+    "lng": -117.234,
+    "city": "San Diego",
+    "country": "USA"
+  },
+  "UMass Chan Medical School": {
+    "lat": 42.2783,
+    "lng": -71.7595,
+    "city": "Worcester",
+    "country": "USA"
+  },
+  "Umeå University": {
+    "lat": 63.8205,
+    "lng": 20.3073,
+    "city": "Umeå",
+    "country": "Sweden"
+  },
+  "University College Cork": {
+    "lat": 51.8939,
+    "lng": -8.4919,
+    "city": "Cork",
+    "country": "Ireland"
+  },
+  "University College Dublin": {
+    "lat": 53.3074,
+    "lng": -6.219,
+    "city": "Dublin",
+    "country": "Ireland"
+  },
+  "University College London": {
+    "lat": 51.5246,
+    "lng": -0.134,
+    "city": "London",
+    "country": "UK"
+  },
+  "University Medical Center Groningen": {
+    "lat": 53.2194,
+    "lng": 6.5665,
+    "city": "Groningen",
+    "country": "Netherlands"
+  },
+  "University of Aberdeen": {
+    "lat": 57.1648,
+    "lng": -2.1015,
+    "city": "Aberdeen",
+    "country": "UK"
+  },
+  "University of Adelaide": {
+    "lat": -34.9209,
+    "lng": 138.6057,
+    "city": "Adelaide",
+    "country": "Australia"
+  },
+  "University of Alberta": {
+    "lat": 53.5232,
+    "lng": -113.5263,
+    "city": "Edmonton",
+    "country": "Canada"
+  },
+  "University of Amsterdam": {
+    "lat": 52.3559,
+    "lng": 4.9558,
+    "city": "Amsterdam",
+    "country": "Netherlands"
+  },
+  "University of Antwerp": {
+    "lat": 51.1642,
+    "lng": 4.4089,
+    "city": "Antwerp",
+    "country": "Belgium"
+  },
+  "University of Arizona": {
+    "lat": 32.2319,
+    "lng": -110.9501,
+    "city": "Tucson",
+    "country": "USA"
+  },
+  "University of Arts": {
+    "lat": 41.3239,
+    "lng": 19.8196,
+    "city": "Tirana",
+    "country": "Albania"
+  },
+  "University of Athens": {
+    "lat": 37.968,
+    "lng": 23.7795,
+    "city": "Athens",
+    "country": "Greece"
+  },
+  "University of Auckland": {
+    "lat": -36.8523,
+    "lng": 174.7691,
+    "city": "Auckland",
+    "country": "New Zealand"
+  },
+  "University of Aveiro": {
+    "lat": 40.6309,
+    "lng": -8.6575,
+    "city": "Aveiro",
+    "country": "Portugal"
+  },
+  "University of Banja Luka": {
+    "lat": 44.7645,
+    "lng": 17.1897,
+    "city": "Banja Luka",
+    "country": "Bosnia and Herzegovina"
+  },
+  "University of Barcelona": {
+    "lat": 41.3871,
+    "lng": 2.1639,
+    "city": "Barcelona",
+    "country": "Spain"
+  },
+  "University of Bari": {
+    "lat": 41.1081,
+    "lng": 16.8783,
+    "city": "Bari",
+    "country": "Italy"
+  },
+  "University of Basel": {
+    "lat": 47.5596,
+    "lng": 7.5886,
+    "city": "Basel",
+    "country": "Switzerland"
+  },
+  "University of Belgrade": {
+    "lat": 44.8176,
+    "lng": 20.4569,
+    "city": "Belgrade",
+    "country": "Serbia"
+  },
+  "University of Bergen": {
+    "lat": 60.3879,
+    "lng": 5.3213,
+    "city": "Bergen",
+    "country": "Norway"
+  },
+  "University of Bern": {
+    "lat": 46.9511,
+    "lng": 7.4386,
+    "city": "Bern",
+    "country": "Switzerland"
+  },
+  "University of Białystok": {
+    "lat": 53.1172,
+    "lng": 23.147,
+    "city": "Białystok",
+    "country": "Poland"
+  },
+  "University of Birmingham": {
+    "lat": 52.4508,
+    "lng": -1.9305,
+    "city": "Birmingham",
+    "country": "UK"
+  },
+  "University of Bitola": {
+    "lat": 41.0297,
+    "lng": 21.3351,
+    "city": "Bitola",
+    "country": "North Macedonia"
+  },
+  "University of Bologna": {
+    "lat": 44.4966,
+    "lng": 11.3526,
+    "city": "Bologna",
+    "country": "Italy"
+  },
+  "University of Bonn": {
+    "lat": 50.7267,
+    "lng": 7.0863,
+    "city": "Bonn",
+    "country": "Germany"
+  },
+  "University of Bordeaux": {
+    "lat": 44.8289,
+    "lng": -0.6073,
+    "city": "Bordeaux",
+    "country": "France"
+  },
+  "University of Bristol": {
+    "lat": 51.4584,
+    "lng": -2.603,
+    "city": "Bristol",
+    "country": "UK"
+  },
+  "University of British Columbia": {
+    "lat": 49.2606,
+    "lng": -123.246,
+    "city": "Vancouver",
+    "country": "Canada"
+  },
+  "University of Bucharest": {
+    "lat": 44.4353,
+    "lng": 26.0995,
+    "city": "Bucharest",
+    "country": "Romania"
+  },
+  "University of Calgary": {
+    "lat": 51.0781,
+    "lng": -114.1319,
+    "city": "Calgary",
+    "country": "Canada"
+  },
+  "University of California, Berkeley": {
+    "lat": 37.8719,
+    "lng": -122.2585,
+    "city": "Berkeley",
+    "country": "USA"
+  },
+  "University of California, Davis": {
+    "lat": 38.5382,
+    "lng": -121.7617,
+    "city": "Davis",
+    "country": "USA"
+  },
+  "University of California, Riverside": {
+    "lat": 33.9737,
+    "lng": -117.3281,
+    "city": "Riverside",
+    "country": "USA"
+  },
+  "University of California, San Diego": {
+    "lat": 32.8801,
+    "lng": -117.234,
+    "city": "San Diego",
+    "country": "USA"
+  },
+  "University of California, Santa Cruz": {
+    "lat": 36.9916,
+    "lng": -122.0583,
+    "city": "Santa Cruz",
+    "country": "USA"
+  },
+  "University of Cambridge": {
+    "lat": 52.2043,
+    "lng": 0.1149,
+    "city": "Cambridge",
+    "country": "UK"
+  },
+  "University of Cape Town": {
+    "lat": -33.9577,
+    "lng": 18.4612,
+    "city": "Cape Town",
+    "country": "South Africa"
+  },
+  "University of Catania": {
+    "lat": 37.5021,
+    "lng": 15.0831,
+    "city": "Catania",
+    "country": "Italy"
+  },
+  "University of Chemistry and Technology Prague": {
+    "lat": 50.1014,
+    "lng": 14.3913,
+    "city": "Prague",
+    "country": "Czech Republic"
+  },
+  "University of Chicago": {
+    "lat": 41.7886,
+    "lng": -87.5987,
+    "city": "Chicago",
+    "country": "USA"
+  },
+  "University of Coimbra": {
+    "lat": 40.2073,
+    "lng": -8.424,
+    "city": "Coimbra",
+    "country": "Portugal"
+  },
+  "University of Cologne": {
+    "lat": 50.9279,
+    "lng": 6.9282,
+    "city": "Cologne",
+    "country": "Germany"
+  },
+  "University of Colorado Boulder": {
+    "lat": 40.0076,
+    "lng": -105.2659,
+    "city": "Boulder",
+    "country": "USA"
+  },
+  "University of Connecticut": {
+    "lat": 41.8077,
+    "lng": -72.254,
+    "city": "Storrs",
+    "country": "USA"
+  },
+  "University of Copenhagen": {
+    "lat": 55.6802,
+    "lng": 12.572,
+    "city": "Copenhagen",
+    "country": "Denmark"
+  },
+  "University of Craiova": {
+    "lat": 44.318,
+    "lng": 23.8017,
+    "city": "Craiova",
+    "country": "Romania"
+  },
+  "University of Crete": {
+    "lat": 35.3053,
+    "lng": 25.0709,
+    "city": "Heraklion",
+    "country": "Greece"
+  },
+  "University of Debrecen": {
+    "lat": 47.5539,
+    "lng": 21.6215,
+    "city": "Debrecen",
+    "country": "Hungary"
+  },
+  "University of Donja Gorica": {
+    "lat": 42.3909,
+    "lng": 19.2108,
+    "city": "Podgorica",
+    "country": "Montenegro"
+  },
+  "University of Dundee": {
+    "lat": 56.4583,
+    "lng": -2.9824,
+    "city": "Dundee",
+    "country": "UK"
+  },
+  "University of Edinburgh": {
+    "lat": 55.9445,
+    "lng": -3.1892,
+    "city": "Edinburgh",
+    "country": "UK"
+  },
+  "University of Erlangen-Nuremberg": {
+    "lat": 49.5974,
+    "lng": 11.0045,
+    "city": "Erlangen",
+    "country": "Germany"
+  },
+  "University of Exeter": {
+    "lat": 50.7372,
+    "lng": -3.5351,
+    "city": "Exeter",
+    "country": "UK"
+  },
+  "University of Florence": {
+    "lat": 43.7793,
+    "lng": 11.2477,
+    "city": "Florence",
+    "country": "Italy"
+  },
+  "University of Florida": {
+    "lat": 29.6436,
+    "lng": -82.3549,
+    "city": "Gainesville",
+    "country": "USA"
+  },
+  "University of Freiburg": {
+    "lat": 48.0097,
+    "lng": 7.857,
+    "city": "Freiburg",
+    "country": "Germany"
+  },
+  "University of Fribourg": {
+    "lat": 46.8065,
+    "lng": 7.1618,
+    "city": "Fribourg",
+    "country": "Switzerland"
+  },
+  "University of Gdańsk": {
+    "lat": 54.4135,
+    "lng": 18.578,
+    "city": "Gdańsk",
+    "country": "Poland"
+  },
+  "University of Geneva": {
+    "lat": 46.1985,
+    "lng": 6.1404,
+    "city": "Geneva",
+    "country": "Switzerland"
+  },
+  "University of Genoa": {
+    "lat": 44.4155,
+    "lng": 8.9691,
+    "city": "Genoa",
+    "country": "Italy"
+  },
+  "University of Georgia": {
+    "lat": 33.948,
+    "lng": -83.3773,
+    "city": "Athens",
+    "country": "USA"
+  },
+  "University of Glasgow": {
+    "lat": 55.8724,
+    "lng": -4.29,
+    "city": "Glasgow",
+    "country": "UK"
+  },
+  "University of Gothenburg": {
+    "lat": 57.6962,
+    "lng": 11.9819,
+    "city": "Gothenburg",
+    "country": "Sweden"
+  },
+  "University of Granada": {
+    "lat": 37.1811,
+    "lng": -3.6065,
+    "city": "Granada",
+    "country": "Spain"
+  },
+  "University of Greifswald": {
+    "lat": 54.0865,
+    "lng": 13.3923,
+    "city": "Greifswald",
+    "country": "Germany"
+  },
+  "University of Grenoble Alpes": {
+    "lat": 45.1875,
+    "lng": 5.7592,
+    "city": "Grenoble",
+    "country": "France"
+  },
+  "University of Groningen": {
+    "lat": 53.2194,
+    "lng": 6.5665,
+    "city": "Groningen",
+    "country": "Netherlands"
+  },
+  "University of Groningen (previously Max Planck Institute)": {
+    "lat": 53.2194,
+    "lng": 6.5665,
+    "city": "Groningen",
+    "country": "Netherlands"
+  },
+  "University of Göttingen": {
+    "lat": 51.5413,
+    "lng": 9.939,
+    "city": "Göttingen",
+    "country": "Germany"
+  },
+  "University of Hamburg": {
+    "lat": 53.5663,
+    "lng": 9.9845,
+    "city": "Hamburg",
+    "country": "Germany"
+  },
+  "University of Helsinki": {
+    "lat": 60.1699,
+    "lng": 24.9384,
+    "city": "Helsinki",
+    "country": "Finland"
+  },
+  "University of Iceland": {
+    "lat": 64.1402,
+    "lng": -21.9501,
+    "city": "Reykjavik",
+    "country": "Iceland"
+  },
+  "University of Illinois": {
+    "lat": 40.102,
+    "lng": -88.2272,
+    "city": "Urbana-Champaign",
+    "country": "USA"
+  },
+  "University of Ioannina": {
+    "lat": 39.6203,
+    "lng": 20.8373,
+    "city": "Ioannina",
+    "country": "Greece"
+  },
+  "University of Kragujevac": {
+    "lat": 44.0107,
+    "lng": 20.9113,
+    "city": "Kragujevac",
+    "country": "Serbia"
+  },
+  "University of Latvia": {
+    "lat": 56.9511,
+    "lng": 24.1163,
+    "city": "Riga",
+    "country": "Latvia"
+  },
+  "University of Lausanne": {
+    "lat": 46.5233,
+    "lng": 6.5791,
+    "city": "Lausanne",
+    "country": "Switzerland"
+  },
+  "University of Leeds": {
+    "lat": 53.8067,
+    "lng": -1.555,
+    "city": "Leeds",
+    "country": "UK"
+  },
+  "University of Leipzig": {
+    "lat": 51.3389,
+    "lng": 12.3786,
+    "city": "Leipzig",
+    "country": "Germany"
+  },
+  "University of Lille": {
+    "lat": 50.6099,
+    "lng": 3.1373,
+    "city": "Lille",
+    "country": "France"
+  },
+  "University of Lisbon": {
+    "lat": 38.7525,
+    "lng": -9.1579,
+    "city": "Lisbon",
+    "country": "Portugal"
+  },
+  "University of Liverpool": {
+    "lat": 53.4048,
+    "lng": -2.9653,
+    "city": "Liverpool",
+    "country": "UK"
+  },
+  "University of Liège": {
+    "lat": 50.5856,
+    "lng": 5.5609,
+    "city": "Liège",
+    "country": "Belgium"
+  },
+  "University of Ljubljana": {
+    "lat": 46.0499,
+    "lng": 14.5039,
+    "city": "Ljubljana",
+    "country": "Slovenia"
+  },
+  "University of Lugano": {
+    "lat": 46.0104,
+    "lng": 8.9581,
+    "city": "Lugano",
+    "country": "Switzerland"
+  },
+  "University of Luxembourg": {
+    "lat": 49.6267,
+    "lng": 6.1583,
+    "city": "Luxembourg",
+    "country": "Luxembourg"
+  },
+  "University of Lyon": {
+    "lat": 45.764,
+    "lng": 4.8357,
+    "city": "Lyon",
+    "country": "France"
+  },
+  "University of Mainz": {
+    "lat": 49.9912,
+    "lng": 8.2372,
+    "city": "Mainz",
+    "country": "Germany"
+  },
+  "University of Manchester": {
+    "lat": 53.4668,
+    "lng": -2.2339,
+    "city": "Manchester",
+    "country": "UK"
+  },
+  "University of Maribor": {
+    "lat": 46.5588,
+    "lng": 15.6382,
+    "city": "Maribor",
+    "country": "Slovenia"
+  },
+  "University of Marseille": {
+    "lat": 43.3047,
+    "lng": 5.3765,
+    "city": "Marseille",
+    "country": "France"
+  },
+  "University of Maryland": {
+    "lat": 38.9869,
+    "lng": -76.9426,
+    "city": "College Park",
+    "country": "USA"
+  },
+  "University of Medicine and Pharmacy Bucharest": {
+    "lat": 44.4515,
+    "lng": 26.0877,
+    "city": "Bucharest",
+    "country": "Romania"
+  },
+  "University of Melbourne": {
+    "lat": -37.7983,
+    "lng": 144.961,
+    "city": "Melbourne",
+    "country": "Australia"
+  },
+  "University of Michigan": {
+    "lat": 42.278,
+    "lng": -83.7382,
+    "city": "Ann Arbor",
+    "country": "USA"
+  },
+  "University of Milan": {
+    "lat": 45.4773,
+    "lng": 9.1815,
+    "city": "Milan",
+    "country": "Italy"
+  },
+  "University of Minho": {
+    "lat": 41.5608,
+    "lng": -8.3976,
+    "city": "Braga",
+    "country": "Portugal"
+  },
+  "University of Minnesota": {
+    "lat": 44.9778,
+    "lng": -93.265,
+    "city": "Minneapolis",
+    "country": "USA"
+  },
+  "University of Montenegro": {
+    "lat": 42.4415,
+    "lng": 19.2622,
+    "city": "Podgorica",
+    "country": "Montenegro"
+  },
+  "University of Montpellier": {
+    "lat": 43.6319,
+    "lng": 3.8645,
+    "city": "Montpellier",
+    "country": "France"
+  },
+  "University of Mostar": {
+    "lat": 43.3388,
+    "lng": 17.8072,
+    "city": "Mostar",
+    "country": "Bosnia and Herzegovina"
+  },
+  "University of Münster": {
+    "lat": 51.9635,
+    "lng": 7.613,
+    "city": "Münster",
+    "country": "Germany"
+  },
+  "University of Nantes": {
+    "lat": 47.2457,
+    "lng": -1.5475,
+    "city": "Nantes",
+    "country": "France"
+  },
+  "University of Naples Federico II": {
+    "lat": 40.8471,
+    "lng": 14.255,
+    "city": "Naples",
+    "country": "Italy"
+  },
+  "University of Navarra": {
+    "lat": 42.8036,
+    "lng": -1.6601,
+    "city": "Pamplona",
+    "country": "Spain"
+  },
+  "University of Neuchâtel": {
+    "lat": 46.9969,
+    "lng": 6.9388,
+    "city": "Neuchâtel",
+    "country": "Switzerland"
+  },
+  "University of New South Wales": {
+    "lat": -33.9173,
+    "lng": 151.2313,
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  "University of Nice Sophia Antipolis": {
+    "lat": 43.6163,
+    "lng": 7.0715,
+    "city": "Nice",
+    "country": "France"
+  },
+  "University of Niš": {
+    "lat": 43.3209,
+    "lng": 21.8959,
+    "city": "Niš",
+    "country": "Serbia"
+  },
+  "University of North Carolina": {
+    "lat": 35.9049,
+    "lng": -79.0469,
+    "city": "Chapel Hill",
+    "country": "USA"
+  },
+  "University of Nottingham": {
+    "lat": 52.9388,
+    "lng": -1.1981,
+    "city": "Nottingham",
+    "country": "UK"
+  },
+  "University of Nova Gorica": {
+    "lat": 45.9573,
+    "lng": 13.6456,
+    "city": "Nova Gorica",
+    "country": "Slovenia"
+  },
+  "University of Novi Sad": {
+    "lat": 45.2469,
+    "lng": 19.8515,
+    "city": "Novi Sad",
+    "country": "Serbia"
+  },
+  "University of Oradea": {
+    "lat": 47.0458,
+    "lng": 21.9189,
+    "city": "Oradea",
+    "country": "Romania"
+  },
+  "University of Oregon": {
+    "lat": 44.0448,
+    "lng": -123.0726,
+    "city": "Eugene",
+    "country": "USA"
+  },
+  "University of Osijek": {
+    "lat": 45.5597,
+    "lng": 18.6783,
+    "city": "Osijek",
+    "country": "Croatia"
+  },
+  "University of Oslo": {
+    "lat": 59.9139,
+    "lng": 10.7522,
+    "city": "Oslo",
+    "country": "Norway"
+  },
+  "University of Otago": {
+    "lat": -45.8665,
+    "lng": 170.5179,
+    "city": "Dunedin",
+    "country": "New Zealand"
+  },
+  "University of Ottawa": {
+    "lat": 45.4231,
+    "lng": -75.6831,
+    "city": "Ottawa",
+    "country": "Canada"
+  },
+  "University of Oulu": {
+    "lat": 65.0593,
+    "lng": 25.4663,
+    "city": "Oulu",
+    "country": "Finland"
+  },
+  "University of Oxford": {
+    "lat": 51.7548,
+    "lng": -1.2544,
+    "city": "Oxford",
+    "country": "UK"
+  },
+  "University of Padua": {
+    "lat": 45.4064,
+    "lng": 11.8768,
+    "city": "Padua",
+    "country": "Italy"
+  },
+  "University of Palermo": {
+    "lat": 38.1121,
+    "lng": 13.3515,
+    "city": "Palermo",
+    "country": "Italy"
+  },
+  "University of Paris": {
+    "lat": 48.8566,
+    "lng": 2.3522,
+    "city": "Paris",
+    "country": "France"
+  },
+  "University of Patras": {
+    "lat": 38.2889,
+    "lng": 21.7862,
+    "city": "Patras",
+    "country": "Greece"
+  },
+  "University of Pennsylvania": {
+    "lat": 39.9522,
+    "lng": -75.1932,
+    "city": "Philadelphia",
+    "country": "USA"
+  },
+  "University of Petroșani": {
+    "lat": 45.4129,
+    "lng": 23.373,
+    "city": "Petroșani",
+    "country": "Romania"
+  },
+  "University of Pisa": {
+    "lat": 43.717,
+    "lng": 10.3982,
+    "city": "Pisa",
+    "country": "Italy"
+  },
+  "University of Pitești": {
+    "lat": 44.8545,
+    "lng": 24.8692,
+    "city": "Pitești",
+    "country": "Romania"
+  },
+  "University of Pittsburgh": {
+    "lat": 40.4444,
+    "lng": -79.9608,
+    "city": "Pittsburgh",
+    "country": "USA"
+  },
+  "University of Porto": {
+    "lat": 41.178,
+    "lng": -8.598,
+    "city": "Porto",
+    "country": "Portugal"
+  },
+  "University of Potsdam": {
+    "lat": 52.4009,
+    "lng": 13.0119,
+    "city": "Potsdam",
+    "country": "Germany"
+  },
+  "University of Primorska": {
+    "lat": 45.5484,
+    "lng": 13.7303,
+    "city": "Koper",
+    "country": "Slovenia"
+  },
+  "University of Pécs": {
+    "lat": 46.0769,
+    "lng": 18.2288,
+    "city": "Pécs",
+    "country": "Hungary"
+  },
+  "University of Queensland": {
+    "lat": -27.4975,
+    "lng": 153.0137,
+    "city": "Brisbane",
+    "country": "Australia"
+  },
+  "University of Rennes": {
+    "lat": 48.1173,
+    "lng": -1.6386,
+    "city": "Rennes",
+    "country": "France"
+  },
+  "University of Rijeka": {
+    "lat": 45.3281,
+    "lng": 14.4408,
+    "city": "Rijeka",
+    "country": "Croatia"
+  },
+  "University of Rome La Sapienza": {
+    "lat": 41.9033,
+    "lng": 12.514,
+    "city": "Rome",
+    "country": "Italy"
+  },
+  "University of Rzeszów": {
+    "lat": 50.032,
+    "lng": 22.0046,
+    "city": "Rzeszów",
+    "country": "Poland"
+  },
+  "University of Salamanca": {
+    "lat": 40.9615,
+    "lng": -5.6676,
+    "city": "Salamanca",
+    "country": "Spain"
+  },
+  "University of Santiago de Compostela": {
+    "lat": 42.874,
+    "lng": -8.551,
+    "city": "Santiago de Compostela",
+    "country": "Spain"
+  },
+  "University of Sarajevo": {
+    "lat": 43.8563,
+    "lng": 18.395,
+    "city": "Sarajevo",
+    "country": "Bosnia and Herzegovina"
+  },
+  "University of Seville": {
+    "lat": 37.3809,
+    "lng": -5.9911,
+    "city": "Seville",
+    "country": "Spain"
+  },
+  "University of Sheffield": {
+    "lat": 53.3811,
+    "lng": -1.4884,
+    "city": "Sheffield",
+    "country": "UK"
+  },
+  "University of Silesia": {
+    "lat": 50.2877,
+    "lng": 18.6766,
+    "city": "Katowice",
+    "country": "Poland"
+  },
+  "University of Skopje": {
+    "lat": 41.9981,
+    "lng": 21.4254,
+    "city": "Skopje",
+    "country": "North Macedonia"
+  },
+  "University of Sofia": {
+    "lat": 42.6744,
+    "lng": 23.3306,
+    "city": "Sofia",
+    "country": "Bulgaria"
+  },
+  "University of South Bohemia": {
+    "lat": 48.9762,
+    "lng": 14.4533,
+    "city": "České Budějovice",
+    "country": "Czech Republic"
+  },
+  "University of Southampton": {
+    "lat": 50.9344,
+    "lng": -1.3965,
+    "city": "Southampton",
+    "country": "UK"
+  },
+  "University of Southern Denmark": {
+    "lat": 55.3678,
+    "lng": 10.4281,
+    "city": "Odense",
+    "country": "Denmark"
+  },
+  "University of Split": {
+    "lat": 43.5126,
+    "lng": 16.4681,
+    "city": "Split",
+    "country": "Croatia"
+  },
+  "University of St Andrews": {
+    "lat": 56.3398,
+    "lng": -2.7967,
+    "city": "St Andrews",
+    "country": "UK"
+  },
+  "University of St. Gallen": {
+    "lat": 47.4313,
+    "lng": 9.3756,
+    "city": "St. Gallen",
+    "country": "Switzerland"
+  },
+  "University of Stirling": {
+    "lat": 56.1462,
+    "lng": -3.9178,
+    "city": "Stirling",
+    "country": "UK"
+  },
+  "University of Strasbourg": {
+    "lat": 48.5814,
+    "lng": 7.7621,
+    "city": "Strasbourg",
+    "country": "France"
+  },
+  "University of Stuttgart": {
+    "lat": 48.745,
+    "lng": 9.1066,
+    "city": "Stuttgart",
+    "country": "Germany"
+  },
+  "University of Sussex": {
+    "lat": 50.8682,
+    "lng": -0.0877,
+    "city": "Brighton",
+    "country": "UK"
+  },
+  "University of Sydney": {
+    "lat": -33.8886,
+    "lng": 151.1873,
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  "University of Szeged": {
+    "lat": 46.2499,
+    "lng": 20.1487,
+    "city": "Szeged",
+    "country": "Hungary"
+  },
+  "University of Tartu": {
+    "lat": 58.3806,
+    "lng": 26.7199,
+    "city": "Tartu",
+    "country": "Estonia"
+  },
+  "University of Tennessee Health Science Center": {
+    "lat": 35.1414,
+    "lng": -90.0327,
+    "city": "Memphis",
+    "country": "USA"
+  },
+  "University of Tetovo": {
+    "lat": 42.0069,
+    "lng": 20.9715,
+    "city": "Tetovo",
+    "country": "North Macedonia"
+  },
+  "University of Texas": {
+    "lat": 30.2849,
+    "lng": -97.7341,
+    "city": "Austin",
+    "country": "USA"
+  },
+  "University of Tirana": {
+    "lat": 41.3186,
+    "lng": 19.8213,
+    "city": "Tirana",
+    "country": "Albania"
+  },
+  "University of Tokyo": {
+    "lat": 35.7126,
+    "lng": 139.7619,
+    "city": "Tokyo",
+    "country": "Japan"
+  },
+  "University of Toronto": {
+    "lat": 43.6629,
+    "lng": -79.3957,
+    "city": "Toronto",
+    "country": "Canada"
+  },
+  "University of Toulouse": {
+    "lat": 43.5605,
+    "lng": 1.4628,
+    "city": "Toulouse",
+    "country": "France"
+  },
+  "University of Trento": {
+    "lat": 46.0664,
+    "lng": 11.1509,
+    "city": "Trento",
+    "country": "Italy"
+  },
+  "University of Trieste": {
+    "lat": 45.6554,
+    "lng": 13.7966,
+    "city": "Trieste",
+    "country": "Italy"
+  },
+  "University of Tromsø": {
+    "lat": 69.6809,
+    "lng": 18.9778,
+    "city": "Tromsø",
+    "country": "Norway"
+  },
+  "University of Turin": {
+    "lat": 45.0653,
+    "lng": 7.6996,
+    "city": "Turin",
+    "country": "Italy"
+  },
+  "University of Turku": {
+    "lat": 60.4545,
+    "lng": 22.2881,
+    "city": "Turku",
+    "country": "Finland"
+  },
+  "University of Tuzla": {
+    "lat": 44.5408,
+    "lng": 18.667,
+    "city": "Tuzla",
+    "country": "Bosnia and Herzegovina"
+  },
+  "University of Tübingen": {
+    "lat": 48.5279,
+    "lng": 9.0439,
+    "city": "Tübingen",
+    "country": "Germany"
+  },
+  "University of Utah": {
+    "lat": 40.7649,
+    "lng": -111.8421,
+    "city": "Salt Lake City",
+    "country": "USA"
+  },
+  "University of Valencia": {
+    "lat": 39.4798,
+    "lng": -0.3595,
+    "city": "Valencia",
+    "country": "Spain"
+  },
+  "University of Venice": {
+    "lat": 45.4352,
+    "lng": 12.321,
+    "city": "Venice",
+    "country": "Italy"
+  },
+  "University of Vienna": {
+    "lat": 48.2132,
+    "lng": 16.36,
+    "city": "Vienna",
+    "country": "Austria"
+  },
+  "University of Virginia": {
+    "lat": 38.0336,
+    "lng": -78.508,
+    "city": "Charlottesville",
+    "country": "USA"
+  },
+  "University of Warmia and Mazury": {
+    "lat": 53.7594,
+    "lng": 20.456,
+    "city": "Olsztyn",
+    "country": "Poland"
+  },
+  "University of Warsaw": {
+    "lat": 52.2407,
+    "lng": 21.0186,
+    "city": "Warsaw",
+    "country": "Poland"
+  },
+  "University of Warwick": {
+    "lat": 52.3793,
+    "lng": -1.5615,
+    "city": "Coventry",
+    "country": "UK"
+  },
+  "University of Washington": {
+    "lat": 47.6553,
+    "lng": -122.3035,
+    "city": "Seattle",
+    "country": "USA"
+  },
+  "University of Waterloo": {
+    "lat": 43.4723,
+    "lng": -80.5449,
+    "city": "Waterloo",
+    "country": "Canada"
+  },
+  "University of West Bohemia": {
+    "lat": 49.727,
+    "lng": 13.3518,
+    "city": "Plzeň",
+    "country": "Czech Republic"
+  },
+  "University of Western Australia": {
+    "lat": -31.9797,
+    "lng": 115.8176,
+    "city": "Perth",
+    "country": "Australia"
+  },
+  "University of Wisconsin": {
+    "lat": 43.0766,
+    "lng": -89.4125,
+    "city": "Madison",
+    "country": "USA"
+  },
+  "University of Wrocław": {
+    "lat": 51.1141,
+    "lng": 17.034,
+    "city": "Wrocław",
+    "country": "Poland"
+  },
+  "University of Würzburg": {
+    "lat": 49.7878,
+    "lng": 9.9358,
+    "city": "Würzburg",
+    "country": "Germany"
+  },
+  "University of York": {
+    "lat": 53.9461,
+    "lng": -1.0518,
+    "city": "York",
+    "country": "UK"
+  },
+  "University of Zagreb": {
+    "lat": 45.8103,
+    "lng": 15.9704,
+    "city": "Zagreb",
+    "country": "Croatia"
+  },
+  "University of Zaragoza": {
+    "lat": 41.6437,
+    "lng": -0.8977,
+    "city": "Zaragoza",
+    "country": "Spain"
+  },
+  "University of Zurich": {
+    "lat": 47.3744,
+    "lng": 8.551,
+    "city": "Zurich",
+    "country": "Switzerland"
+  },
+  "University of the Algarve": {
+    "lat": 37.0426,
+    "lng": -7.9706,
+    "city": "Faro",
+    "country": "Portugal"
+  },
+  "University of the Basque Country": {
+    "lat": 43.3076,
+    "lng": -2.9827,
+    "city": "Bilbao",
+    "country": "Spain"
+  },
+  "University of the Witwatersrand": {
+    "lat": -26.1917,
+    "lng": 28.0306,
+    "city": "Johannesburg",
+    "country": "South Africa"
+  },
+  "University of Łódź": {
+    "lat": 51.7769,
+    "lng": 19.453,
+    "city": "Łódź",
+    "country": "Poland"
+  },
+  "University of Žilina": {
+    "lat": 49.2064,
+    "lng": 18.7588,
+    "city": "Žilina",
+    "country": "Slovakia"
+  },
+  "Universität Greifswald": {
+    "lat": 54.0865,
+    "lng": 13.3923,
+    "city": "Greifswald",
+    "country": "Germany"
+  },
+  "Université Paris-Saclay, CNRS, INRIA": {
+    "lat": 48.7146,
+    "lng": 2.1663,
+    "city": "Orsay",
+    "country": "France"
+  },
+  "Université catholique de Louvain": {
+    "lat": 50.6698,
+    "lng": 4.6125,
+    "city": "Louvain-la-Neuve",
+    "country": "Belgium"
+  },
+  "Unknown": {
+    "lat": 0,
+    "lng": 0,
+    "city": "Unknown",
+    "country": "Unknown"
+  },
+  "Uppsala University": {
+    "lat": 59.8586,
+    "lng": 17.6389,
+    "city": "Uppsala",
+    "country": "Sweden"
+  },
+  "Ural Federal University": {
+    "lat": 56.8431,
+    "lng": 60.653,
+    "city": "Yekaterinburg",
+    "country": "Russia"
+  },
+  "Utrecht University": {
+    "lat": 52.0907,
+    "lng": 5.1214,
+    "city": "Utrecht",
+    "country": "Netherlands"
+  },
+  "V. N. Karazin Kharkiv National University": {
+    "lat": 50.0039,
+    "lng": 36.2284,
+    "city": "Kharkiv",
+    "country": "Ukraine"
+  },
+  "Valahia University": {
+    "lat": 44.9247,
+    "lng": 25.4571,
+    "city": "Târgoviște",
+    "country": "Romania"
+  },
+  "Vanderbilt University": {
+    "lat": 36.1445,
+    "lng": -86.8027,
+    "city": "Nashville",
+    "country": "USA"
+  },
+  "Vilnius Gediminas Technical University": {
+    "lat": 54.7052,
+    "lng": 25.2691,
+    "city": "Vilnius",
+    "country": "Lithuania"
+  },
+  "Vilnius University": {
+    "lat": 54.6827,
+    "lng": 25.2879,
+    "city": "Vilnius",
+    "country": "Lithuania"
+  },
+  "Vilnius University Life Sciences Center": {
+    "lat": 54.6872,
+    "lng": 25.2797,
+    "city": "Vilnius",
+    "country": "Lithuania"
+  },
+  "Vinnytsia National Technical University": {
+    "lat": 49.2352,
+    "lng": 28.414,
+    "city": "Vinnytsia",
+    "country": "Ukraine"
+  },
+  "Vrije Universiteit Amsterdam": {
+    "lat": 52.334,
+    "lng": 4.8655,
+    "city": "Amsterdam",
+    "country": "Netherlands"
+  },
+  "Vrije Universiteit Brussel": {
+    "lat": 50.8225,
+    "lng": 4.3941,
+    "city": "Brussels",
+    "country": "Belgium"
+  },
+  "Vytautas Magnus University": {
+    "lat": 54.904,
+    "lng": 23.962,
+    "city": "Kaunas",
+    "country": "Lithuania"
+  },
+  "Wageningen University": {
+    "lat": 51.9851,
+    "lng": 5.6642,
+    "city": "Wageningen",
+    "country": "Netherlands"
+  },
+  "Warsaw University of Technology": {
+    "lat": 52.22,
+    "lng": 21.0107,
+    "city": "Warsaw",
+    "country": "Poland"
+  },
+  "Washington University in St. Louis": {
+    "lat": 38.6488,
+    "lng": -90.3108,
+    "city": "St. Louis",
+    "country": "USA"
+  },
+  "Weizmann Institute of Science": {
+    "lat": 31.9071,
+    "lng": 34.8098,
+    "city": "Rehovot",
+    "country": "Israel"
+  },
+  "Wellcome Sanger Institute": {
+    "lat": 52.0833,
+    "lng": 0.1833,
+    "city": "Hinxton",
+    "country": "UK"
+  },
+  "West University of Timișoara": {
+    "lat": 45.7471,
+    "lng": 21.2306,
+    "city": "Timișoara",
+    "country": "Romania"
+  },
+  "Westminster International University in Tashkent": {
+    "lat": 41.3415,
+    "lng": 69.2649,
+    "city": "Tashkent",
+    "country": "Uzbekistan"
+  },
+  "Wuhan Technology and Business University": {
+    "lat": 30.5928,
+    "lng": 114.3055,
+    "city": "Wuhan",
+    "country": "China"
+  },
+  "Yale University": {
+    "lat": 41.3163,
+    "lng": -72.9223,
+    "city": "New Haven",
+    "country": "USA"
+  },
+  "Yerevan State Medical University": {
+    "lat": 40.1823,
+    "lng": 44.5163,
+    "city": "Yerevan",
+    "country": "Armenia"
+  },
+  "Yerevan State University": {
+    "lat": 40.1837,
+    "lng": 44.5149,
+    "city": "Yerevan",
+    "country": "Armenia"
+  },
+  "Yuriy Fedkovych Chernivtsi National University": {
+    "lat": 48.2966,
+    "lng": 25.9239,
+    "city": "Chernivtsi",
+    "country": "Ukraine"
+  },
+  "Zaporizhzhia National University": {
+    "lat": 47.8167,
+    "lng": 35.1902,
+    "city": "Zaporizhzhia",
+    "country": "Ukraine"
+  },
+  "École Normale Supérieure": {
+    "lat": 48.8422,
+    "lng": 2.3451,
+    "city": "Paris",
+    "country": "France"
+  },
+  "École Polytechnique": {
+    "lat": 48.7141,
+    "lng": 2.2123,
+    "city": "Palaiseau",
+    "country": "France"
+  },
+  "Ștefan cel Mare University": {
+    "lat": 47.6423,
+    "lng": 26.2573,
+    "city": "Suceava",
+    "country": "Romania"
+  }
+}

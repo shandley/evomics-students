@@ -1,0 +1,370 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-01-03",
+    "totalMappings": 100,
+    "description": "Additional term mappings for high-frequency unmapped terms"
+  },
+  "mappings": {
+    "ngs": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "high",
+      "notes": "Common abbreviation for next-generation sequencing"
+    },
+    "rad-seq": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "high",
+      "notes": "Restriction site associated DNA sequencing"
+    },
+    "rna-seq": {
+      "standardizedId": "transcriptomics",
+      "confidence": "high",
+      "notes": "RNA sequencing technology"
+    },
+    "gwas": {
+      "standardizedId": "statistical-genetics",
+      "confidence": "high",
+      "notes": "Genome-wide association studies"
+    },
+    "adaptive evolution": {
+      "standardizedId": "adaptation",
+      "confidence": "high",
+      "notes": "Evolutionary adaptation"
+    },
+    "adaptive genomics": {
+      "standardizedId": "adaptation",
+      "confidence": "high",
+      "notes": "Genomic basis of adaptation"
+    },
+    "adaptation genomics": {
+      "standardizedId": "adaptation",
+      "confidence": "high",
+      "notes": "Genomic basis of adaptation"
+    },
+    "adaptive divergence": {
+      "standardizedId": "adaptation",
+      "confidence": "high",
+      "notes": "Divergent adaptation"
+    },
+    "evolutionary relationships": {
+      "standardizedId": "phylogenetics",
+      "confidence": "high",
+      "notes": "Phylogenetic relationships"
+    },
+    "evolutionary ecology": {
+      "standardizedId": "ecology",
+      "confidence": "high",
+      "notes": "Intersection of evolution and ecology"
+    },
+    "evolutionary forces": {
+      "standardizedId": "evolutionary-biology",
+      "confidence": "medium",
+      "notes": "General evolutionary mechanisms"
+    },
+    "fish evolution": {
+      "standardizedId": "fish-evolution",
+      "confidence": "high",
+      "notes": "Evolution of fish species"
+    },
+    "butterfly evolution": {
+      "standardizedId": "insect-genomics",
+      "confidence": "high",
+      "notes": "Evolution of butterflies"
+    },
+    "butterfly genomics": {
+      "standardizedId": "insect-genomics",
+      "confidence": "high",
+      "notes": "Genomics of butterflies"
+    },
+    "marine biology": {
+      "standardizedId": "marine-ecology",
+      "confidence": "high",
+      "notes": "Marine organisms and ecosystems"
+    },
+    "marine microbiology": {
+      "standardizedId": "environmental-microbiology",
+      "confidence": "high",
+      "notes": "Microbiology of marine environments"
+    },
+    "marine genomics": {
+      "standardizedId": "environmental-genomics",
+      "confidence": "high",
+      "notes": "Genomics of marine organisms"
+    },
+    "marine fish genomics": {
+      "standardizedId": "fish-evolution",
+      "confidence": "high",
+      "notes": "Genomics of marine fish"
+    },
+    "pathogen genomics": {
+      "standardizedId": "microbial-genomics",
+      "confidence": "high",
+      "notes": "Genomics of pathogenic organisms"
+    },
+    "antimicrobial resistance": {
+      "standardizedId": "microbial-evolution",
+      "confidence": "high",
+      "notes": "Evolution of antimicrobial resistance"
+    },
+    "climate adaptation": {
+      "standardizedId": "adaptation",
+      "confidence": "high",
+      "notes": "Adaptation to climate change"
+    },
+    "demographic inference": {
+      "standardizedId": "demographic-inference",
+      "confidence": "high",
+      "notes": "Inference of population demographics"
+    },
+    "data visualization": {
+      "standardizedId": "data-science",
+      "confidence": "high",
+      "notes": "Visualization of biological data"
+    },
+    "statistical ecology": {
+      "standardizedId": "ecology",
+      "confidence": "high",
+      "notes": "Statistical approaches in ecology"
+    },
+    "behavioral ecology": {
+      "standardizedId": "ecology",
+      "confidence": "high",
+      "notes": "Study of behavioral adaptations"
+    },
+    "arabidopsis genomics": {
+      "standardizedId": "plant-genomics",
+      "confidence": "high",
+      "notes": "Genomics of Arabidopsis model plant"
+    },
+    "arabidopsis": {
+      "standardizedId": "model-organisms",
+      "confidence": "high",
+      "notes": "Model plant organism"
+    },
+    "arabidopsis thaliana": {
+      "standardizedId": "model-organisms",
+      "confidence": "high",
+      "notes": "Model plant species"
+    },
+    "drosophila genetics": {
+      "standardizedId": "model-organisms",
+      "confidence": "high",
+      "notes": "Genetics of Drosophila model organism"
+    },
+    "quantitative genetics": {
+      "standardizedId": "quantitative-genetics",
+      "confidence": "high",
+      "notes": "Study of quantitative traits"
+    },
+    "macroevolution": {
+      "standardizedId": "evolutionary-biology",
+      "confidence": "high",
+      "notes": "Large-scale evolutionary patterns"
+    },
+    "metabolomics": {
+      "standardizedId": "metabolomics",
+      "confidence": "high",
+      "notes": "Study of metabolites"
+    },
+    "natural variation": {
+      "standardizedId": "genetic-variation",
+      "confidence": "high",
+      "notes": "Natural genetic variation"
+    },
+    "genetic mapping": {
+      "standardizedId": "population-genetics",
+      "confidence": "high",
+      "notes": "Mapping genetic loci"
+    },
+    "selection analysis": {
+      "standardizedId": "natural-selection",
+      "confidence": "high",
+      "notes": "Analysis of selection pressures"
+    },
+    "molecular dating": {
+      "standardizedId": "phylogenetics",
+      "confidence": "high",
+      "notes": "Dating evolutionary events"
+    },
+    "genomic differentiation": {
+      "standardizedId": "population-genomics",
+      "confidence": "high",
+      "notes": "Genomic differences between populations"
+    },
+    "population stratification": {
+      "standardizedId": "population-genetics",
+      "confidence": "high",
+      "notes": "Population structure and stratification"
+    },
+    "association studies": {
+      "standardizedId": "statistical-genetics",
+      "confidence": "high",
+      "notes": "Genetic association studies"
+    },
+    "biomedical data science": {
+      "standardizedId": "data-science",
+      "confidence": "high",
+      "notes": "Data science in biomedical research"
+    },
+    "microbiome data science": {
+      "standardizedId": "microbiome-research",
+      "confidence": "high",
+      "notes": "Data science for microbiome research"
+    },
+    "complex microbial communities": {
+      "standardizedId": "microbial-ecology",
+      "confidence": "high",
+      "notes": "Study of complex microbial ecosystems"
+    },
+    "theoretical ecology": {
+      "standardizedId": "ecology",
+      "confidence": "high",
+      "notes": "Theoretical approaches in ecology"
+    },
+    "entomology": {
+      "standardizedId": "insect-genomics",
+      "confidence": "medium",
+      "notes": "Study of insects"
+    },
+    "terrestrialization": {
+      "standardizedId": "evolutionary-biology",
+      "confidence": "medium",
+      "notes": "Evolution of terrestrial life"
+    },
+    "eukaryotes": {
+      "standardizedId": "comparative-genomics",
+      "confidence": "medium",
+      "notes": "Study of eukaryotic organisms"
+    },
+    "pan-genomics": {
+      "standardizedId": "pangenomics",
+      "confidence": "high",
+      "notes": "Alternative spelling of pangenomics"
+    },
+    "pangenomics": {
+      "standardizedId": "pangenomics",
+      "confidence": "high",
+      "notes": "Study of all genes in a species"
+    },
+    "qiime 2": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Microbiome analysis software"
+    },
+    "galaxy platform": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Bioinformatics workflow platform"
+    },
+    "beast 2": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Bayesian phylogenetic software"
+    },
+    "beast software": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Bayesian phylogenetic software"
+    },
+    "starbeast2": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Species tree estimation software"
+    },
+    "samtools": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Sequence alignment/map tools"
+    },
+    "bcftools": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Variant calling tools"
+    },
+    "htlib": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "High-throughput sequencing data library"
+    },
+    "stacks software": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "RAD-seq analysis software"
+    },
+    "mira assembler": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Sequence assembly software"
+    },
+    "fasta algorithm": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Sequence alignment algorithm"
+    },
+    "biomart": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Data mining tool"
+    },
+    "ensembl genomes": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "Genome database"
+    },
+    "snp detection": {
+      "standardizedId": "variant-calling",
+      "confidence": "high",
+      "notes": "Single nucleotide polymorphism detection"
+    },
+    "est assembly": {
+      "standardizedId": "genome-assembly",
+      "confidence": "high",
+      "notes": "Expressed sequence tag assembly"
+    },
+    "range expansion genetics": {
+      "standardizedId": "population-genetics",
+      "confidence": "high",
+      "notes": "Genetics of range expansion"
+    },
+    "big biological data": {
+      "standardizedId": "data-science",
+      "confidence": "high",
+      "notes": "Big data in biology"
+    },
+    "k-mers": {
+      "standardizedId": "sequence-analysis",
+      "confidence": "high",
+      "notes": "K-mer analysis"
+    },
+    "methods development": {
+      "standardizedId": "computational-methods",
+      "confidence": "medium",
+      "notes": "Development of new methods"
+    },
+    "restriction enzyme-based data": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "medium",
+      "notes": "Data from restriction enzyme methods"
+    },
+    "fungal host interactions": {
+      "standardizedId": "microbial-ecology",
+      "confidence": "high",
+      "notes": "Fungal-host interactions"
+    },
+    "microsporidians": {
+      "standardizedId": "microbial-evolution",
+      "confidence": "medium",
+      "notes": "Microsporidian parasites"
+    },
+    "atlantic cod": {
+      "standardizedId": "fish-evolution",
+      "confidence": "high",
+      "notes": "Specific fish species"
+    },
+    "nematode-trapping fungi": {
+      "standardizedId": "fungal-evolution",
+      "confidence": "high",
+      "notes": "Specialized fungi"
+    }
+  }
+}

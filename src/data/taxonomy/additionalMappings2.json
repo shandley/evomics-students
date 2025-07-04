@@ -1,0 +1,574 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-07-03",
+    "totalMappings": 103,
+    "confidence": {
+      "high": 85,
+      "medium": 17,
+      "low": 1
+    }
+  },
+  "mappings": {
+    "Bayesian methods": {
+      "standardizedId": "bayesian-methods",
+      "confidence": "high",
+      "notes": "Direct match to Level 2 category"
+    },
+    "Bayesian models": {
+      "standardizedId": "bayesian-methods",
+      "confidence": "high",
+      "notes": "Bayesian modeling approach"
+    },
+    "R statistical programming": {
+      "standardizedId": "computational-methods",
+      "confidence": "high",
+      "notes": "R programming for statistical analysis"
+    },
+    "RNA processing": {
+      "standardizedId": "molecular-biology",
+      "confidence": "high",
+      "notes": "RNA processing mechanisms"
+    },
+    "RNA virus ecology": {
+      "standardizedId": "viral-genomics",
+      "confidence": "high",
+      "notes": "Ecology of RNA viruses"
+    },
+    "algal genomics": {
+      "standardizedId": "plant-genomics",
+      "confidence": "high",
+      "notes": "Genomics of algae"
+    },
+    "animal evolution": {
+      "standardizedId": "evolutionary-biology",
+      "confidence": "high",
+      "notes": "Evolution of animals"
+    },
+    "apoptosis": {
+      "standardizedId": "cell-biology",
+      "confidence": "high",
+      "notes": "Programmed cell death"
+    },
+    "applied mathematics": {
+      "standardizedId": "mathematical-biology",
+      "confidence": "high",
+      "notes": "Applied math in biology"
+    },
+    "aquatic microbiology": {
+      "standardizedId": "environmental-microbiology",
+      "confidence": "high",
+      "notes": "Microbiology of aquatic environments"
+    },
+    "archaeogenetics": {
+      "standardizedId": "ancient-dna",
+      "confidence": "high",
+      "notes": "Genetics of archaeological samples"
+    },
+    "archaic humans": {
+      "standardizedId": "human-evolution",
+      "confidence": "high",
+      "notes": "Study of archaic human species"
+    },
+    "arthropod genomics": {
+      "standardizedId": "insect-genomics",
+      "confidence": "high",
+      "notes": "Genomics of arthropods"
+    },
+    "bacterial evolution": {
+      "standardizedId": "microbial-evolution",
+      "confidence": "high",
+      "notes": "Evolution of bacteria"
+    },
+    "bacterial genomics": {
+      "standardizedId": "microbial-genomics",
+      "confidence": "high",
+      "notes": "Genomics of bacteria"
+    },
+    "biodiversity genomics": {
+      "standardizedId": "biodiversity",
+      "confidence": "high",
+      "notes": "Genomic approaches to biodiversity"
+    },
+    "bioinformatics algorithms": {
+      "standardizedId": "algorithm-development",
+      "confidence": "high",
+      "notes": "Algorithm development for bioinformatics"
+    },
+    "bioinformatics infrastructure": {
+      "standardizedId": "computational-infrastructure",
+      "confidence": "high",
+      "notes": "Infrastructure for bioinformatics"
+    },
+    "bioinformatics training": {
+      "standardizedId": "computational-methods",
+      "confidence": "medium",
+      "notes": "Training in bioinformatics"
+    },
+    "biotechnology": {
+      "standardizedId": "synthetic-biology",
+      "confidence": "medium",
+      "notes": "Applied biotechnology"
+    },
+    "cancer informatics": {
+      "standardizedId": "cancer-genomics",
+      "confidence": "high",
+      "notes": "Informatics for cancer research"
+    },
+    "cancer research": {
+      "standardizedId": "cancer-genomics",
+      "confidence": "high",
+      "notes": "Cancer biology research"
+    },
+    "cell type diversity": {
+      "standardizedId": "single-cell-genomics",
+      "confidence": "high",
+      "notes": "Diversity of cell types"
+    },
+    "chloroplast genomics": {
+      "standardizedId": "plant-genomics",
+      "confidence": "high",
+      "notes": "Genomics of chloroplasts"
+    },
+    "chromosome evolution": {
+      "standardizedId": "chromosome-evolution",
+      "confidence": "high",
+      "notes": "Evolution of chromosomes"
+    },
+    "cichlid fish": {
+      "standardizedId": "fish-evolution",
+      "confidence": "high",
+      "notes": "Cichlid model organisms"
+    },
+    "climate change": {
+      "standardizedId": "environmental-genomics",
+      "confidence": "medium",
+      "notes": "Climate change impacts"
+    },
+    "coevolution": {
+      "standardizedId": "evolutionary-ecology",
+      "confidence": "high",
+      "notes": "Coevolutionary processes"
+    },
+    "complex genetics": {
+      "standardizedId": "quantitative-genetics",
+      "confidence": "high",
+      "notes": "Complex genetic traits"
+    },
+    "complex traits": {
+      "standardizedId": "quantitative-genetics",
+      "confidence": "high",
+      "notes": "Complex trait genetics"
+    },
+    "computational ecology": {
+      "standardizedId": "ecology",
+      "confidence": "high",
+      "notes": "Computational approaches in ecology"
+    },
+    "data mining": {
+      "standardizedId": "data-science",
+      "confidence": "high",
+      "notes": "Data mining techniques"
+    },
+    "deep learning": {
+      "standardizedId": "machine-learning",
+      "confidence": "high",
+      "notes": "Deep learning methods"
+    },
+    "ecogenomics": {
+      "standardizedId": "ecological-genomics",
+      "confidence": "high",
+      "notes": "Ecological genomics"
+    },
+    "environmental bioinformatics": {
+      "standardizedId": "environmental-genomics",
+      "confidence": "high",
+      "notes": "Bioinformatics for environmental data"
+    },
+    "epigenetics": {
+      "standardizedId": "epigenomics",
+      "confidence": "high",
+      "notes": "Study of epigenetic modifications"
+    },
+    "epigenomics": {
+      "standardizedId": "epigenomics",
+      "confidence": "high",
+      "notes": "Genome-wide epigenetic studies"
+    },
+    "evolutionary developmental biology": {
+      "standardizedId": "developmental-biology",
+      "confidence": "high",
+      "notes": "Evo-devo field"
+    },
+    "functional annotation": {
+      "standardizedId": "genome-annotation",
+      "confidence": "high",
+      "notes": "Functional gene annotation"
+    },
+    "fungal biology": {
+      "standardizedId": "fungal-genomics",
+      "confidence": "high",
+      "notes": "Biology of fungi"
+    },
+    "gene duplication": {
+      "standardizedId": "molecular-evolution",
+      "confidence": "high",
+      "notes": "Gene duplication events"
+    },
+    "gene expression evolution": {
+      "standardizedId": "evolutionary-genomics",
+      "confidence": "high",
+      "notes": "Evolution of gene expression"
+    },
+    "gene family evolution": {
+      "standardizedId": "molecular-evolution",
+      "confidence": "high",
+      "notes": "Evolution of gene families"
+    },
+    "gene regulation": {
+      "standardizedId": "functional-genomics",
+      "confidence": "high",
+      "notes": "Gene regulatory mechanisms"
+    },
+    "genetics": {
+      "standardizedId": "population-genetics",
+      "confidence": "low",
+      "notes": "Too general - context needed"
+    },
+    "genome biology": {
+      "standardizedId": "genomics-omics",
+      "confidence": "medium",
+      "notes": "General genome biology"
+    },
+    "genomic epidemiology": {
+      "standardizedId": "molecular-epidemiology",
+      "confidence": "high",
+      "notes": "Genomics in epidemiology"
+    },
+    "genomic medicine": {
+      "standardizedId": "clinical-genomics",
+      "confidence": "high",
+      "notes": "Medical applications of genomics"
+    },
+    "gut microbiome": {
+      "standardizedId": "microbiome-research",
+      "confidence": "high",
+      "notes": "Gut microbiome studies"
+    },
+    "host-microbe interactions": {
+      "standardizedId": "microbial-ecology",
+      "confidence": "high",
+      "notes": "Interactions between hosts and microbes"
+    },
+    "host-pathogen interactions": {
+      "standardizedId": "pathogen-genomics",
+      "confidence": "high",
+      "notes": "Host-pathogen molecular interactions"
+    },
+    "human adaptation": {
+      "standardizedId": "human-evolution",
+      "confidence": "high",
+      "notes": "Human adaptive evolution"
+    },
+    "human microbiome": {
+      "standardizedId": "microbiome-research",
+      "confidence": "high",
+      "notes": "Human microbiome studies"
+    },
+    "human population genomics": {
+      "standardizedId": "human-genetics",
+      "confidence": "high",
+      "notes": "Population genomics of humans"
+    },
+    "hybridization": {
+      "standardizedId": "speciation",
+      "confidence": "high",
+      "notes": "Hybridization in evolution"
+    },
+    "immunogenetics": {
+      "standardizedId": "immunology",
+      "confidence": "high",
+      "notes": "Genetics of immune systems"
+    },
+    "immunology": {
+      "standardizedId": "immunology",
+      "confidence": "high",
+      "notes": "Study of immune systems"
+    },
+    "infectious disease": {
+      "standardizedId": "pathogen-genomics",
+      "confidence": "high",
+      "notes": "Infectious disease research"
+    },
+    "insect-plant interactions": {
+      "standardizedId": "evolutionary-ecology",
+      "confidence": "high",
+      "notes": "Interactions between insects and plants"
+    },
+    "landscape genetics": {
+      "standardizedId": "population-genetics",
+      "confidence": "high",
+      "notes": "Spatial population genetics"
+    },
+    "local adaptation": {
+      "standardizedId": "adaptation",
+      "confidence": "high",
+      "notes": "Local adaptive evolution"
+    },
+    "long-read sequencing": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "high",
+      "notes": "Long-read sequencing technologies"
+    },
+    "macroecology": {
+      "standardizedId": "ecology",
+      "confidence": "high",
+      "notes": "Large-scale ecological patterns"
+    },
+    "mathematical modeling": {
+      "standardizedId": "mathematical-biology",
+      "confidence": "high",
+      "notes": "Mathematical models in biology"
+    },
+    "medical genetics": {
+      "standardizedId": "clinical-genomics",
+      "confidence": "high",
+      "notes": "Medical applications of genetics"
+    },
+    "metapopulation dynamics": {
+      "standardizedId": "population-genetics",
+      "confidence": "high",
+      "notes": "Dynamics of metapopulations"
+    },
+    "microbial oceanography": {
+      "standardizedId": "environmental-microbiology",
+      "confidence": "high",
+      "notes": "Ocean microbiology"
+    },
+    "microbiology": {
+      "standardizedId": "microbiology-microbiome",
+      "confidence": "medium",
+      "notes": "General microbiology"
+    },
+    "microbiome composition": {
+      "standardizedId": "microbiome-research",
+      "confidence": "high",
+      "notes": "Composition of microbiomes"
+    },
+    "microbiome evolution": {
+      "standardizedId": "microbial-evolution",
+      "confidence": "high",
+      "notes": "Evolution of microbiomes"
+    },
+    "mitochondria": {
+      "standardizedId": "organellar-genomics",
+      "confidence": "high",
+      "notes": "Mitochondrial biology"
+    },
+    "molecular biology of plants": {
+      "standardizedId": "plant-genomics",
+      "confidence": "high",
+      "notes": "Plant molecular biology"
+    },
+    "molecular clock": {
+      "standardizedId": "molecular-evolution",
+      "confidence": "high",
+      "notes": "Molecular clock dating"
+    },
+    "mycology": {
+      "standardizedId": "fungal-genomics",
+      "confidence": "high",
+      "notes": "Study of fungi"
+    },
+    "nanopore sequencing": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "high",
+      "notes": "Nanopore sequencing technology"
+    },
+    "neuroscience": {
+      "standardizedId": "neurobiology",
+      "confidence": "high",
+      "notes": "Study of nervous systems"
+    },
+    "non-coding RNA": {
+      "standardizedId": "functional-genomics",
+      "confidence": "high",
+      "notes": "Non-coding RNA biology"
+    },
+    "non-model species": {
+      "standardizedId": "comparative-genomics",
+      "confidence": "medium",
+      "notes": "Genomics of non-model organisms"
+    },
+    "open science": {
+      "standardizedId": "computational-methods",
+      "confidence": "medium",
+      "notes": "Open science practices"
+    },
+    "parallel evolution": {
+      "standardizedId": "convergent-evolution",
+      "confidence": "high",
+      "notes": "Parallel evolutionary patterns"
+    },
+    "pathogen surveillance": {
+      "standardizedId": "pathogen-genomics",
+      "confidence": "high",
+      "notes": "Surveillance of pathogens"
+    },
+    "personalized medicine": {
+      "standardizedId": "precision-medicine",
+      "confidence": "high",
+      "notes": "Personalized medical approaches"
+    },
+    "phylogeography": {
+      "standardizedId": "phylogenetics",
+      "confidence": "high",
+      "notes": "Geographic patterns of phylogeny"
+    },
+    "plant evolution": {
+      "standardizedId": "plant-genomics",
+      "confidence": "high",
+      "notes": "Evolution of plants"
+    },
+    "plant molecular biology": {
+      "standardizedId": "plant-genomics",
+      "confidence": "high",
+      "notes": "Molecular biology of plants"
+    },
+    "plant pathology": {
+      "standardizedId": "plant-genomics",
+      "confidence": "high",
+      "notes": "Plant disease research"
+    },
+    "plant-pathogen interactions": {
+      "standardizedId": "pathogen-genomics",
+      "confidence": "high",
+      "notes": "Interactions between plants and pathogens"
+    },
+    "plasticity": {
+      "standardizedId": "developmental-biology",
+      "confidence": "medium",
+      "notes": "Phenotypic plasticity"
+    },
+    "polyploidy": {
+      "standardizedId": "chromosome-evolution",
+      "confidence": "high",
+      "notes": "Polyploid genome evolution"
+    },
+    "population structure": {
+      "standardizedId": "population-genetics",
+      "confidence": "high",
+      "notes": "Structure of populations"
+    },
+    "primate genomics": {
+      "standardizedId": "mammalian-genomics",
+      "confidence": "high",
+      "notes": "Genomics of primates"
+    },
+    "protein similarity": {
+      "standardizedId": "proteomics",
+      "confidence": "high",
+      "notes": "Protein sequence similarity"
+    },
+    "proteomics": {
+      "standardizedId": "proteomics",
+      "confidence": "high",
+      "notes": "Study of proteomes"
+    },
+    "public health genomics": {
+      "standardizedId": "molecular-epidemiology",
+      "confidence": "high",
+      "notes": "Genomics in public health"
+    },
+    "recombination": {
+      "standardizedId": "molecular-evolution",
+      "confidence": "high",
+      "notes": "Genetic recombination"
+    },
+    "regulatory evolution": {
+      "standardizedId": "evolutionary-genomics",
+      "confidence": "high",
+      "notes": "Evolution of gene regulation"
+    },
+    "reproductive isolation": {
+      "standardizedId": "speciation",
+      "confidence": "high",
+      "notes": "Mechanisms of reproductive isolation"
+    },
+    "sequence assembly": {
+      "standardizedId": "genome-assembly",
+      "confidence": "high",
+      "notes": "Assembly of sequences"
+    },
+    "sequencing technologies": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "high",
+      "notes": "Various sequencing technologies"
+    },
+    "sequencing technology": {
+      "standardizedId": "sequencing-technology",
+      "confidence": "high",
+      "notes": "Sequencing technology development"
+    },
+    "simulation": {
+      "standardizedId": "computational-methods",
+      "confidence": "medium",
+      "notes": "Computational simulations"
+    },
+    "spatial genetics": {
+      "standardizedId": "landscape-genetics",
+      "confidence": "high",
+      "notes": "Spatial genetic patterns"
+    },
+    "speciation genetics": {
+      "standardizedId": "speciation",
+      "confidence": "high",
+      "notes": "Genetics of speciation"
+    },
+    "species diversification": {
+      "standardizedId": "macroevolution",
+      "confidence": "high",
+      "notes": "Patterns of species diversification"
+    },
+    "statistical analysis": {
+      "standardizedId": "biostatistics",
+      "confidence": "medium",
+      "notes": "Statistical analysis methods"
+    },
+    "symbiosis": {
+      "standardizedId": "microbial-ecology",
+      "confidence": "high",
+      "notes": "Symbiotic relationships"
+    },
+    "synthetic biology": {
+      "standardizedId": "synthetic-biology",
+      "confidence": "high",
+      "notes": "Engineering biological systems"
+    },
+    "systematics": {
+      "standardizedId": "phylogenetics",
+      "confidence": "high",
+      "notes": "Systematic biology"
+    },
+    "variant analysis": {
+      "standardizedId": "variant-calling",
+      "confidence": "high",
+      "notes": "Analysis of genetic variants"
+    },
+    "viral evolution": {
+      "standardizedId": "viral-genomics",
+      "confidence": "high",
+      "notes": "Evolution of viruses"
+    },
+    "virology": {
+      "standardizedId": "viral-genomics",
+      "confidence": "high",
+      "notes": "Study of viruses"
+    },
+    "whole genome duplication": {
+      "standardizedId": "chromosome-evolution",
+      "confidence": "high",
+      "notes": "Whole genome duplication events"
+    }
+  }
+}
