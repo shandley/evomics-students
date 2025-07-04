@@ -50,7 +50,11 @@ export const InactiveWorkshopsInfo: React.FC<InactiveWorkshopsInfoProps> = ({
           }, yearArray[0]) : null
         };
       })
-      .filter(data => data.uniqueStudents >= 50) // Only show workshops with significant participation
+      .filter(data => {
+        // Include workshops with 50+ students OR Czech Republic workshops
+        return data.uniqueStudents >= 50 || 
+               ['randbioc', 'programm'].includes(data.id);
+      })
       .sort((a, b) => b.uniqueStudents - a.uniqueStudents);
 
     // Create timeline data for visualization
@@ -81,8 +85,9 @@ export const InactiveWorkshopsInfo: React.FC<InactiveWorkshopsInfoProps> = ({
       <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">Historical Workshop Series</h2>
         <p className="text-gray-600">
-          Legacy workshops that have contributed significantly to the Evomics community. 
-          These workshops are no longer active but represent important chapters in genomics education history.
+          Legacy workshops that have contributed to the Evomics community. 
+          These workshops are no longer active but represent important chapters in genomics education history, 
+          including specialized programming workshops held in the Czech Republic.
         </p>
       </div>
 
@@ -116,7 +121,7 @@ export const InactiveWorkshopsInfo: React.FC<InactiveWorkshopsInfoProps> = ({
           </ResponsiveContainer>
         </div>
         <p className="text-sm text-gray-600 mt-2">
-          Historical workshops with 50+ student participants, showing their contribution to the Evomics community.
+          Historical workshops showing their contribution to the Evomics community, including specialized programming workshops from the Czech Republic.
         </p>
       </div>
 
@@ -127,19 +132,27 @@ export const InactiveWorkshopsInfo: React.FC<InactiveWorkshopsInfoProps> = ({
             'border-slate-200 bg-slate-50',
             'border-gray-200 bg-gray-50', 
             'border-zinc-200 bg-zinc-50',
-            'border-stone-200 bg-stone-50'
+            'border-stone-200 bg-stone-50',
+            'border-blue-200 bg-blue-50'  // Special color for Czech workshops
           ];
+          
+          const isCzechWorkshop = ['randbioc', 'programm'].includes(data.id);
           
           return (
             <div key={data.id} className={`border rounded-lg p-6 ${colorMap[index % colorMap.length]} relative`}>
               {/* Status Badge */}
-              <div className="absolute top-4 right-4">
+              <div className="absolute top-4 right-4 flex gap-2">
+                {isCzechWorkshop && (
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                    Czech Republic
+                  </span>
+                )}
                 <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
                   Inactive
                 </span>
               </div>
               
-              <div className="pr-16"> {/* Add padding for the badge */}
+              <div className={`${isCzechWorkshop ? 'pr-32' : 'pr-16'}`}> {/* Add padding for badges */}
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">
                   {data.workshop.shortName}
                 </h4>
@@ -189,7 +202,7 @@ export const InactiveWorkshopsInfo: React.FC<InactiveWorkshopsInfoProps> = ({
       {/* Summary Stats */}
       <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Historical Impact Summary</h3>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           <div className="text-center p-4 bg-gray-50 rounded-lg">
             <div className="text-2xl font-bold text-gray-700">
               {inactiveWorkshopData.inactiveWorkshops.length}
@@ -216,6 +229,13 @@ export const InactiveWorkshopsInfo: React.FC<InactiveWorkshopsInfoProps> = ({
               {inactiveWorkshopData.inactiveWorkshops.reduce((sum, workshop) => sum + workshop.totalYears, 0)}
             </div>
             <div className="text-sm text-gray-600">Combined Active Years</div>
+          </div>
+          
+          <div className="text-center p-4 bg-blue-50 rounded-lg">
+            <div className="text-2xl font-bold text-blue-700">
+              {inactiveWorkshopData.inactiveWorkshops.filter(w => ['randbioc', 'programm'].includes(w.id)).length}
+            </div>
+            <div className="text-sm text-blue-600">Czech Republic Workshops</div>
           </div>
         </div>
       </div>
