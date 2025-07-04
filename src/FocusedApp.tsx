@@ -4,6 +4,7 @@ import { InteractiveWorldMap } from './components/InteractiveWorldMap';
 import { InteractiveTimeline } from './components/InteractiveTimeline';
 import { WorkshopComparisons } from './components/WorkshopComparisons';
 import { DrilldownAnalytics } from './components/DrilldownAnalytics';
+import { InactiveWorkshopsInfo } from './components/InactiveWorkshopsInfo';
 import { useFocusedStudentData } from './hooks/useFocusedStudentData';
 
 
@@ -15,6 +16,7 @@ function FocusedApp() {
   const [showTimeline, setShowTimeline] = useState(false);
   const [showComparisons, setShowComparisons] = useState(false);
   const [showDrilldown, setShowDrilldown] = useState(false);
+  const [showInactiveWorkshops, setShowInactiveWorkshops] = useState(false);
 
 
   if (loading) {
@@ -138,7 +140,7 @@ function FocusedApp() {
         {/* Interactive Visualization Toggle Buttons */}
         <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm mb-6">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Interactive Visualizations</h3>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
             <button
               onClick={() => setShowMap(!showMap)}
               className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
@@ -195,6 +197,20 @@ function FocusedApp() {
               </svg>
               Analytics
             </button>
+            
+            <button
+              onClick={() => setShowInactiveWorkshops(!showInactiveWorkshops)}
+              className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
+                showInactiveWorkshops 
+                  ? 'bg-gray-100 border-gray-300 text-gray-800' 
+                  : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+              }`}
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Historical
+            </button>
           </div>
         </div>
 
@@ -220,6 +236,12 @@ function FocusedApp() {
         {showDrilldown && (
           <div className="mb-6">
             <DrilldownAnalytics profiles={profiles} workshops={workshops} />
+          </div>
+        )}
+
+        {showInactiveWorkshops && (
+          <div className="mb-6">
+            <InactiveWorkshopsInfo profiles={profiles} workshops={workshops} />
           </div>
         )}
 
