@@ -10,24 +10,22 @@ export function useFocusedStudentData() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Filter workshops to only include the 3 main ones
+  // Return all workshops but mark focused ones as active
   const workshops = useMemo(() => {
     const allWorkshops = workshopsJson as { [key: string]: Workshop };
-    const filtered: { [key: string]: Workshop } = {};
+    const result: { [key: string]: Workshop } = {};
     
-    FOCUSED_WORKSHOPS.forEach(id => {
-      if (allWorkshops[id]) {
-        filtered[id] = {
-          ...allWorkshops[id],
-          active: true // Mark as active since these are our focus
-        };
-      }
+    Object.entries(allWorkshops).forEach(([id, workshop]) => {
+      result[id] = {
+        ...workshop,
+        active: FOCUSED_WORKSHOPS.includes(id) ? true : workshop.active
+      };
     });
     
-    return filtered;
+    return result;
   }, []);
 
-  // Filter student profiles to only include those who participated in focused workshops
+  // Include all student profiles but keep track of which are from focused workshops
   const profiles = useMemo(() => {
     try {
       const data = studentDataJson as any;
@@ -37,43 +35,7 @@ export function useFocusedStudentData() {
         statistics: profile.statistics
       })) as StudentProfile[];
 
-      // Filter to only include students who participated in our focused workshops
-      const focusedProfiles = allProfiles.filter(profile => {
-        return FOCUSED_WORKSHOPS.some(workshopId => 
-          profile.participations[workshopId] && profile.participations[workshopId].length > 0
-        );
-      }).map(profile => {
-        // Filter participations to only include focused workshops
-        const filteredParticipations: { [key: string]: number[] } = {};
-        let totalYears = 0;
-        let workshopCount = 0;
-        const allYears: number[] = [];
-
-        FOCUSED_WORKSHOPS.forEach(workshopId => {
-          if (profile.participations[workshopId] && profile.participations[workshopId].length > 0) {
-            filteredParticipations[workshopId] = profile.participations[workshopId];
-            totalYears += profile.participations[workshopId].length;
-            workshopCount++;
-            allYears.push(...profile.participations[workshopId]);
-          }
-        });
-
-        // Recalculate statistics for focused workshops only
-        const statistics = {
-          totalYears,
-          workshopCount,
-          firstYear: allYears.length > 0 ? Math.min(...allYears) : 0,
-          lastYear: allYears.length > 0 ? Math.max(...allYears) : 0,
-        };
-
-        return {
-          student: profile.student,
-          participations: filteredParticipations,
-          statistics
-        };
-      });
-
-      return focusedProfiles;
+      return allProfiles;
     } catch (err) {
       console.error('Error processing focused student data:', err);
       return [];

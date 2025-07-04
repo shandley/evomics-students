@@ -65,7 +65,14 @@ export const InactiveWorkshopsInfo: React.FC<InactiveWorkshopsInfoProps> = ({
   }, [profiles, workshops]);
 
   if (inactiveWorkshopData.inactiveWorkshops.length === 0) {
-    return null;
+    return (
+      <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Historical Workshop Series</h2>
+        <p className="text-gray-600">
+          No inactive workshops with significant participation data found.
+        </p>
+      </div>
+    );
   }
 
   return (

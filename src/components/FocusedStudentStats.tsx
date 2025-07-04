@@ -8,23 +8,42 @@ interface FocusedStudentStatsProps {
 
 export const FocusedStudentStats: React.FC<FocusedStudentStatsProps> = ({ profiles, workshops }) => {
   const stats = useMemo(() => {
+    // Focus only on active workshops (the main 3)
+    const focusedWorkshops = Object.keys(workshops).filter(id => workshops[id].active);
+    
+    // Filter profiles to only include those who participated in focused workshops
+    const focusedProfiles = profiles.filter(profile => {
+      return focusedWorkshops.some(workshopId => 
+        profile.participations[workshopId] && profile.participations[workshopId].length > 0
+      );
+    });
+    
     const countries = new Set<string>();
     const institutions = new Set<string>();
     let totalParticipations = 0;
     
-    // Get all unique years across focused workshops
+    // Get all unique years across focused workshops only
     const allYears = new Set<number>();
-    profiles.forEach(profile => {
-      Object.values(profile.participations).flat().forEach(year => allYears.add(year));
+    focusedProfiles.forEach(profile => {
+      focusedWorkshops.forEach(workshopId => {
+        if (profile.participations[workshopId]) {
+          profile.participations[workshopId].forEach(year => allYears.add(year));
+        }
+      });
     });
     const yearRange = allYears.size > 0 
       ? Math.max(...allYears) - Math.min(...allYears) + 1 
       : 0;
 
-    profiles.forEach(profile => {
+    focusedProfiles.forEach(profile => {
       countries.add(profile.student.country);
       institutions.add(profile.student.institution);
-      totalParticipations += profile.statistics.totalYears;
+      // Count only participations in focused workshops
+      focusedWorkshops.forEach(workshopId => {
+        if (profile.participations[workshopId]) {
+          totalParticipations += profile.participations[workshopId].length;
+        }
+      });
     });
 
     // Calculate average students per year
@@ -32,14 +51,14 @@ export const FocusedStudentStats: React.FC<FocusedStudentStatsProps> = ({ profil
       ? (totalParticipations / yearRange).toFixed(0)
       : '0';
 
-    // Count students by workshop (matching faculty site exactly)
-    const workshopCounts = Object.keys(workshops).reduce((acc, workshopId) => {
+    // Count students by focused workshop only
+    const workshopCounts = focusedWorkshops.reduce((acc, workshopId) => {
       acc[workshopId] = profiles.filter(p => p.participations[workshopId]?.length > 0).length;
       return acc;
     }, {} as { [key: string]: number });
 
     return {
-      totalStudents: profiles.length,
+      totalStudents: focusedProfiles.length,
       totalCountries: countries.size,
       totalInstitutions: institutions.size,
       totalParticipations,
