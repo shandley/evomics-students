@@ -44,6 +44,11 @@ export interface StudentProfile {
   };
 }
 
+// Compatibility interface that includes both student and faculty properties
+export interface CompatibleStudentProfile extends StudentProfile {
+  faculty: Student; // For compatibility with existing components
+}
+
 export interface Filters {
   search: string;
   workshops: string[];
@@ -75,13 +80,13 @@ export interface StudentEnrichment {
   };
 }
 
-export interface EnrichedStudentProfile extends StudentProfile {
+export interface EnrichedStudentProfile extends CompatibleStudentProfile {
   enrichment?: StudentEnrichment;
 }
 
 // Legacy aliases for compatibility with existing components
 export type Faculty = Student;
-export type FacultyProfile = StudentProfile;
+export type FacultyProfile = CompatibleStudentProfile;
 export type FacultyEnrichment = StudentEnrichment;
 export type EnrichedFacultyProfile = EnrichedStudentProfile;
 

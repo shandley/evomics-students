@@ -12,13 +12,8 @@ export function useFacultyData() {
     try {
       const data = studentDataJson as any;
       return data.profiles.map((profile: any) => ({
-        faculty: {
-          id: profile.student.id,
-          firstName: profile.student.firstName,
-          lastName: profile.student.lastName,
-          institution: profile.student.institution,
-          country: profile.student.country
-        },
+        student: profile.student,
+        faculty: profile.student, // Compatibility layer
         participations: profile.participations,
         statistics: profile.statistics
       })) as StudentProfile[];
