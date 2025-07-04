@@ -26,20 +26,37 @@ export const InteractiveTimeline: React.FC<InteractiveTimelineProps> = ({
       wphylo: number;
     }} = {};
 
+    // Track unique students per year per workshop
+    const uniqueStudentsByYearWorkshop: { [year: number]: { [workshopId: string]: Set<string> } } = {};
+
     profiles.forEach(profile => {
       Object.entries(profile.participations).forEach(([workshopId, years]) => {
         years.forEach(year => {
-          if (!yearData[year]) {
-            yearData[year] = { year, total: 0, wog: 0, wpsg: 0, wphylo: 0 };
+          if (!uniqueStudentsByYearWorkshop[year]) {
+            uniqueStudentsByYearWorkshop[year] = {};
           }
-          
-          yearData[year].total++;
-          
-          if (workshopId === 'wog') yearData[year].wog++;
-          else if (workshopId === 'wpsg') yearData[year].wpsg++;
-          else if (workshopId === 'wphylo') yearData[year].wphylo++;
+          if (!uniqueStudentsByYearWorkshop[year][workshopId]) {
+            uniqueStudentsByYearWorkshop[year][workshopId] = new Set();
+          }
+          uniqueStudentsByYearWorkshop[year][workshopId].add(profile.student.id);
         });
       });
+    });
+
+    // Convert to counts
+    Object.entries(uniqueStudentsByYearWorkshop).forEach(([yearStr, workshops]) => {
+      const year = parseInt(yearStr);
+      yearData[year] = { year, total: 0, wog: 0, wpsg: 0, wphylo: 0 };
+      
+      Object.entries(workshops).forEach(([workshopId, studentSet]) => {
+        const count = studentSet.size;
+        if (workshopId === 'wog') yearData[year].wog = count;
+        else if (workshopId === 'wpsg') yearData[year].wpsg = count;
+        else if (workshopId === 'wphylo') yearData[year].wphylo = count;
+      });
+      
+      // Total is sum of workshop participations (can be > unique students if students attend multiple workshops)
+      yearData[year].total = yearData[year].wog + yearData[year].wpsg + yearData[year].wphylo;
     });
 
     return Object.values(yearData).sort((a, b) => a.year - b.year);
