@@ -1,22 +1,27 @@
 import React, { useState } from 'react';
 import { FocusedStudentStats } from './components/FocusedStudentStats';
-import { InteractiveWorldMap } from './components/InteractiveWorldMap';
-import { InteractiveTimeline } from './components/InteractiveTimeline';
-import { WorkshopComparisons } from './components/WorkshopComparisons';
-import { DrilldownAnalytics } from './components/DrilldownAnalytics';
-import { InactiveWorkshopsInfo } from './components/InactiveWorkshopsInfo';
+import { ExportMenu } from './components/ExportMenu';
+import { 
+  LazyWorldMap, 
+  LazyTimeline, 
+  LazyComparisons, 
+  LazyAnalytics, 
+  LazyHistorical 
+} from './components/LazyVisualization';
 import { useFocusedStudentData } from './hooks/useFocusedStudentData';
+import { useUrlState } from './hooks/useUrlState';
 
 
 function FocusedApp() {
   const { loading, error, profiles, workshops } = useFocusedStudentData();
+  const { state: urlState, updateUrl, shareCurrentView } = useUrlState();
   
-  // Visualization toggle states
-  const [showMap, setShowMap] = useState(false);
-  const [showTimeline, setShowTimeline] = useState(false);
-  const [showComparisons, setShowComparisons] = useState(false);
-  const [showDrilldown, setShowDrilldown] = useState(false);
-  const [showInactiveWorkshops, setShowInactiveWorkshops] = useState(false);
+  // Use URL state for visualization toggles
+  const showMap = urlState.showMap;
+  const showTimeline = urlState.showTimeline;
+  const showComparisons = urlState.showComparisons;
+  const showDrilldown = urlState.showDrilldown;
+  const showInactiveWorkshops = urlState.showInactiveWorkshops;
 
 
   if (loading) {
@@ -66,17 +71,30 @@ function FocusedApp() {
                 Celebrating the global community of students who have shaped genomics education worldwide
               </p>
             </div>
-            <a
-              href="https://evomics.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg border border-white/20 text-white transition-colors duration-200 flex items-center gap-2"
-            >
-              evomics.org
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
+            <div className="flex items-center gap-3">
+              <ExportMenu profiles={profiles} workshops={workshops} />
+              <button
+                onClick={shareCurrentView}
+                className="bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg border border-white/20 text-white transition-colors duration-200 flex items-center gap-2"
+                title="Share current dashboard view"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
+                </svg>
+                Share
+              </button>
+              <a
+                href="https://evomics.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg border border-white/20 text-white transition-colors duration-200 flex items-center gap-2"
+              >
+                evomics.org
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -142,7 +160,7 @@ function FocusedApp() {
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Interactive Visualizations</h3>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
             <button
-              onClick={() => setShowMap(!showMap)}
+              onClick={() => updateUrl({ showMap: !showMap })}
               className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
                 showMap 
                   ? 'bg-blue-100 border-blue-300 text-blue-800' 
@@ -156,7 +174,7 @@ function FocusedApp() {
             </button>
             
             <button
-              onClick={() => setShowTimeline(!showTimeline)}
+              onClick={() => updateUrl({ showTimeline: !showTimeline })}
               className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
                 showTimeline 
                   ? 'bg-purple-100 border-purple-300 text-purple-800' 
@@ -170,7 +188,7 @@ function FocusedApp() {
             </button>
             
             <button
-              onClick={() => setShowComparisons(!showComparisons)}
+              onClick={() => updateUrl({ showComparisons: !showComparisons })}
               className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
                 showComparisons 
                   ? 'bg-green-100 border-green-300 text-green-800' 
@@ -185,7 +203,7 @@ function FocusedApp() {
             </button>
             
             <button
-              onClick={() => setShowDrilldown(!showDrilldown)}
+              onClick={() => updateUrl({ showDrilldown: !showDrilldown })}
               className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
                 showDrilldown 
                   ? 'bg-orange-100 border-orange-300 text-orange-800' 
@@ -199,7 +217,7 @@ function FocusedApp() {
             </button>
             
             <button
-              onClick={() => setShowInactiveWorkshops(!showInactiveWorkshops)}
+              onClick={() => updateUrl({ showInactiveWorkshops: !showInactiveWorkshops })}
               className={`flex items-center justify-center px-4 py-3 rounded-lg border transition-all duration-200 ${
                 showInactiveWorkshops 
                   ? 'bg-gray-100 border-gray-300 text-gray-800' 
@@ -217,31 +235,31 @@ function FocusedApp() {
         {/* Interactive Visualizations */}
         {showMap && (
           <div className="mb-6">
-            <InteractiveWorldMap profiles={profiles} workshops={workshops} />
+            <LazyWorldMap profiles={profiles} workshops={workshops} />
           </div>
         )}
 
         {showTimeline && (
           <div className="mb-6">
-            <InteractiveTimeline profiles={profiles} workshops={workshops} />
+            <LazyTimeline profiles={profiles} workshops={workshops} />
           </div>
         )}
 
         {showComparisons && (
           <div className="mb-6">
-            <WorkshopComparisons profiles={profiles} workshops={workshops} />
+            <LazyComparisons profiles={profiles} workshops={workshops} />
           </div>
         )}
 
         {showDrilldown && (
           <div className="mb-6">
-            <DrilldownAnalytics profiles={profiles} workshops={workshops} />
+            <LazyAnalytics profiles={profiles} workshops={workshops} />
           </div>
         )}
 
         {showInactiveWorkshops && (
           <div className="mb-6">
-            <InactiveWorkshopsInfo profiles={profiles} workshops={workshops} />
+            <LazyHistorical profiles={profiles} workshops={workshops} />
           </div>
         )}
 
