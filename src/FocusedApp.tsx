@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FocusedStudentStats } from './components/FocusedStudentStats';
+import { CommunityOverview } from './components/CommunityOverview';
 import { ExportMenu } from './components/ExportMenu';
 import { 
   LazyWorldMap, 
@@ -68,7 +69,16 @@ function FocusedApp() {
                 Evomics Student Alumni
               </h1>
               <p className="text-xl text-blue-100 max-w-3xl">
-                Celebrating the global community of students who have shaped genomics education worldwide
+                Celebrating the global community of students who have shaped genomics education worldwide, 
+                taught by our{' '}
+                <a 
+                  href="https://shandley.github.io/evomics-faculty/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-200 hover:text-white underline decoration-dotted"
+                >
+                  172 distinguished faculty alumni
+                </a>
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -83,6 +93,19 @@ function FocusedApp() {
                 </svg>
                 Share
               </button>
+              <a
+                href="https://shandley.github.io/evomics-faculty/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg border border-white/20 text-white transition-colors duration-200 flex items-center gap-2"
+                title="View faculty alumni dashboard"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+                Faculty Alumni
+              </a>
               <a
                 href="https://evomics.org"
                 target="_blank"
@@ -101,6 +124,9 @@ function FocusedApp() {
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 -mt-8">
+        {/* Community Overview */}
+        <CommunityOverview profiles={profiles} workshops={workshops} />
+        
         {/* Main Stats Dashboard */}
         <FocusedStudentStats profiles={profiles} workshops={workshops} />
         
@@ -108,7 +134,16 @@ function FocusedApp() {
         <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm mb-6">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Workshop Timeline</h3>
           <div className="mb-4 text-sm text-gray-600">
-            2011 - 2024 (14 years of student participation)
+            2011 - 2024 (14 years of student participation) • Led by{' '}
+            <a 
+              href="https://shandley.github.io/evomics-faculty/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline decoration-dotted"
+            >
+              expert faculty
+            </a>
+            {' '}from around the world
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -264,16 +299,75 @@ function FocusedApp() {
         )}
 
         {/* Footer */}
-        <div className="mt-16 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm bg-white rounded-lg p-6">
-          <p>
-            Evomics Student Alumni • {profiles.length} students from core workshop series
-          </p>
-          <p className="mt-2 text-xs">
-            Focused on Workshop on Genomics, Workshop on Population and Speciation Genomics, and Workshop on Phylogenomics
-          </p>
-          <p className="mt-1 text-xs">
-            Aggregate data only - individual student information is not displayed for privacy protection
-          </p>
+        <div className="mt-16 pt-8 border-t border-gray-200 bg-white rounded-lg p-6">
+          {/* Alumni Network Stats */}
+          <div className="text-center mb-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">🌟 Evomics Alumni Network</h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                <div className="text-2xl font-bold text-blue-700">{profiles.length}</div>
+                <div className="text-sm text-blue-600">Student Alumni</div>
+                <div className="text-xs text-blue-500">Core workshops</div>
+              </div>
+              <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
+                <div className="text-2xl font-bold text-purple-700">172</div>
+                <div className="text-sm text-purple-600">Faculty Alumni</div>
+                <div className="text-xs text-purple-500">All workshops</div>
+              </div>
+              <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                <div className="text-2xl font-bold text-green-700">3</div>
+                <div className="text-sm text-green-600">Active Workshops</div>
+                <div className="text-xs text-green-500">WoG • WPSG • WPhylo</div>
+              </div>
+              <div className="bg-orange-50 rounded-lg p-4 border border-orange-200">
+                <div className="text-2xl font-bold text-orange-700">14</div>
+                <div className="text-sm text-orange-600">Years of Impact</div>
+                <div className="text-xs text-orange-500">2011 - 2024</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Cross-Dashboard Navigation */}
+          <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
+            <a
+              href="https://shandley.github.io/evomics-faculty/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-lg border border-blue-200 transition-colors duration-200"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              </svg>
+              View Faculty Dashboard
+            </a>
+            <a
+              href="https://evomics.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-lg border border-gray-200 transition-colors duration-200"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              evomics.org
+            </a>
+            <span className="text-gray-400">•</span>
+            <span className="text-sm text-gray-600">Current: Student Alumni Dashboard</span>
+          </div>
+
+          {/* Footer Text */}
+          <div className="text-center text-gray-500 text-sm">
+            <p className="mb-2">
+              <strong>Part of the Evomics Alumni Network</strong> • Building the future of genomics education
+            </p>
+            <p className="text-xs">
+              Focused on Workshop on Genomics, Workshop on Population and Speciation Genomics, and Workshop on Phylogenomics
+            </p>
+            <p className="mt-1 text-xs">
+              Aggregate data only - individual student information is not displayed for privacy protection
+            </p>
+          </div>
         </div>
       </div>
     </div>

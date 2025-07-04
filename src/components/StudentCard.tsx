@@ -9,8 +9,8 @@ interface StudentCardProps {
 
 const workshopColors = {
   WoG: 'bg-blue-100 text-blue-800 border-blue-200',
-  WPSG: 'bg-green-100 text-green-800 border-green-200',
-  WPhylo: 'bg-purple-100 text-purple-800 border-purple-200',
+  WPSG: 'bg-purple-100 text-purple-800 border-purple-200',  // Fixed: Purple to match faculty dashboard
+  WPhylo: 'bg-green-100 text-green-800 border-green-200',   // Fixed: Green to match faculty dashboard
   WME: 'bg-orange-100 text-orange-800 border-orange-200',
   WCG: 'bg-pink-100 text-pink-800 border-pink-200',
   default: 'bg-gray-100 text-gray-800 border-gray-200'
