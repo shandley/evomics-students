@@ -100,7 +100,7 @@ function App() {
             <div className="w-16 h-16 border-4 border-primary-200 rounded-full"></div>
             <div className="w-16 h-16 border-4 border-primary-600 rounded-full animate-spin border-t-transparent absolute top-0"></div>
           </div>
-          <div className="text-gray-600 font-medium">Loading faculty data...</div>
+          <div className="text-gray-600 font-medium">Loading student data...</div>
         </div>
       </Layout>
     );
@@ -146,7 +146,7 @@ function App() {
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
           </svg>
-          {showNetwork ? 'Hide' : 'Show'} Faculty Network
+          {showNetwork ? 'Hide' : 'Show'} Student Network
         </button>
         <button
           onClick={() => setShowTaxonomy(!showTaxonomy)}
@@ -179,7 +179,7 @@ function App() {
         />
       )}
       
-      {/* Faculty Network Visualization */}
+      {/* Student Network Visualization */}
       {showNetwork && (
         <FacultyNetworkVisualization
           faculty={enrichedProfiles}
@@ -193,7 +193,7 @@ function App() {
         <TopicTaxonomyViewer 
           faculty={enrichedProfiles}
           onTopicClick={(topicId) => {
-            // When a topic is clicked, update the filters to show only faculty with that topic
+            // When a topic is clicked, update the filters to show only students with that topic
             setFilters({
               ...filters,
               topics: [topicId],
