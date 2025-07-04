@@ -1,0 +1,183 @@
+name: Data Quality Check
+
+on:
+  push:
+    paths:
+      - 'src/data/**'
+      - 'scripts/**'
+  pull_request:
+    paths:
+      - 'src/data/**' 
+      - 'scripts/**'
+  schedule:
+    # Run weekly on Monday at 2 AM UTC
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  data-quality-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run data validation
+      run: node scripts/validateData.cjs
+      
+    - name: Generate data quality report
+      run: node scripts/generateDataQualityReport.cjs
+      
+    - name: Upload data quality report
+      uses: actions/upload-artifact@v4
+      with:
+        name: data-quality-report
+        path: reports/data-quality-report.json
+        retention-days: 30
+        
+    - name: Comment on PR with data quality results
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          
+          try {
+            const reportPath = 'reports/data-quality-report.json';
+            
+            if (!fs.existsSync(reportPath)) {
+              console.log('⚠️ Data quality report not found');
+              return;
+            }
+            
+            const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+            
+            const statusEmoji = report.summary.overallStatus === 'pass' ? '✅' : '❌';
+            const timestamp = new Date().toLocaleString('en-US', { 
+              timeZone: 'UTC',
+              year: 'numeric',
+              month: 'short', 
+              day: 'numeric',
+              hour: '2-digit',
+              minute: '2-digit',
+              timeZoneName: 'short'
+            });
+            
+            let comment = `## ${statusEmoji} Student Data Quality Check Results\n\n`;
+            comment += `**Status:** ${report.summary.overallStatus.toUpperCase()}\n`;
+            comment += `**Generated:** ${timestamp}\n\n`;
+            
+            // Summary statistics
+            comment += `### 📊 Summary Statistics\n`;
+            comment += `- **Total Students:** ${report.summary.totalStudents || 'N/A'}\n`;
+            comment += `- **Active Workshops:** ${report.summary.activeWorkshops || 'N/A'}\n`;
+            comment += `- **Countries Represented:** ${report.summary.totalCountries || 'N/A'}\n`;
+            comment += `- **Institutions:** ${report.summary.totalInstitutions || 'N/A'}\n`;
+            comment += `- **Data Completeness:** ${report.summary.dataCompleteness || 'N/A'}%\n\n`;
+            
+            // Issues breakdown
+            if (report.issues && report.issues.length > 0) {
+              const criticalIssues = report.issues.filter(issue => issue.severity === 'critical');
+              const warningIssues = report.issues.filter(issue => issue.severity === 'warning');
+              const infoIssues = report.issues.filter(issue => issue.severity === 'info');
+              
+              comment += `### 🔍 Issues Found\n`;
+              
+              if (criticalIssues.length > 0) {
+                comment += `\n**🚨 Critical Issues (${criticalIssues.length}):**\n`;
+                criticalIssues.forEach(issue => {
+                  comment += `- ${issue.message}\n`;
+                });
+              }
+              
+              if (warningIssues.length > 0) {
+                comment += `\n**⚠️ Warnings (${warningIssues.length}):**\n`;
+                warningIssues.forEach(issue => {
+                  comment += `- ${issue.message}\n`;
+                });
+              }
+              
+              if (infoIssues.length > 0) {
+                comment += `\n**ℹ️ Info (${infoIssues.length}):**\n`;
+                infoIssues.forEach(issue => {
+                  comment += `- ${issue.message}\n`;
+                });
+              }
+            } else {
+              comment += `### ✅ No Issues Found\n\nAll student data validation checks passed successfully!\n`;
+            }
+            
+            comment += `\n---\n*This check validates student participation data, workshop information, geographic data, and institutional affiliations.*`;
+            
+            // Find existing comment to update or create new one
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            
+            const existingComment = comments.find(comment => 
+              comment.user.type === 'Bot' && 
+              comment.body.includes('Student Data Quality Check Results')
+            );
+            
+            if (existingComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existingComment.id,
+                body: comment
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: comment
+              });
+            }
+            
+          } catch (error) {
+            console.error('Error processing data quality report:', error);
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `## ❌ Student Data Quality Check Failed\n\nError processing data quality report: ${error.message}\n\nPlease check the workflow logs for more details.`
+            });
+          }
+          
+    - name: Fail workflow if critical issues found
+      run: |
+        if [ -f "reports/data-quality-report.json" ]; then
+          CRITICAL_ISSUES=$(node -e "
+            const report = require('./reports/data-quality-report.json');
+            const critical = report.issues?.filter(issue => issue.severity === 'critical') || [];
+            console.log(critical.length);
+          ")
+          
+          if [ "$CRITICAL_ISSUES" -gt 0 ]; then
+            echo "❌ Found $CRITICAL_ISSUES critical data quality issues"
+            exit 1
+          else
+            echo "✅ No critical data quality issues found"
+          fi
+        else
+          echo "⚠️ Data quality report not found"
+          exit 1
+        fi

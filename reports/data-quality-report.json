@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-07-04T20:42:11.136Z",
+  "summary": {
+    "overallStatus": "pass",
+    "totalStudents": 2190,
+    "totalParticipations": 2387,
+    "totalCountries": 89,
+    "totalInstitutions": 1155,
+    "activeWorkshops": 4,
+    "dataCompleteness": 100,
+    "totalIssues": 0,
+    "criticalIssues": 0,
+    "warningIssues": 0,
+    "infoIssues": 0
+  },
+  "issues": [],
+  "recommendations": [
+    {
+      "priority": "low",
+      "category": "maintenance",
+      "message": "Data quality is excellent",
+      "action": "Continue regular monitoring and validation"
+    }
+  ]
+}

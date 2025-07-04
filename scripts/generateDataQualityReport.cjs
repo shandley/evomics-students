@@ -2,28 +2,102 @@
 
 const fs = require('fs');
 const path = require('path');
-const DataValidator = require('./validateData.cjs');
+const StudentDataValidator = require('./validateData.cjs');
+
+function generateRecommendations(result) {
+  const recommendations = [];
+  
+  const { summary, issues } = result;
+  
+  if (summary.criticalIssues > 0) {
+    recommendations.push({
+      priority: 'high',
+      category: 'critical_issues',
+      message: `Address ${summary.criticalIssues} critical data issues immediately`,
+      action: 'Review and fix critical issues to ensure data integrity'
+    });
+  }
+  
+  if (summary.dataCompleteness < 95) {
+    recommendations.push({
+      priority: 'medium',
+      category: 'data_completeness',
+      message: `Data completeness is ${summary.dataCompleteness}% - aim for >95%`,
+      action: 'Review students with missing required fields and complete data'
+    });
+  }
+  
+  if (summary.warningIssues > 10) {
+    recommendations.push({
+      priority: 'medium',
+      category: 'data_quality',
+      message: `${summary.warningIssues} warning issues found`,
+      action: 'Review and address warning issues to improve data quality'
+    });
+  }
+  
+  // Check for orphaned data
+  const orphanedIssues = issues.filter(issue => 
+    issue.type === 'ORPHAN_PARTICIPATION' || issue.type === 'ORPHANED_PARTICIPATIONS'
+  );
+  
+  if (orphanedIssues.length > 0) {
+    recommendations.push({
+      priority: 'high',
+      category: 'data_consistency',
+      message: 'Orphaned participation records found',
+      action: 'Clean up participation records that reference non-existent students'
+    });
+  }
+  
+  // Geographic data quality
+  const geoIssues = issues.filter(issue => 
+    issue.type === 'SUSPICIOUS_COUNTRY' || issue.type === 'SHORT_INSTITUTION'
+  );
+  
+  if (geoIssues.length > 0) {
+    recommendations.push({
+      priority: 'low',
+      category: 'geographic_data',
+      message: 'Geographic data quality issues detected',
+      action: 'Review and standardize country and institution names'
+    });
+  }
+  
+  // If no issues, add positive recommendations
+  if (summary.criticalIssues === 0 && summary.warningIssues < 5) {
+    recommendations.push({
+      priority: 'low',
+      category: 'maintenance',
+      message: 'Data quality is excellent',
+      action: 'Continue regular monitoring and validation'
+    });
+  }
+  
+  return recommendations;
+}
 
 async function generateReport() {
-  console.log('📊 Generating data quality report...');
+  console.log('📊 Generating student data quality report...');
   
   try {
-    const validator = new DataValidator();
+    const validator = new StudentDataValidator();
     const result = await validator.validate();
     
     const report = {
       timestamp: new Date().toISOString(),
       summary: {
-        overallStatus: result.success ? 'pass' : 'fail',
-        totalFaculty: result.stats.totalFaculty,
-        enrichedProfiles: result.stats.enrichedProfiles,
-        enrichmentPercentage: result.stats.enrichmentPercentage,
-        orcidCoverage: result.stats.orcidCoverage,
-        workshopCount: result.stats.workshopCount,
+        overallStatus: result.summary.overallStatus,
+        totalStudents: result.summary.totalStudents,
+        totalParticipations: result.summary.totalParticipations,
+        totalCountries: result.summary.totalCountries,
+        totalInstitutions: result.summary.totalInstitutions,
+        activeWorkshops: result.summary.activeWorkshops,
+        dataCompleteness: result.summary.dataCompleteness,
         totalIssues: result.issues.length,
-        criticalIssues: result.issues.filter(i => i.severity === 'critical').length,
-        warningIssues: result.issues.filter(i => i.severity === 'warning').length,
-        infoIssues: result.issues.filter(i => i.severity === 'info').length
+        criticalIssues: result.summary.criticalIssues,
+        warningIssues: result.summary.warningIssues,
+        infoIssues: result.summary.infoIssues
       },
       issues: result.issues,
       recommendations: generateRecommendations(result)
@@ -41,6 +115,8 @@ async function generateReport() {
     
     console.log(`✅ Report generated: ${reportPath}`);
     console.log(`📊 Summary: ${report.summary.overallStatus.toUpperCase()} - ${report.summary.totalIssues} issues found`);
+    console.log(`🎓 Students: ${report.summary.totalStudents} from ${report.summary.totalCountries} countries`);
+    console.log(`📈 Data Completeness: ${report.summary.dataCompleteness}%`);
     
     return report;
     
@@ -50,74 +126,9 @@ async function generateReport() {
   }
 }
 
-function generateRecommendations(result) {
-  const recommendations = [];
-  const { issues, stats } = result;
-  
-  // Critical issues recommendations
-  const criticalIssues = issues.filter(i => i.severity === 'critical');
-  if (criticalIssues.length > 0) {
-    recommendations.push({
-      priority: 'high',
-      category: 'data_integrity',
-      title: 'Fix Critical Data Issues',
-      description: `${criticalIssues.length} critical issues found that need immediate attention`,
-      action: 'Review and fix all critical validation errors before deployment'
-    });
-  }
-  
-  // Enrichment recommendations
-  if (stats.enrichmentPercentage < 90) {
-    recommendations.push({
-      priority: 'medium',
-      category: 'data_enrichment',
-      title: 'Improve Faculty Profile Enrichment',
-      description: `Only ${stats.enrichmentPercentage}% of faculty have enriched profiles`,
-      action: 'Run enrichment scripts to gather missing professional information'
-    });
-  }
-  
-  // ORCID recommendations
-  if (stats.orcidCoverage < 85) {
-    recommendations.push({
-      priority: 'medium',
-      category: 'orcid_coverage',
-      title: 'Increase ORCID Coverage',
-      description: `ORCID coverage is ${stats.orcidCoverage}%, below target of 85%`,
-      action: 'Run ORCID lookup scripts to find missing identifiers'
-    });
-  }
-  
-  // Duplicate detection
-  const duplicateIssues = issues.filter(i => i.type.includes('DUPLICATE'));
-  if (duplicateIssues.length > 0) {
-    recommendations.push({
-      priority: 'high',
-      category: 'data_cleanup',
-      title: 'Resolve Duplicate Records',
-      description: `${duplicateIssues.length} duplicate entries found`,
-      action: 'Review and merge or remove duplicate faculty records'
-    });
-  }
-  
-  // URL validation issues
-  const urlIssues = issues.filter(i => i.type.includes('URL'));
-  if (urlIssues.length > 5) {
-    recommendations.push({
-      priority: 'low',
-      category: 'url_maintenance',
-      title: 'Update Invalid URLs',
-      description: `${urlIssues.length} invalid URLs found`,
-      action: 'Review and update faculty website URLs'
-    });
-  }
-  
-  return recommendations;
-}
-
 // Run if called directly
 if (require.main === module) {
   generateReport();
 }
 
-module.exports = generateReport;
+module.exports = { generateReport };

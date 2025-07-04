@@ -3,305 +3,316 @@
 const fs = require('fs');
 const path = require('path');
 
-class DataValidator {
+class StudentDataValidator {
   constructor() {
     this.issues = [];
-    this.facultyData = null;
-    this.enrichedData = null;
+    this.studentData = null;
     this.workshops = null;
+    this.students = [];
+    this.participations = [];
   }
 
-  addIssue(type, message, severity = 'warning', facultyId = null) {
+  addIssue(type, message, severity = 'warning', studentId = null) {
     this.issues.push({
       type,
       message,
       severity,
-      facultyId,
+      studentId,
       timestamp: new Date().toISOString()
     });
   }
 
   loadData() {
     try {
-      // Load faculty data
-      const facultyPath = path.join(__dirname, '../src/data/facultyData.json');
-      const facultyJson = JSON.parse(fs.readFileSync(facultyPath, 'utf8'));
-      this.facultyData = facultyJson.faculty || facultyJson; // Handle both formats
-      
-      // Load enriched data
-      const enrichedPath = path.join(__dirname, '../src/data/facultyEnriched.json');
-      this.enrichedData = JSON.parse(fs.readFileSync(enrichedPath, 'utf8'));
+      // Load student data
+      const studentPath = path.join(__dirname, '../src/data/studentData.json');
+      this.studentData = JSON.parse(fs.readFileSync(studentPath, 'utf8'));
+      this.students = this.studentData.students || [];
+      this.participations = this.studentData.participations || [];
       
       // Load workshops
       const workshopsPath = path.join(__dirname, '../src/data/workshops.json');
       this.workshops = JSON.parse(fs.readFileSync(workshopsPath, 'utf8'));
       
-      console.log('✅ Data files loaded successfully');
+      console.log('✅ Student data files loaded successfully');
+      console.log(`📊 Loaded ${this.students.length} students and ${this.participations.length} participations`);
     } catch (error) {
       this.addIssue('DATA_LOAD', `Failed to load data files: ${error.message}`, 'critical');
       throw error;
     }
   }
 
-  validateFacultyStructure() {
-    console.log('🔍 Validating faculty data structure...');
+  validateStudentStructure() {
+    console.log('🔍 Validating student data structure...');
     
-    if (!Array.isArray(this.facultyData)) {
-      this.addIssue('STRUCTURE', 'Faculty data is not an array', 'critical');
+    if (!Array.isArray(this.students)) {
+      this.addIssue('STRUCTURE', 'Students data is not an array', 'critical');
       return;
     }
 
-    this.facultyData.forEach((faculty, index) => {
-      const facultyId = faculty.id || `index-${index}`;
+    if (!Array.isArray(this.participations)) {
+      this.addIssue('STRUCTURE', 'Participations data is not an array', 'critical');
+      return;
+    }
+
+    // Validate each student record
+    this.students.forEach((student, index) => {
+      const requiredFields = ['id', 'firstName', 'lastName', 'institution', 'country'];
       
-      // Required fields
-      if (!faculty.id) {
-        this.addIssue('REQUIRED_FIELD', `Faculty missing ID at index ${index}`, 'critical');
-      }
-      if (!faculty.firstName) {
-        this.addIssue('REQUIRED_FIELD', `Faculty missing firstName`, 'critical', facultyId);
-      }
-      if (!faculty.lastName) {
-        this.addIssue('REQUIRED_FIELD', `Faculty missing lastName`, 'critical', facultyId);
-      }
+      requiredFields.forEach(field => {
+        if (!student[field] || student[field].trim() === '') {
+          this.addIssue('MISSING_FIELD', 
+            `Student at index ${index} missing required field: ${field}`, 
+            'critical', 
+            student.id
+          );
+        }
+      });
 
-      // ID format validation
-      if (faculty.id && !/^[a-zA-Z0-9_-]+$/.test(faculty.id)) {
-        this.addIssue('ID_FORMAT', `Faculty ID contains invalid characters: ${faculty.id}`, 'warning', facultyId);
-      }
-
-      // Email validation
-      if (faculty.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(faculty.email)) {
-        this.addIssue('EMAIL_FORMAT', `Invalid email format: ${faculty.email}`, 'warning', facultyId);
-      }
-
-      // ORCID validation
-      if (faculty.orcid && !/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/.test(faculty.orcid)) {
-        this.addIssue('ORCID_FORMAT', `Invalid ORCID format: ${faculty.orcid}`, 'warning', facultyId);
-      }
-
-      // URL validation
-      if (faculty.website && !this.isValidUrl(faculty.website)) {
-        this.addIssue('URL_FORMAT', `Invalid website URL: ${faculty.website}`, 'warning', facultyId);
+      // Validate ID format
+      if (student.id && !/^[a-z0-9-]+$/.test(student.id)) {
+        this.addIssue('INVALID_ID', 
+          `Student ID "${student.id}" contains invalid characters (should be lowercase letters, numbers, and hyphens only)`, 
+          'warning', 
+          student.id
+        );
       }
     });
+
+    console.log(`✅ Validated ${this.students.length} student records`);
   }
 
-  validateEnrichmentData() {
-    console.log('🔍 Validating enrichment data...');
+  validateParticipations() {
+    console.log('🔍 Validating participation data...');
     
-    if (!this.enrichedData || typeof this.enrichedData !== 'object') {
-      this.addIssue('ENRICHMENT', 'Enriched data is not a valid object', 'critical');
-      return;
+    const studentIds = new Set(this.students.map(s => s.id));
+    const workshopIds = new Set(Object.keys(this.workshops));
+
+    this.participations.forEach((participation, index) => {
+      const requiredFields = ['studentId', 'workshopId', 'year'];
+      
+      requiredFields.forEach(field => {
+        if (!participation[field]) {
+          this.addIssue('MISSING_FIELD', 
+            `Participation at index ${index} missing required field: ${field}`, 
+            'critical', 
+            participation.studentId
+          );
+        }
+      });
+
+      // Validate student ID exists
+      if (participation.studentId && !studentIds.has(participation.studentId)) {
+        this.addIssue('ORPHAN_PARTICIPATION', 
+          `Participation references non-existent student ID: ${participation.studentId}`, 
+          'critical', 
+          participation.studentId
+        );
+      }
+
+      // Validate workshop ID exists
+      if (participation.workshopId && !workshopIds.has(participation.workshopId)) {
+        this.addIssue('INVALID_WORKSHOP', 
+          `Participation references non-existent workshop ID: ${participation.workshopId}`, 
+          'warning', 
+          participation.studentId
+        );
+      }
+
+      // Validate year range
+      const currentYear = new Date().getFullYear();
+      if (participation.year && (participation.year < 2000 || participation.year > currentYear + 1)) {
+        this.addIssue('INVALID_YEAR', 
+          `Participation year ${participation.year} is outside reasonable range (2000-${currentYear + 1})`, 
+          'warning', 
+          participation.studentId
+        );
+      }
+    });
+
+    console.log(`✅ Validated ${this.participations.length} participation records`);
+  }
+
+  validateDataConsistency() {
+    console.log('🔍 Validating data consistency...');
+    
+    // Check for duplicate student IDs
+    const studentIds = this.students.map(s => s.id);
+    const duplicateIds = studentIds.filter((id, index) => studentIds.indexOf(id) !== index);
+    
+    if (duplicateIds.length > 0) {
+      duplicateIds.forEach(id => {
+        this.addIssue('DUPLICATE_ID', 
+          `Duplicate student ID found: ${id}`, 
+          'critical', 
+          id
+        );
+      });
     }
 
-    const facultyIds = this.facultyData.map(f => f.id);
-    const enrichedIds = Object.keys(this.enrichedData);
+    // Check for students without participations
+    const participatingStudents = new Set(this.participations.map(p => p.studentId));
+    const studentsWithoutParticipations = this.students.filter(s => !participatingStudents.has(s.id));
     
-    // Check for orphaned enrichment data
-    enrichedIds.forEach(id => {
-      if (!facultyIds.includes(id)) {
-        this.addIssue('ORPHANED_ENRICHMENT', `Enrichment data exists for non-existent faculty: ${id}`, 'warning');
+    if (studentsWithoutParticipations.length > 0) {
+      studentsWithoutParticipations.forEach(student => {
+        this.addIssue('NO_PARTICIPATIONS', 
+          `Student ${student.firstName} ${student.lastName} has no workshop participations`, 
+          'warning', 
+          student.id
+        );
+      });
+    }
+
+    // Check for participations without students (orphaned)
+    const studentIdSet = new Set(studentIds);
+    const orphanedParticipations = this.participations.filter(p => !studentIdSet.has(p.studentId));
+    
+    if (orphanedParticipations.length > 0) {
+      this.addIssue('ORPHANED_PARTICIPATIONS', 
+        `Found ${orphanedParticipations.length} participations with no corresponding student records`, 
+        'critical'
+      );
+    }
+
+    console.log(`✅ Data consistency validation complete`);
+  }
+
+  validateGeographicData() {
+    console.log('🔍 Validating geographic data...');
+    
+    const countries = new Set();
+    const institutions = new Set();
+    
+    this.students.forEach(student => {
+      if (student.country) {
+        countries.add(student.country);
+      }
+      if (student.institution) {
+        institutions.add(student.institution);
       }
     });
 
-    // Validate enrichment structure
-    Object.entries(this.enrichedData).forEach(([facultyId, data]) => {
-      if (!data.enrichment) {
-        this.addIssue('ENRICHMENT_MISSING', `No enrichment data for faculty`, 'info', facultyId);
-        return;
-      }
-
-      const enrichment = data.enrichment;
-      
-      // Validate confidence level
-      if (enrichment.confidence && !['high', 'medium', 'low'].includes(enrichment.confidence)) {
-        this.addIssue('CONFIDENCE_LEVEL', `Invalid confidence level: ${enrichment.confidence}`, 'warning', facultyId);
-      }
-
-      // Validate professional data
-      if (enrichment.professional?.affiliation && typeof enrichment.professional.affiliation !== 'string') {
-        this.addIssue('AFFILIATION_TYPE', 'Affiliation should be a string', 'warning', facultyId);
-      }
-
-      // Validate academic data
-      if (enrichment.academic?.researchAreas && !Array.isArray(enrichment.academic.researchAreas)) {
-        this.addIssue('RESEARCH_AREAS_TYPE', 'Research areas should be an array', 'warning', facultyId);
-      }
-
-      // Validate ORCID in enrichment
-      if (enrichment.academic?.orcid && !/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/.test(enrichment.academic.orcid)) {
-        this.addIssue('ENRICHMENT_ORCID_FORMAT', `Invalid ORCID in enrichment: ${enrichment.academic.orcid}`, 'warning', facultyId);
-      }
+    // Check for suspicious country names
+    const suspiciousCountries = Array.from(countries).filter(country => 
+      country.length < 2 || country.length > 50 || /[0-9]/.test(country)
+    );
+    
+    suspiciousCountries.forEach(country => {
+      this.addIssue('SUSPICIOUS_COUNTRY', 
+        `Suspicious country name: "${country}"`, 
+        'warning'
+      );
     });
+
+    // Check for very short institution names
+    const shortInstitutions = Array.from(institutions).filter(inst => 
+      inst.length < 3 && !/^[A-Z]{2,3}$/.test(inst) // Allow short acronyms like "CDC"
+    );
+    
+    shortInstitutions.forEach(institution => {
+      this.addIssue('SHORT_INSTITUTION', 
+        `Unusually short institution name: "${institution}"`, 
+        'info'
+      );
+    });
+
+    console.log(`✅ Geographic validation complete: ${countries.size} countries, ${institutions.size} institutions`);
   }
 
   validateWorkshopData() {
     console.log('🔍 Validating workshop data...');
     
     if (!this.workshops || typeof this.workshops !== 'object') {
-      this.addIssue('WORKSHOPS', 'Workshop data is not a valid object', 'critical');
+      this.addIssue('WORKSHOP_STRUCTURE', 'Workshop data is not a valid object', 'critical');
       return;
     }
 
-    Object.entries(this.workshops).forEach(([workshopId, workshop]) => {
-      // Required fields
-      if (!workshop.name) {
-        this.addIssue('WORKSHOP_NAME', `Workshop missing name`, 'critical', workshopId);
-      }
-      if (!workshop.shortName) {
-        this.addIssue('WORKSHOP_SHORT_NAME', `Workshop missing shortName`, 'warning', workshopId);
-      }
-      if (typeof workshop.active !== 'boolean') {
-        this.addIssue('WORKSHOP_ACTIVE', `Workshop active field should be boolean`, 'warning', workshopId);
-      }
-      if (!workshop.startYear || workshop.startYear < 2000 || workshop.startYear > new Date().getFullYear()) {
-        this.addIssue('WORKSHOP_START_YEAR', `Invalid workshop start year: ${workshop.startYear}`, 'warning', workshopId);
-      }
-    });
-  }
-
-  validateParticipationData() {
-    console.log('🔍 Validating participation data...');
-    
     const workshopIds = Object.keys(this.workshops);
-    const currentYear = new Date().getFullYear();
     
-    this.facultyData.forEach(faculty => {
-      if (!faculty.participations || typeof faculty.participations !== 'object') {
-        this.addIssue('PARTICIPATION_MISSING', `No participation data`, 'warning', faculty.id);
-        return;
-      }
-
-      Object.entries(faculty.participations).forEach(([workshopId, years]) => {
-        // Check if workshop exists
-        if (!workshopIds.includes(workshopId)) {
-          this.addIssue('INVALID_WORKSHOP', `Participation in unknown workshop: ${workshopId}`, 'warning', faculty.id);
-        }
-
-        // Check if years is an array
-        if (!Array.isArray(years)) {
-          this.addIssue('PARTICIPATION_FORMAT', `Participation years should be an array for workshop ${workshopId}`, 'warning', faculty.id);
-          return;
-        }
-
-        // Validate year values
-        years.forEach(year => {
-          if (typeof year !== 'number' || year < 2000 || year > currentYear + 1) {
-            this.addIssue('INVALID_YEAR', `Invalid participation year: ${year} for workshop ${workshopId}`, 'warning', faculty.id);
-          }
-        });
-      });
-    });
-  }
-
-  checkDuplicates() {
-    console.log('🔍 Checking for duplicates...');
-    
-    const ids = [];
-    const names = [];
-    const emails = [];
-    const orcids = [];
-
-    this.facultyData.forEach(faculty => {
-      // Check duplicate IDs
-      if (ids.includes(faculty.id)) {
-        this.addIssue('DUPLICATE_ID', `Duplicate faculty ID: ${faculty.id}`, 'critical');
-      } else {
-        ids.push(faculty.id);
-      }
-
-      // Check duplicate names
-      const fullName = `${faculty.firstName} ${faculty.lastName}`;
-      if (names.includes(fullName)) {
-        this.addIssue('DUPLICATE_NAME', `Duplicate faculty name: ${fullName}`, 'warning', faculty.id);
-      } else {
-        names.push(fullName);
-      }
-
-      // Check duplicate emails
-      if (faculty.email) {
-        if (emails.includes(faculty.email)) {
-          this.addIssue('DUPLICATE_EMAIL', `Duplicate email: ${faculty.email}`, 'warning', faculty.id);
-        } else {
-          emails.push(faculty.email);
-        }
-      }
-
-      // Check duplicate ORCIDs
-      if (faculty.orcid) {
-        if (orcids.includes(faculty.orcid)) {
-          this.addIssue('DUPLICATE_ORCID', `Duplicate ORCID: ${faculty.orcid}`, 'warning', faculty.id);
-        } else {
-          orcids.push(faculty.orcid);
-        }
+    workshopIds.forEach(workshopId => {
+      const workshop = this.workshops[workshopId];
+      
+      if (!workshop.name || !workshop.shortName) {
+        this.addIssue('INCOMPLETE_WORKSHOP', 
+          `Workshop ${workshopId} missing name or shortName`, 
+          'warning'
+        );
       }
     });
+
+    // Check for participations in workshops not marked as active
+    const activeWorkshops = workshopIds.filter(id => this.workshops[id].active);
+    const inactiveWorkshops = workshopIds.filter(id => !this.workshops[id].active);
+    
+    console.log(`📊 Found ${activeWorkshops.length} active workshops and ${inactiveWorkshops.length} inactive workshops`);
+    console.log(`✅ Workshop data validation complete`);
   }
 
-  isValidUrl(string) {
-    try {
-      new URL(string);
-      return true;
-    } catch (_) {
-      return false;
-    }
-  }
-
-  generateStats() {
-    const totalFaculty = this.facultyData.length;
-    const enrichedCount = Object.keys(this.enrichedData).filter(id => 
-      this.enrichedData[id].enrichment
+  generateSummary() {
+    const totalStudents = this.students.length;
+    const totalParticipations = this.participations.length;
+    const totalCountries = new Set(this.students.map(s => s.country)).size;
+    const totalInstitutions = new Set(this.students.map(s => s.institution)).size;
+    const activeWorkshops = Object.keys(this.workshops).filter(id => this.workshops[id].active).length;
+    
+    // Calculate data completeness
+    const completeStudents = this.students.filter(student => 
+      student.id && student.firstName && student.lastName && 
+      student.institution && student.country
     ).length;
-    const orcidCount = this.facultyData.filter(f => f.orcid).length;
     
+    const dataCompleteness = totalStudents > 0 ? (completeStudents / totalStudents * 100) : 0;
+
+    const criticalIssues = this.issues.filter(issue => issue.severity === 'critical').length;
+    const overallStatus = criticalIssues === 0 ? 'pass' : 'fail';
+
     return {
-      totalFaculty,
-      enrichedProfiles: enrichedCount,
-      enrichmentPercentage: Math.round((enrichedCount / totalFaculty) * 100),
-      orcidCoverage: Math.round((orcidCount / totalFaculty) * 100),
-      workshopCount: Object.keys(this.workshops).length
+      overallStatus,
+      totalStudents,
+      totalParticipations,
+      totalCountries,
+      totalInstitutions,
+      activeWorkshops,
+      dataCompleteness: Math.round(dataCompleteness * 10) / 10,
+      criticalIssues,
+      warningIssues: this.issues.filter(issue => issue.severity === 'warning').length,
+      infoIssues: this.issues.filter(issue => issue.severity === 'info').length
     };
   }
 
   async validate() {
-    console.log('🚀 Starting data validation...');
+    console.log('🚀 Starting student data validation...\n');
     
     this.loadData();
-    this.validateFacultyStructure();
-    this.validateEnrichmentData();
+    
+    this.validateStudentStructure();
+    this.validateParticipations();
+    this.validateDataConsistency();
+    this.validateGeographicData();
     this.validateWorkshopData();
-    this.validateParticipationData();
-    this.checkDuplicates();
     
-    const stats = this.generateStats();
-    const criticalIssues = this.issues.filter(i => i.severity === 'critical');
-    const warningIssues = this.issues.filter(i => i.severity === 'warning');
+    const summary = this.generateSummary();
     
-    console.log(`\n📊 Validation Results:`);
-    console.log(`   Total Faculty: ${stats.totalFaculty}`);
-    console.log(`   Enriched Profiles: ${stats.enrichedProfiles} (${stats.enrichmentPercentage}%)`);
-    console.log(`   ORCID Coverage: ${stats.orcidCoverage}%`);
-    console.log(`   Critical Issues: ${criticalIssues.length}`);
-    console.log(`   Warnings: ${warningIssues.length}`);
+    console.log('\n📊 Validation Summary:');
+    console.log(`Status: ${summary.overallStatus.toUpperCase()}`);
+    console.log(`Students: ${summary.totalStudents}`);
+    console.log(`Participations: ${summary.totalParticipations}`);
+    console.log(`Countries: ${summary.totalCountries}`);
+    console.log(`Institutions: ${summary.totalInstitutions}`);
+    console.log(`Active Workshops: ${summary.activeWorkshops}`);
+    console.log(`Data Completeness: ${summary.dataCompleteness}%`);
+    console.log(`Issues: ${summary.criticalIssues} critical, ${summary.warningIssues} warnings, ${summary.infoIssues} info`);
     
-    if (criticalIssues.length > 0) {
-      console.log(`\n❌ Critical Issues:`);
-      criticalIssues.forEach(issue => {
-        console.log(`   - ${issue.type}: ${issue.message}`);
-      });
-    }
-    
-    if (warningIssues.length > 0 && warningIssues.length <= 5) {
-      console.log(`\n⚠️  Warnings:`);
-      warningIssues.slice(0, 5).forEach(issue => {
-        console.log(`   - ${issue.type}: ${issue.message}`);
-      });
+    if (summary.criticalIssues > 0) {
+      console.log('\n❌ Critical issues found:');
+      this.issues
+        .filter(issue => issue.severity === 'critical')
+        .forEach(issue => console.log(`  - ${issue.message}`));
     }
     
     return {
-      success: criticalIssues.length === 0,
-      stats,
+      summary,
       issues: this.issues
     };
   }
@@ -309,21 +320,17 @@ class DataValidator {
 
 // Run validation if called directly
 if (require.main === module) {
-  const validator = new DataValidator();
+  const validator = new StudentDataValidator();
   validator.validate()
     .then(result => {
-      if (!result.success) {
-        console.log('\n❌ Validation failed due to critical issues');
+      if (result.summary.criticalIssues > 0) {
         process.exit(1);
-      } else {
-        console.log('\n✅ Validation passed');
-        process.exit(0);
       }
     })
     .catch(error => {
-      console.error('💥 Validation error:', error.message);
+      console.error('❌ Validation failed:', error.message);
       process.exit(1);
     });
 }
 
-module.exports = DataValidator;
+module.exports = StudentDataValidator;
