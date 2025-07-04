@@ -131,10 +131,10 @@ export const WorkshopComparisons: React.FC<WorkshopComparisonsProps> = ({
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Geographic Diversity by Workshop</h3>
         <div className="h-64">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={workshopData.geographic} layout="horizontal">
+            <BarChart data={workshopData.geographic}>
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis type="number" />
-              <YAxis dataKey="workshop" type="category" width={60} />
+              <XAxis dataKey="workshop" />
+              <YAxis />
               <Tooltip content={<CustomTooltip />} />
               <Legend />
               <Bar dataKey="countries" fill="#3b82f6" name="Countries" />
