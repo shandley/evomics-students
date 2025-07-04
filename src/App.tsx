@@ -9,7 +9,7 @@ import { GeographicDistribution } from './components/GeographicDistribution';
 import { FacultyNetworkVisualization } from './components/FacultyNetworkVisualization';
 import { TimelineVisualization } from './components/TimelineVisualization';
 import { useFacultyData } from './hooks/useFacultyData';
-import { filterFacultyProfiles, sortFacultyProfiles } from './utils/filters';
+import { filterFacultyProfiles, sortFacultyProfiles } from './utils/filtersSimple';
 import { exportToCSV, generateFilename } from './utils/export';
 import type { Filters, SortOption, EnrichedFacultyProfile } from './types';
 

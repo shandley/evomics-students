@@ -1,5 +1,5 @@
-import type { FacultyProfile, Filters, SortOption, EnrichedFacultyProfile, hasStandardizedResearchAreas } from '../types';
-import { getTopicById, getAllTopics } from '../models/taxonomyData';
+import type { FacultyProfile, Filters, SortOption, EnrichedFacultyProfile } from '../types';
+// import { getTopicById, getAllTopics } from '../models/taxonomyData';
 
 export function filterFacultyProfiles(
   profiles: FacultyProfile[],
