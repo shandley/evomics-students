@@ -13,7 +13,7 @@ import { useUrlState } from './hooks/useUrlState';
 
 
 function FocusedApp() {
-  const { loading, error, profiles, workshops } = useFocusedStudentData();
+  const { loading, error, profiles, workshops, allProfiles, allWorkshops } = useFocusedStudentData();
   const { state: urlState, updateUrl, shareCurrentView } = useUrlState();
   
   // Use URL state for visualization toggles
@@ -259,7 +259,7 @@ function FocusedApp() {
 
         {showInactiveWorkshops && (
           <div className="mb-6">
-            <LazyHistorical profiles={profiles} workshops={workshops} />
+            <LazyHistorical profiles={allProfiles} workshops={allWorkshops} />
           </div>
         )}
 

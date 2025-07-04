@@ -8,42 +8,25 @@ interface FocusedStudentStatsProps {
 
 export const FocusedStudentStats: React.FC<FocusedStudentStatsProps> = ({ profiles, workshops }) => {
   const stats = useMemo(() => {
-    // Focus only on active workshops (the main 3)
-    const focusedWorkshops = Object.keys(workshops).filter(id => workshops[id].active);
-    
-    // Filter profiles to only include those who participated in focused workshops
-    const focusedProfiles = profiles.filter(profile => {
-      return focusedWorkshops.some(workshopId => 
-        profile.participations[workshopId] && profile.participations[workshopId].length > 0
-      );
-    });
-    
     const countries = new Set<string>();
     const institutions = new Set<string>();
     let totalParticipations = 0;
     
-    // Get all unique years across focused workshops only
+    // Get all unique years across all provided profiles (already filtered)
     const allYears = new Set<number>();
-    focusedProfiles.forEach(profile => {
-      focusedWorkshops.forEach(workshopId => {
-        if (profile.participations[workshopId]) {
-          profile.participations[workshopId].forEach(year => allYears.add(year));
-        }
+    profiles.forEach(profile => {
+      Object.values(profile.participations).forEach(years => {
+        years.forEach(year => allYears.add(year));
       });
     });
     const yearRange = allYears.size > 0 
       ? Math.max(...allYears) - Math.min(...allYears) + 1 
       : 0;
 
-    focusedProfiles.forEach(profile => {
+    profiles.forEach(profile => {
       countries.add(profile.student.country);
       institutions.add(profile.student.institution);
-      // Count only participations in focused workshops
-      focusedWorkshops.forEach(workshopId => {
-        if (profile.participations[workshopId]) {
-          totalParticipations += profile.participations[workshopId].length;
-        }
-      });
+      totalParticipations += profile.statistics.totalYears;
     });
 
     // Calculate average students per year
@@ -51,20 +34,13 @@ export const FocusedStudentStats: React.FC<FocusedStudentStatsProps> = ({ profil
       ? (totalParticipations / yearRange).toFixed(0)
       : '0';
 
-    // Count students by focused workshop only
-    const workshopCounts = focusedWorkshops.reduce((acc, workshopId) => {
-      acc[workshopId] = profiles.filter(p => p.participations[workshopId]?.length > 0).length;
-      return acc;
-    }, {} as { [key: string]: number });
-
     return {
-      totalStudents: focusedProfiles.length,
+      totalStudents: profiles.length,
       totalCountries: countries.size,
       totalInstitutions: institutions.size,
       totalParticipations,
       yearRange,
-      avgStudentsPerYear,
-      workshopCounts
+      avgStudentsPerYear
     };
   }, [profiles, workshops]);
 
