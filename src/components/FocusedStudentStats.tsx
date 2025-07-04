@@ -27,9 +27,9 @@ export const FocusedStudentStats: React.FC<FocusedStudentStatsProps> = ({ profil
       totalParticipations += profile.statistics.totalYears;
     });
 
-    // Calculate average years per student
-    const avgYears = profiles.length > 0
-      ? (profiles.reduce((sum, p) => sum + p.statistics.totalYears, 0) / profiles.length).toFixed(1)
+    // Calculate average students per year
+    const avgStudentsPerYear = yearRange > 0
+      ? (totalParticipations / yearRange).toFixed(0)
       : '0';
 
     // Count students by workshop (matching faculty site exactly)
@@ -44,7 +44,7 @@ export const FocusedStudentStats: React.FC<FocusedStudentStatsProps> = ({ profil
       totalInstitutions: institutions.size,
       totalParticipations,
       yearRange,
-      avgYears,
+      avgStudentsPerYear,
       workshopCounts
     };
   }, [profiles, workshops]);
@@ -122,13 +122,13 @@ export const FocusedStudentStats: React.FC<FocusedStudentStatsProps> = ({ profil
         <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Avg. Years/Student</p>
-              <p className="text-3xl font-bold text-gray-900 mt-1">{stats.avgYears}</p>
-              <p className="text-sm text-gray-500 mt-1">Participation depth</p>
+              <p className="text-sm font-medium text-gray-600">Avg. Students/Year</p>
+              <p className="text-3xl font-bold text-gray-900 mt-1">{stats.avgStudentsPerYear}</p>
+              <p className="text-sm text-gray-500 mt-1">Annual participation</p>
             </div>
             <div className="text-orange-600">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
             </div>
           </div>
