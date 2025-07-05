@@ -1,0 +1,73 @@
+name: Claude Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    # Focus on student dashboard and data files
+    paths:
+      - "src/**/*.ts"
+      - "src/**/*.tsx"
+      - "src/**/*.js"
+      - "src/**/*.jsx"
+      - "scripts/**/*.cjs"
+      - "scripts/**/*.js"
+      - "src/data/**/*.json"
+      - ".github/workflows/**/*.yml"
+
+jobs:
+  claude-review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: read
+      id-token: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run Claude Code Review
+        id: claude-review
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          
+          # Use Claude Sonnet 4 (default) for comprehensive reviews
+          # model: "claude-sonnet-4-20250514"
+          
+          # Customized prompt for student dashboard project
+          direct_prompt: |
+            Please review this pull request for the Evomics Student Alumni Dashboard and provide feedback on:
+            
+            **Code Quality & Best Practices:**
+            - React/TypeScript patterns and component design
+            - State management and data flow
+            - Performance optimizations for large datasets (2,190+ students)
+            
+            **Student Data Specific:**
+            - Student data validation and integrity
+            - Geographic data consistency (89 countries, 1,155+ institutions)
+            - Workshop participation tracking accuracy
+            - Data privacy and anonymization compliance
+            
+            **Dashboard Functionality:**
+            - Data visualization accuracy (charts, maps, statistics)
+            - Search, filtering, and sorting performance
+            - Cross-dashboard integration with faculty site
+            - Mobile responsiveness and accessibility
+            
+            **Security & Reliability:**
+            - Data validation scripts and quality checks
+            - GitHub Actions workflow configurations
+            - Error handling and boundary cases
+            - Bundle size and loading performance
+            
+            **Testing & Documentation:**
+            - Test coverage for critical functionality
+            - Code documentation and maintainability
+            - README and setup instructions accuracy
+            
+            Focus on the educational nature of this project and ensure the implementation supports the global genomics education community effectively. Be constructive and provide specific, actionable feedback.
