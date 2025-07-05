@@ -1,0 +1,256 @@
+{
+  "timestamp": "2025-07-04T20:48:08.927Z",
+  "summary": {
+    "totalLinks": 17,
+    "workingLinks": 17,
+    "warningLinks": 0,
+    "brokenLinks": 0,
+    "successRate": 100,
+    "strictSuccessRate": 100
+  },
+  "links": [
+    {
+      "url": "https://shandley.github.io/evomics-students/",
+      "type": "site_link",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "timestamp": "2025-07-04T20:48:05.904Z"
+    },
+    {
+      "url": "https://shandley.github.io/evomics-faculty/",
+      "type": "site_link",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "timestamp": "2025-07-04T20:48:05.943Z"
+    },
+    {
+      "url": "https://evomics.org",
+      "type": "site_link",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "timestamp": "2025-07-04T20:48:06.064Z"
+    },
+    {
+      "url": "https://www.cdc.gov",
+      "type": "institutional_website",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "institution": "CDC",
+      "timestamp": "2025-07-04T20:48:06.122Z"
+    },
+    {
+      "url": "https://naturalhistory.si.edu",
+      "type": "institutional_website",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "institution": "NMNH",
+      "timestamp": "2025-07-04T20:48:06.184Z"
+    },
+    {
+      "url": "https://www.uu.se",
+      "type": "institutional_website",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "institution": "Uppsala University",
+      "timestamp": "2025-07-04T20:48:06.397Z"
+    },
+    {
+      "url": "https://www.lu.se",
+      "type": "institutional_website",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "institution": "Lund University",
+      "timestamp": "2025-07-04T20:48:06.896Z"
+    },
+    {
+      "url": "https://www.ku.dk",
+      "type": "institutional_website",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "institution": "University of Copenhagen",
+      "timestamp": "2025-07-04T20:48:06.949Z"
+    },
+    {
+      "url": "https://www.su.se",
+      "type": "institutional_website",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "institution": "Stockholm University",
+      "timestamp": "2025-07-04T20:48:07.484Z"
+    },
+    {
+      "url": "https://www.harvard.edu",
+      "type": "institutional_website",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "institution": "Harvard University",
+      "timestamp": "2025-07-04T20:48:07.540Z"
+    },
+    {
+      "url": "https://www.mit.edu",
+      "type": "institutional_website",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "institution": "MIT",
+      "timestamp": "2025-07-04T20:48:07.666Z"
+    },
+    {
+      "url": "https://www.nih.gov",
+      "type": "institutional_website",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "institution": "NIH",
+      "timestamp": "2025-07-04T20:48:07.787Z"
+    },
+    {
+      "url": "https://www.broadinstitute.org",
+      "type": "institutional_website",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "institution": "Broad Institute",
+      "timestamp": "2025-07-04T20:48:07.931Z"
+    },
+    {
+      "url": "https://evomics.org/workshops/workshop-on-genomics/",
+      "type": "workshop_reference",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "timestamp": "2025-07-04T20:48:08.256Z"
+    },
+    {
+      "url": "https://evomics.org/workshops/workshop-on-population-and-speciation-genomics/",
+      "type": "workshop_reference",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "timestamp": "2025-07-04T20:48:08.386Z"
+    },
+    {
+      "url": "https://evomics.org/workshops/workshop-on-phylogenomics/",
+      "type": "workshop_reference",
+      "status": "working",
+      "statusCode": 301,
+      "error": "Redirect to https://evomics.org/workshop-on-phylogenomics/",
+      "timestamp": "2025-07-04T20:48:08.790Z"
+    },
+    {
+      "url": "https://evomics.org/workshops/",
+      "type": "workshop_reference",
+      "status": "working",
+      "statusCode": 200,
+      "error": null,
+      "timestamp": "2025-07-04T20:48:08.926Z"
+    }
+  ],
+  "breakdown": {
+    "byType": {
+      "site_link": {
+        "total": 3,
+        "working": 3,
+        "broken": 0,
+        "warning": 0
+      },
+      "institutional_website": {
+        "total": 10,
+        "working": 10,
+        "broken": 0,
+        "warning": 0
+      },
+      "workshop_reference": {
+        "total": 4,
+        "working": 4,
+        "broken": 0,
+        "warning": 0
+      }
+    },
+    "byStatus": {
+      "working": 17,
+      "broken": 0,
+      "warning": 0
+    },
+    "byInstitution": {
+      "CDC": {
+        "total": 1,
+        "working": 1,
+        "broken": 0,
+        "warning": 0
+      },
+      "NMNH": {
+        "total": 1,
+        "working": 1,
+        "broken": 0,
+        "warning": 0
+      },
+      "Uppsala University": {
+        "total": 1,
+        "working": 1,
+        "broken": 0,
+        "warning": 0
+      },
+      "Lund University": {
+        "total": 1,
+        "working": 1,
+        "broken": 0,
+        "warning": 0
+      },
+      "University of Copenhagen": {
+        "total": 1,
+        "working": 1,
+        "broken": 0,
+        "warning": 0
+      },
+      "Stockholm University": {
+        "total": 1,
+        "working": 1,
+        "broken": 0,
+        "warning": 0
+      },
+      "Harvard University": {
+        "total": 1,
+        "working": 1,
+        "broken": 0,
+        "warning": 0
+      },
+      "MIT": {
+        "total": 1,
+        "working": 1,
+        "broken": 0,
+        "warning": 0
+      },
+      "NIH": {
+        "total": 1,
+        "working": 1,
+        "broken": 0,
+        "warning": 0
+      },
+      "Broad Institute": {
+        "total": 1,
+        "working": 1,
+        "broken": 0,
+        "warning": 0
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "low",
+      "category": "maintenance",
+      "message": "Link health is excellent",
+      "action": "Continue regular monitoring"
+    }
+  ]
+}

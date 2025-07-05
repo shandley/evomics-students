@@ -114,11 +114,8 @@ jobs:
                 issueBody += `- Status Code: ${link.statusCode || 'N/A'}\n`;
                 issueBody += `- Error: ${link.error || 'Unknown error'}\n`;
                 issueBody += `- Type: ${link.type || 'Unknown'}\n`;
-                if (link.studentId) {
-                  issueBody += `- Student ID: ${link.studentId}\n`;
-                }
-                if (link.institutionName) {
-                  issueBody += `- Institution: ${link.institutionName}\n`;
+                if (link.institution) {
+                  issueBody += `- Institution: ${link.institution}\n`;
                 }
                 issueBody += `\n`;
               });
@@ -132,11 +129,8 @@ jobs:
                 issueBody += `- Status Code: ${link.statusCode || 'N/A'}\n`;
                 issueBody += `- Issue: ${link.error || 'Unknown warning'}\n`;
                 issueBody += `- Type: ${link.type || 'Unknown'}\n`;
-                if (link.studentId) {
-                  issueBody += `- Student ID: ${link.studentId}\n`;
-                }
-                if (link.institutionName) {
-                  issueBody += `- Institution: ${link.institutionName}\n`;
+                if (link.institution) {
+                  issueBody += `- Institution: ${link.institution}\n`;
                 }
                 issueBody += `\n`;
               });
@@ -150,7 +144,7 @@ jobs:
             issueBody += `- **Success Rate:** ${(report.summary?.successRate || 0).toFixed(1)}%\n`;
             issueBody += `- **Strict Success Rate:** ${(report.summary?.strictSuccessRate || 0).toFixed(1)}%\n\n`;
             
-            issueBody += `---\n*This report is automatically generated. Links are checked for institutional websites, workshop references, and other external resources in student data.*`;
+            issueBody += `---\n*This report is automatically generated. Links are checked for student dashboard sites, institutional websites, and workshop reference pages.*`;
             
             const issueTitle = `Broken Links Found - ${brokenLinks.length} broken, ${warningLinks.length} warnings`;
             

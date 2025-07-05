@@ -5,23 +5,22 @@ const path = require('path');
 const https = require('https');
 const http = require('http');
 
-class LinkChecker {
+class StudentLinkChecker {
   constructor() {
     this.results = [];
-    this.facultyData = null;
-    this.enrichedData = null;
+    this.studentData = null;
+    this.workshops = null;
   }
 
   loadData() {
     try {
-      // Load faculty data
-      const facultyPath = path.join(__dirname, '../src/data/facultyData.json');
-      const facultyJson = JSON.parse(fs.readFileSync(facultyPath, 'utf8'));
-      this.facultyData = facultyJson.faculty || facultyJson; // Handle both formats
+      // Load student data
+      const studentPath = path.join(__dirname, '../src/data/studentData.json');
+      this.studentData = JSON.parse(fs.readFileSync(studentPath, 'utf8'));
       
-      // Load enriched data
-      const enrichedPath = path.join(__dirname, '../src/data/facultyEnriched.json');
-      this.enrichedData = JSON.parse(fs.readFileSync(enrichedPath, 'utf8'));
+      // Load workshops
+      const workshopsPath = path.join(__dirname, '../src/data/workshops.json');
+      this.workshops = JSON.parse(fs.readFileSync(workshopsPath, 'utf8'));
       
       console.log('✅ Data files loaded successfully');
     } catch (error) {
@@ -64,7 +63,7 @@ class LinkChecker {
 
       const request = client.get(url, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (compatible; Evomics-Faculty-Link-Checker/1.0)',
+          'User-Agent': 'Mozilla/5.0 (compatible; Evomics-Students-Link-Checker/1.0)',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.5',
           'Connection': 'close'
@@ -106,16 +105,15 @@ class LinkChecker {
           resolve({
             status: 'warning',
             statusCode,
-            error: `Unexpected status ${statusCode}`
+            error: `Unexpected status code: ${statusCode}`
           });
         }
       });
 
       request.on('error', (error) => {
         clearTimeout(timeoutId);
-        
-        // Categorize common errors
         let errorMessage = error.message;
+        
         if (error.code === 'ENOTFOUND') {
           errorMessage = 'Domain not found';
         } else if (error.code === 'ECONNREFUSED') {
@@ -124,8 +122,6 @@ class LinkChecker {
           errorMessage = 'Connection timeout';
         } else if (error.code === 'CERT_HAS_EXPIRED') {
           errorMessage = 'SSL certificate expired';
-        } else if (error.message.includes('certificate')) {
-          errorMessage = 'SSL certificate issue';
         }
         
         resolve({
@@ -141,142 +137,136 @@ class LinkChecker {
         resolve({
           status: 'broken',
           statusCode: null,
-          error: 'Connection timeout'
+          error: 'Request timeout'
         });
       });
     });
   }
 
-  async checkFacultyLinks() {
-    console.log('🔍 Checking faculty website links...');
+  async checkStudentSiteLinks() {
+    console.log('🔍 Checking student dashboard site links...');
     
-    const promises = this.facultyData.map(async (faculty) => {
-      const links = [];
-      
-      // Check main website
-      if (faculty.website) {
-        const result = await this.checkUrl(faculty.website);
-        links.push({
-          type: 'website',
-          url: faculty.website,
-          facultyId: faculty.id,
-          facultyName: `${faculty.firstName} ${faculty.lastName}`,
-          ...result
-        });
-      }
-      
-      // Check enriched data links
-      const enriched = this.enrichedData[faculty.id];
-      if (enriched?.enrichment?.professional?.labWebsite) {
-        const result = await this.checkUrl(enriched.enrichment.professional.labWebsite);
-        links.push({
-          type: 'lab_website',
-          url: enriched.enrichment.professional.labWebsite,
-          facultyId: faculty.id,
-          facultyName: `${faculty.firstName} ${faculty.lastName}`,
-          ...result
-        });
-      }
-      
-      return links;
-    });
-    
-    const allResults = await Promise.all(promises);
-    return allResults.flat();
-  }
+    const siteUrls = [
+      'https://shandley.github.io/evomics-students/',
+      'https://shandley.github.io/evomics-faculty/', // Cross-reference to faculty site
+      'https://evomics.org' // Main evomics site
+    ];
 
-  async checkOrcidLinks() {
-    console.log('🔍 Checking ORCID links...');
-    
-    const orcidPromises = this.facultyData.map(async (faculty) => {
-      const orcidLinks = [];
-      
-      // Check main ORCID
-      if (faculty.orcid) {
-        const orcidUrl = `https://orcid.org/${faculty.orcid}`;
-        const result = await this.checkUrl(orcidUrl);
-        orcidLinks.push({
-          type: 'orcid',
-          url: orcidUrl,
-          facultyId: faculty.id,
-          facultyName: `${faculty.firstName} ${faculty.lastName}`,
-          ...result
-        });
-      }
-      
-      // Check enriched ORCID
-      const enriched = this.enrichedData[faculty.id];
-      if (enriched?.enrichment?.academic?.orcid && enriched.enrichment.academic.orcid !== faculty.orcid) {
-        const orcidUrl = `https://orcid.org/${enriched.enrichment.academic.orcid}`;
-        const result = await this.checkUrl(orcidUrl);
-        orcidLinks.push({
-          type: 'orcid_enriched',
-          url: orcidUrl,
-          facultyId: faculty.id,
-          facultyName: `${faculty.firstName} ${faculty.lastName}`,
-          ...result
-        });
-      }
-      
-      return orcidLinks;
-    });
-    
-    const allOrcidResults = await Promise.all(orcidPromises);
-    return allOrcidResults.flat();
-  }
-
-  async checkInstitutionalLinks() {
-    console.log('🔍 Checking institutional affiliation links...');
-    
-    // This could be expanded to check institutional pages
-    // For now, we'll focus on explicitly provided URLs
-    const institutionalLinks = [];
-    
-    // Check for any institutional URLs in enrichment data
-    for (const [facultyId, data] of Object.entries(this.enrichedData)) {
-      if (data.enrichment?.profile?.source) {
-        const faculty = this.facultyData.find(f => f.id === facultyId);
-        if (faculty && this.isValidUrl(data.enrichment.profile.source)) {
-          const result = await this.checkUrl(data.enrichment.profile.source);
-          institutionalLinks.push({
-            type: 'profile_source',
-            url: data.enrichment.profile.source,
-            facultyId,
-            facultyName: `${faculty.firstName} ${faculty.lastName}`,
-            ...result
-          });
-        }
-      }
-    }
-    
-    return institutionalLinks;
-  }
-
-  isValidUrl(string) {
-    try {
-      new URL(string);
-      return true;
-    } catch (_) {
-      return false;
+    for (const url of siteUrls) {
+      const result = await this.checkUrl(url);
+      this.results.push({
+        url,
+        type: 'site_link',
+        status: result.status,
+        statusCode: result.statusCode,
+        error: result.error,
+        timestamp: new Date().toISOString()
+      });
     }
   }
 
-  async checkAllLinks() {
-    console.log('🚀 Starting link checking process...');
+  async checkInstitutionalWebsites() {
+    console.log('🔍 Checking institutional website links...');
+    
+    // Get unique institutions and try to find their websites
+    const institutions = [...new Set(this.studentData.students.map(s => s.institution))];
+    const institutionalUrls = [];
+    
+    // Common institutional website patterns
+    const institutionUrlMap = {
+      'CDC': 'https://www.cdc.gov',
+      'NMNH': 'https://naturalhistory.si.edu',
+      'Uppsala University': 'https://www.uu.se',
+      'Lund University': 'https://www.lu.se', 
+      'University of Copenhagen': 'https://www.ku.dk',
+      'Stockholm University': 'https://www.su.se',
+      'Harvard University': 'https://www.harvard.edu',
+      'Stanford University': 'https://www.stanford.edu',
+      'University of California, Berkeley': 'https://www.berkeley.edu',
+      'MIT': 'https://www.mit.edu',
+      'NIH': 'https://www.nih.gov',
+      'Broad Institute': 'https://www.broadinstitute.org'
+    };
+
+    // Check major institutions that we know have websites
+    for (const [institution, url] of Object.entries(institutionUrlMap)) {
+      if (institutions.includes(institution)) {
+        institutionalUrls.push({ institution, url });
+      }
+    }
+
+    // Check a sample of institutional URLs
+    const sampleUrls = institutionalUrls.slice(0, 10); // Limit to avoid too many requests
+
+    for (const { institution, url } of sampleUrls) {
+      const result = await this.checkUrl(url);
+      this.results.push({
+        url,
+        type: 'institutional_website',
+        status: result.status,
+        statusCode: result.statusCode,
+        error: result.error,
+        institution,
+        timestamp: new Date().toISOString()
+      });
+    }
+  }
+
+  async checkWorkshopReferences() {
+    console.log('🔍 Checking workshop reference links...');
+    
+    // Check evomics.org workshop pages
+    const workshopUrls = [
+      'https://evomics.org/workshops/workshop-on-genomics/',
+      'https://evomics.org/workshops/workshop-on-population-and-speciation-genomics/',
+      'https://evomics.org/workshops/workshop-on-phylogenomics/',
+      'https://evomics.org/workshops/'
+    ];
+
+    for (const url of workshopUrls) {
+      const result = await this.checkUrl(url);
+      this.results.push({
+        url,
+        type: 'workshop_reference',
+        status: result.status,
+        statusCode: result.statusCode,
+        error: result.error,
+        timestamp: new Date().toISOString()
+      });
+    }
+  }
+
+  generateSummary() {
+    const totalLinks = this.results.length;
+    const workingLinks = this.results.filter(r => r.status === 'working').length;
+    const warningLinks = this.results.filter(r => r.status === 'warning').length;
+    const brokenLinks = this.results.filter(r => r.status === 'broken').length;
+    
+    const successRate = totalLinks > 0 ? (workingLinks / totalLinks * 100) : 0;
+    const strictSuccessRate = totalLinks > 0 ? ((workingLinks) / totalLinks * 100) : 0; // Only count working as success
+
+    return {
+      totalLinks,
+      workingLinks,
+      warningLinks,
+      brokenLinks,
+      successRate: Math.round(successRate * 10) / 10,
+      strictSuccessRate: Math.round(strictSuccessRate * 10) / 10
+    };
+  }
+
+  async checkLinks() {
+    console.log('🚀 Starting student site link checking process...\n');
     
     this.loadData();
     
-    // Check all types of links
-    const facultyLinks = await this.checkFacultyLinks();
-    const orcidLinks = await this.checkOrcidLinks();
-    const institutionalLinks = await this.checkInstitutionalLinks();
+    await this.checkStudentSiteLinks();
+    await this.checkInstitutionalWebsites();
+    await this.checkWorkshopReferences();
     
-    this.results = [...facultyLinks, ...orcidLinks, ...institutionalLinks];
-    
-    // Generate summary
     const summary = this.generateSummary();
     
-    console.log(`\n📊 Link Check Results:`);
+    console.log('\n📊 Link Check Results:');
     console.log(`   Total links checked: ${summary.totalLinks}`);
     console.log(`   Working links: ${summary.workingLinks}`);
     console.log(`   Warning links: ${summary.warningLinks}`);
@@ -284,26 +274,26 @@ class LinkChecker {
     console.log(`   Overall success rate: ${summary.successRate}%`);
     console.log(`   Strict success rate: ${summary.strictSuccessRate}%`);
     
-    if (summary.warningLinks > 0) {
-      console.log(`\n⚠️  Warning links found:`);
-      const warningLinks = this.results.filter(r => r.status === 'warning');
-      warningLinks.slice(0, 3).forEach(link => {
-        console.log(`   - ${link.type}: ${link.facultyName} - ${link.url} (${link.error})`);
+    // Show details for non-working links
+    const warningLinks = this.results.filter(r => r.status === 'warning');
+    const brokenLinks = this.results.filter(r => r.status === 'broken');
+    
+    if (warningLinks.length > 0) {
+      console.log('\n⚠️  Warning links found:');
+      warningLinks.forEach(link => {
+        console.log(`   - ${link.type}: ${link.institution || 'N/A'} - ${link.url} (${link.error})`);
       });
-      if (warningLinks.length > 3) {
-        console.log(`   ... and ${warningLinks.length - 3} more warnings`);
-      }
     }
     
-    if (summary.brokenLinks > 0) {
-      console.log(`\n❌ Broken links found:`);
-      const brokenLinks = this.results.filter(r => r.status === 'broken');
-      brokenLinks.slice(0, 5).forEach(link => {
-        console.log(`   - ${link.type}: ${link.facultyName} - ${link.url} (${link.error})`);
+    if (brokenLinks.length > 0) {
+      console.log('\n❌ Broken links found:');
+      brokenLinks.forEach(link => {
+        console.log(`   - ${link.type}: ${link.institution || 'N/A'} - ${link.url} (${link.error})`);
       });
-      if (brokenLinks.length > 5) {
-        console.log(`   ... and ${brokenLinks.length - 5} more`);
-      }
+    }
+    
+    if (warningLinks.length === 0 && brokenLinks.length === 0) {
+      console.log('\n✅ All links are working properly!');
     }
     
     return {
@@ -311,56 +301,22 @@ class LinkChecker {
       summary
     };
   }
-
-  generateSummary() {
-    const totalLinks = this.results.length;
-    const workingLinks = this.results.filter(r => r.status === 'working').length;
-    const brokenLinks = this.results.filter(r => r.status === 'broken').length;
-    const warningLinks = this.results.filter(r => r.status === 'warning').length;
-    
-    // Consider warnings as working for success rate calculation
-    const functionalLinks = workingLinks + warningLinks;
-    
-    return {
-      totalLinks,
-      workingLinks,
-      brokenLinks,
-      warningLinks,
-      functionalLinks,
-      successRate: totalLinks > 0 ? Math.round((functionalLinks / totalLinks) * 100) : 0,
-      strictSuccessRate: totalLinks > 0 ? Math.round((workingLinks / totalLinks) * 100) : 0,
-      timestamp: new Date().toISOString()
-    };
-  }
 }
 
-// Run if called directly
+// Run link checking if called directly
 if (require.main === module) {
-  const checker = new LinkChecker();
-  checker.checkAllLinks()
+  const checker = new StudentLinkChecker();
+  checker.checkLinks()
     .then(result => {
-      const { brokenLinks, successRate } = result.summary;
-      
-      if (brokenLinks > 0) {
-        console.log(`\n⚠️  Found ${brokenLinks} broken links (${successRate}% success rate)`);
-        
-        // Only fail if there are many broken links or very low success rate
-        if (brokenLinks > 20 || successRate < 80) {
-          console.log('❌ Too many broken links - failing workflow');
-          process.exit(1);
-        } else {
-          console.log('✅ Acceptable number of broken links - creating issue for tracking');
-          process.exit(0);
-        }
-      } else {
-        console.log('\n✅ All links are working');
-        process.exit(0);
+      if (result.summary.brokenLinks > 0) {
+        console.log(`\n⚠️  Found ${result.summary.brokenLinks} broken links`);
+        process.exit(0); // Don't fail CI for broken external links
       }
     })
     .catch(error => {
-      console.error('💥 Link checking error:', error.message);
+      console.error('❌ Link checking failed:', error.message);
       process.exit(1);
     });
 }
 
-module.exports = LinkChecker;
+module.exports = StudentLinkChecker;
