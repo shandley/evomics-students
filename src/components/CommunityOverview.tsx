@@ -25,7 +25,7 @@ export const CommunityOverview: React.FC<CommunityOverviewProps> = ({ profiles, 
     <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm mb-6">
       <div className="text-center mb-6">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">
-          🧬 Evomics Alumni Community
+          Evomics Alumni Community
         </h2>
         <p className="text-gray-600">
           Connecting faculty and students across the global genomics education network
