@@ -27,7 +27,7 @@ function FocusedApp() {
 
   if (loading) {
     return (
-      <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+      <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex flex-col justify-center items-center h-64 gap-4">
             <div className="relative">
@@ -43,7 +43,7 @@ function FocusedApp() {
 
   if (error) {
     return (
-      <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+      <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex flex-col justify-center items-center h-64 gap-4">
             <div className="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center">
@@ -59,9 +59,9 @@ function FocusedApp() {
   }
 
   return (
-    <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+    <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)' }}>
       {/* Header matching faculty site exactly */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex justify-between items-start">
             <div>
